@@ -1,0 +1,644 @@
+<title>Promo Intel Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: one working column — header + track switch, summary line, tabs, filter bar, record list. Scanned, not read. */
+:root{
+  --bg:#F2F4F3; --surface:#FFFFFF; --sunk:#E8ECEA; --ink:#15211C; --muted:#5A6A63; --line:#D5DDD9;
+  --accent:#1D58C9; --accent-soft:#E2EAFA; --accent-ink:#FFFFFF;
+  --hi:#B5321C; --hi-bg:#FAE3DD; --med:#8A5A00; --med-bg:#F8EDD3; --lo:#56655E; --lo-bg:#E4EAE7;
+  --ok:#1B6E45; --ok-bg:#DBEFE3;
+  --f-display:"Space Grotesk",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101614; --surface:#18201D; --sunk:#141B18; --ink:#E5ECE8; --muted:#93A39C; --line:#2A3531;
+  --accent:#7FA6F5; --accent-soft:#1D2A44; --accent-ink:#0D1424;
+  --hi:#F2907C; --hi-bg:#3A1F19; --med:#E8BC63; --med-bg:#352A12; --lo:#A3B2AB; --lo-bg:#232D29;
+  --ok:#7FD3A6; --ok-bg:#15301F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101614; --surface:#18201D; --sunk:#141B18; --ink:#E5ECE8; --muted:#93A39C; --line:#2A3531;
+  --accent:#7FA6F5; --accent-soft:#1D2A44; --accent-ink:#0D1424;
+  --hi:#F2907C; --hi-bg:#3A1F19; --med:#E8BC63; --med-bg:#352A12; --lo:#A3B2AB; --lo-bg:#232D29;
+  --ok:#7FD3A6; --ok-bg:#15301F; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:24px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:2px 0 0;max-width:65ch}
+.top{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+.label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+.seg{display:inline-flex;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:3px;gap:2px}
+.seg button{border:0;background:transparent;color:var(--muted);font:inherit;font-weight:500;padding:6px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.stat{padding:12px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat:last-child{border-right:0}
+.stat b{font-family:var(--f-mono);font-size:24px;font-weight:500;font-variant-numeric:tabular-nums}
+.stat.alert b{color:var(--hi)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:4px;overflow-x:auto}
+.tabs button{border:0;background:none;font:inherit;font-family:var(--f-display);font-weight:600;font-size:15px;color:var(--muted);padding:10px 12px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs .count{font-family:var(--f-mono);font-size:12px;font-weight:400;color:var(--muted);margin-left:4px}
+.actions{display:flex;gap:8px;padding-bottom:8px;flex-wrap:wrap}
+
+.btn{font:inherit;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:7px;cursor:pointer}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.small{padding:4px 9px;font-size:12px}
+.btn.danger{color:var(--hi)}
+.btn.danger.armed{background:var(--hi);color:var(--surface);border-color:var(--hi)}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+select,input,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:7px 9px;min-width:0}
+.filters input[type=search]{flex:1 1 200px}
+.chk{display:inline-flex;gap:6px;align-items:center;color:var(--muted);font-weight:500;cursor:pointer;padding:0 4px}
+.chk input{accent-color:var(--accent)}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field.wide{grid-column:1/-1}
+.field textarea{min-height:64px;resize:vertical}
+.formfoot{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.msg{color:var(--muted);font-size:13px}
+.msg.err{color:var(--hi)}
+
+.list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.row{display:grid;grid-template-columns:112px minmax(0,1fr) 170px;gap:16px;padding:14px 16px;border-top:1px solid var(--line);align-items:start}
+.row:first-child{border-top:0}
+.row .meta{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.row .body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.row .side{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.row h3{font-family:var(--f-body);font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.row p{margin:0;overflow-wrap:anywhere}
+.row .act{color:var(--ink);background:var(--accent-soft);border-radius:6px;padding:6px 10px;font-size:13px}
+.row .act span{font-weight:600;color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;color:var(--muted);font-size:13px}
+.tag{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--lo-bg);color:var(--lo);font-weight:500;white-space:nowrap}
+.tag.brand{background:var(--accent-soft);color:var(--accent)}
+.pill{font-family:var(--f-mono);font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px;letter-spacing:.04em;white-space:nowrap}
+.pill.i3{background:var(--hi-bg);color:var(--hi)} .pill.i2{background:var(--med-bg);color:var(--med)} .pill.i1{background:var(--lo-bg);color:var(--lo)}
+.st-New{border-left:3px solid var(--hi)} .st-Reviewing{border-left:3px solid var(--med)} .st-Actioned{border-left:3px solid var(--ok)} .st-Ignored{border-left:3px solid var(--line);opacity:.72}
+a{color:var(--accent)}
+@media (max-width:720px){.row{grid-template-columns:minmax(0,1fr)}.row .meta{flex-direction:row;flex-wrap:wrap;align-items:center}}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{text-align:left;padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;background:var(--sunk)}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+.links{display:flex;flex-wrap:wrap;gap:4px}
+.links a{font-size:12px;text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:1px 7px;color:var(--muted);white-space:nowrap}
+.links a:hover{color:var(--accent);border-color:var(--accent)}
+.path{font-family:var(--f-mono);font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.runbar{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;color:var(--muted)}
+.runbar b{color:var(--ink);font-family:var(--f-mono);font-weight:500}
+.delta{font-family:var(--f-mono);font-size:13px;white-space:nowrap}
+.delta .up{color:var(--ok)} .delta .down{color:var(--hi)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.status{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:4px;white-space:nowrap}
+.status.ok{background:var(--ok-bg);color:var(--ok)} .status.baseline{background:var(--accent-soft);color:var(--accent)}
+.status.blocked,.status.error,.status.partial{background:var(--med-bg);color:var(--med)}
+.empty{padding:36px 20px;text-align:center;color:var(--muted);display:flex;flex-direction:column;gap:6px;align-items:center}
+.empty strong{color:var(--ink);font-family:var(--f-display);font-size:16px}
+.notice{font-size:13px;color:var(--med);background:var(--med-bg);border-radius:8px;padding:8px 12px}
+.foot{color:var(--muted);font-size:12px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="label">Competitive intelligence · promotional products</div>
+      <h1>Promo Intel Desk</h1>
+      <p class="sub">Competitor moves and industry news, logged per brand. Each signal ends in a decision: act, watch or ignore.</p>
+    </div>
+    <div class="field">
+      <span class="label" id="trackLbl">Track</span>
+      <div class="seg" role="group" aria-labelledby="trackLbl">
+        <button type="button" data-track="w4h" aria-pressed="true">web4half brands</button>
+        <button type="button" data-track="mg" aria-pressed="false">Magnetguys (supplier)</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="stats" aria-label="Summary">
+    <div class="stat"><span class="label">Launches · last 30 days</span><b id="sFeed">–</b></div>
+    <div class="stat"><span class="label">Signals · last 7 days</span><b id="sWeek">–</b></div>
+    <div class="stat alert"><span class="label">High impact, not actioned</span><b id="sHigh">–</b></div>
+    <div class="stat"><span class="label">Competitors tracked</span><b id="sComp">–</b></div>
+  </section>
+
+  <div id="notice" class="notice" hidden></div>
+
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="feed" aria-selected="true">Launch feed<span class="count" id="cFeed"></span></button>
+      <button type="button" role="tab" data-tab="watch" aria-selected="false">Site watch<span class="count" id="cWatch"></span></button>
+      <button type="button" role="tab" data-tab="signals" aria-selected="false">Signals<span class="count" id="cSig"></span></button>
+      <button type="button" role="tab" data-tab="news" aria-selected="false">Industry news<span class="count" id="cNews"></span></button>
+      <button type="button" role="tab" data-tab="competitors" aria-selected="false">Competitors<span class="count" id="cComp"></span></button>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn" id="copyDigest">Copy weekly digest</button>
+      <button type="button" class="btn primary" id="addBtn">Log signal</button>
+    </div>
+  </div>
+
+  <!-- Add forms (one per tab) -->
+  <form class="panel" id="formFeed" hidden>
+    <h2 style="font-size:17px">Log a launch</h2>
+    <div class="grid">
+      <label class="field"><span class="label">Date launched</span><input type="date" id="fdDate" required></label>
+      <label class="field"><span class="label">Competitor</span><select id="fdComp" required></select></label>
+      <label class="field"><span class="label">Launch type</span><select id="fdType" required></select></label>
+      <label class="field"><span class="label">Most relevant to</span><select id="fdBrand"></select></label>
+      <label class="field"><span class="label">Impact</span><select id="fdImpact"><option value="3">3 · Act this week</option><option value="2" selected>2 · Discuss in review</option><option value="1">1 · File only</option></select></label>
+      <label class="field"><span class="label">Date confidence</span><select id="fdConf"><option>Confirmed</option><option>Approximate</option><option>Unverified source</option></select></label>
+      <label class="field wide"><span class="label">What they launched</span><input id="fdTitle" required placeholder="Example: AI gift finder on homepage"></label>
+      <label class="field wide"><span class="label">Details</span><textarea id="fdWhat" placeholder="What it does, where it lives on their site, who it targets"></textarea></label>
+      <label class="field wide"><span class="label">What we can learn or copy</span><textarea id="fdLesson" placeholder="The specific move for our brand, with the conversion reason"></textarea></label>
+      <label class="field wide"><span class="label">Source link</span><input type="url" id="fdSource" placeholder="https://"></label>
+    </div>
+    <div class="formfoot"><button class="btn primary" type="submit">Save launch</button><button class="btn" type="button" data-cancel>Cancel</button><span class="msg" id="fdMsg"></span></div>
+  </form>
+
+  <form class="panel" id="formSignals" hidden>
+    <h2 style="font-size:17px">Log a competitor signal</h2>
+    <div class="grid">
+      <label class="field"><span class="label">Date seen</span><input type="date" id="sgDate" required></label>
+      <label class="field"><span class="label">Competitor</span><select id="sgComp" required></select></label>
+      <label class="field"><span class="label">Brand it affects</span><select id="sgBrand" required></select></label>
+      <label class="field"><span class="label">Module</span><select id="sgModule" required></select></label>
+      <label class="field"><span class="label">Impact</span><select id="sgImpact"><option value="3">3 · Act this week</option><option value="2" selected>2 · Discuss in review</option><option value="1">1 · File only</option></select></label>
+      <label class="field"><span class="label">Owner</span><input id="sgOwner" placeholder="Who follows up"></label>
+      <label class="field wide"><span class="label">What changed</span><textarea id="sgSummary" required placeholder="Example: 4imprint emailing free setup on all drinkware orders over $250, 3 sends in 10 days"></textarea></label>
+      <label class="field wide"><span class="label">Recommended action</span><textarea id="sgAction" placeholder="Example: match with free setup on Proimprint tumblers for 2 weeks, test in Monday send"></textarea></label>
+      <label class="field wide"><span class="label">Source link (optional)</span><input type="url" id="sgSource" placeholder="https://"></label>
+    </div>
+    <div class="formfoot"><button class="btn primary" type="submit">Save signal</button><button class="btn" type="button" data-cancel>Cancel</button><span class="msg" id="sgMsg"></span></div>
+  </form>
+
+  <form class="panel" id="formNews" hidden>
+    <h2 style="font-size:17px">Log industry news</h2>
+    <div class="grid">
+      <label class="field"><span class="label">Date</span><input type="date" id="nwDate" required></label>
+      <label class="field"><span class="label">Category</span><select id="nwCat"></select></label>
+      <label class="field"><span class="label">Relevant to</span><select id="nwBrand"></select></label>
+      <label class="field"><span class="label">Impact</span><select id="nwImpact"><option value="3">3 · Act this week</option><option value="2" selected>2 · Discuss in review</option><option value="1">1 · File only</option></select></label>
+      <label class="field wide"><span class="label">Headline</span><input id="nwHead" required></label>
+      <label class="field wide"><span class="label">What it means for us</span><textarea id="nwSummary"></textarea></label>
+      <label class="field wide"><span class="label">Source link (optional)</span><input type="url" id="nwSource" placeholder="https://"></label>
+    </div>
+    <div class="formfoot"><button class="btn primary" type="submit">Save news item</button><button class="btn" type="button" data-cancel>Cancel</button><span class="msg" id="nwMsg"></span></div>
+  </form>
+
+  <form class="panel" id="formCompetitors" hidden>
+    <h2 style="font-size:17px">Add a competitor</h2>
+    <div class="grid">
+      <label class="field"><span class="label">Name</span><input id="cpName" required></label>
+      <label class="field"><span class="label">Website</span><input type="url" id="cpUrl" placeholder="https://"></label>
+      <label class="field"><span class="label">Competes with</span><select id="cpBrand"></select></label>
+      <label class="field"><span class="label">Tier</span><select id="cpTier"><option value="1">Tier 1 · weekly watch</option><option value="2">Tier 2 · monthly watch</option></select></label>
+      <label class="field"><span class="label">Type of competitor</span><select id="cpCat"></select></label>
+      <label class="field"><span class="label">Page to watch (blog, newsroom, changelog)</span><input type="url" id="cpWatch" placeholder="https://"></label>
+      <label class="field wide"><span class="label">Notes</span><textarea id="cpNotes" placeholder="Positioning, strengths, what to watch"></textarea></label>
+    </div>
+    <div class="formfoot"><button class="btn primary" type="submit">Save competitor</button><button class="btn" type="button" data-cancel>Cancel</button><span class="msg" id="cpMsg"></span></div>
+  </form>
+
+  <div class="filters" id="filters">
+    <select id="fBrand" aria-label="Filter by brand"></select>
+    <select id="fModule" aria-label="Filter by module"></select>
+    <select id="fStatus" aria-label="Filter by status"></select>
+    <select id="fImpact" aria-label="Minimum impact"><option value="0">Any impact</option><option value="2">Impact 2+</option><option value="3">Impact 3 only</option></select>
+    <input type="search" id="fQ" placeholder="Search text or competitor" aria-label="Search">
+    <label class="chk"><input type="checkbox" id="fWeek"> Last 7 days</label>
+  </div>
+
+  <main id="view" aria-live="polite"></main>
+
+  <p class="foot">Launch feed: what competitors ship (pages, features, AI tools, content, positioning). Signals: short-term moves (offers, ads, emails, reviews). Impact scale: 3 act this week · 2 discuss in weekly review · 1 file only. The weekly digest copies impact 2+ items from the last 7 days for the active track, ready to paste in Teams.</p>
+</div>
+
+<script>
+// ---------- Config ----------
+const BRANDS = {
+  w4h: ["Proimprint","web4half","cmagnets","sunglassville","budgetkeychains","usumbrella","promo4kids"],
+  mg:  ["Magnetguys"]
+};
+const MODULES = ["Offer / coupon","Website / UX","Ads","Reviews","Email strategy"];
+const STATUSES = ["New","Reviewing","Actioned","Ignored"];
+const NEWS_CATS = ["Tariffs & duties","Supplier news","M&A","Trade shows","Regulation & recalls","Market data","Industry tech & AI"];
+const FEED_TYPES = ["New page or section","Site feature","AI & tools","Content strategy","Product line","Brand & positioning","Campaign","Partnership & M&A","Performance & ranking"];
+const CATEGORIES = ["E-commerce distributor","Swag platform","Web-to-print giant","Distributor network","New entrant / marketplace","Supplier"];
+const WATCH_KINDS = {page:"New page", content:"New content page", product:"New product", post:"Blog post", industry:"Industry headline"};
+
+const S = {
+  track:"w4h", tab:"feed",
+  competitors:[], signals:[], news:[], feed:[], runs:[], pages:[],
+  ready:{competitors:false, signals:false, news:false, feed:false, runs:false, pages:false},
+  canWrite:true, db:null, armed:null
+};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "";
+const today = () => new Date().toISOString().slice(0,10);
+const weekAgo = () => { const d=new Date(); d.setDate(d.getDate()-7); return d.toISOString().slice(0,10); };
+const fmtDate = d => { if(!d) return ""; const x=new Date(d+"T00:00:00"); return isNaN(x)?d:x.toLocaleDateString(undefined,{day:"numeric",month:"short",year:"numeric"}); };
+const opts = (list, sel, first) => (first?`<option value="">${esc(first)}</option>`:"") + list.map(v=>`<option value="${esc(v)}"${v===sel?" selected":""}>${esc(v)}</option>`).join("");
+
+// ---------- Derived data for the active track ----------
+const inTrack = r => (r.track || "w4h") === S.track;
+const comps = () => S.competitors.filter(inTrack);
+const sigs = () => S.signals.filter(inTrack);
+const newsItems = () => S.news.filter(inTrack);
+const feedItems = () => S.feed.filter(inTrack);
+const watchPages = () => S.pages.filter(inTrack);
+
+// One-click research links built from a competitor's domain and name (no API keys needed)
+function intelLinks(c){
+  let dom = c.domain || ""; try{ if(!dom && c.url) dom = new URL(c.url).hostname; }catch{}
+  const bare = dom.replace(/^www\./,""), q = encodeURIComponent(c.name.replace(/\s*\(.*\)$/,"").replace(/ \/ .*$/,""));
+  const L = [];
+  L.push(["Meta ads",`https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=${q}&search_type=keyword_unordered`]);
+  if(bare){
+    L.push(["Google ads",`https://adstransparency.google.com/?region=US&domain=${bare}`]);
+    L.push(["Traffic",`https://www.similarweb.com/website/${bare}/`]);
+    L.push(["Tech stack",`https://builtwith.com/${bare}`]);
+    L.push(["Reviews",`https://www.trustpilot.com/review/${bare}`]);
+    L.push(["Archive",`https://web.archive.org/web/*/${bare}`]);
+    L.push(["Indexed pages",`https://www.google.com/search?q=site%3A${bare}`]);
+  }
+  L.push(["Jobs",`https://www.linkedin.com/jobs/search/?keywords=${q}`]);
+  L.push(["News",`https://news.google.com/search?q=%22${q}%22`]);
+  return `<div class="links">${L.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>`;
+}
+const daysAgo = n => { const d=new Date(); d.setDate(d.getDate()-n); return d.toISOString().slice(0,10); };
+
+function filtered(list, kind){
+  const b=$("fBrand").value, m=$("fModule").value, st=$("fStatus").value;
+  const imp=+$("fImpact").value, q=$("fQ").value.trim().toLowerCase(), wk=$("fWeek").checked, since=weekAgo();
+  return list.filter(r=>{
+    if(b && !(r.brand===b || ((kind==="news"||kind==="feed") && r.brand==="All brands"))) return false;
+    if(kind==="signals" && m && r.module!==m) return false;
+    if(kind==="news" && m && r.category!==m) return false;
+    if(kind==="feed" && m && r.type!==m) return false;
+    if(kind==="competitors" && m && r.category!==m) return false;
+    if(kind==="watch" && m && r.kind!==m) return false;
+    if(kind==="signals" && st && r.status!==st) return false;
+    if(kind!=="competitors" && kind!=="watch" && imp && (+r.impact||0) < imp) return false;
+    if(kind!=="competitors" && wk && (r.date||"") < since) return false;
+    if(q){ const hay=[r.name,r.competitorName,r.summary,r.action,r.headline,r.notes,r.owner,r.title,r.what,r.lesson,r.type,r.category,r.url,r.section].join(" ").toLowerCase(); if(!hay.includes(q)) return false; }
+    return true;
+  });
+}
+
+// ---------- Rendering ----------
+function renderControls(){
+  document.querySelectorAll("[data-track]").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.track===S.track)));
+  document.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-selected", String(b.dataset.tab===S.tab)));
+  const brands = BRANDS[S.track];
+  const keep = (id, html) => { const el=$(id), v=el.value; el.innerHTML=html; if([...el.options].some(o=>o.value===v)) el.value=v; };
+  keep("fBrand", opts(brands,null,"All brands"));
+  $("fModule").hidden=false;
+  if(S.tab==="signals") keep("fModule", opts(MODULES,null,"All modules"));
+  else if(S.tab==="news") keep("fModule", opts(NEWS_CATS,null,"All categories"));
+  else if(S.tab==="feed") keep("fModule", opts(FEED_TYPES,null,"All launch types"));
+  else if(S.tab==="watch") keep("fModule", `<option value="">Everything new</option>` + Object.entries(WATCH_KINDS).map(([k,v])=>`<option value="${k}">${esc(v)}</option>`).join(""));
+  else keep("fModule", opts(CATEGORIES,null,"All competitor types"));
+  $("fStatus").hidden = S.tab!=="signals";
+  keep("fStatus", opts(STATUSES,null,"Any status"));
+  $("fImpact").hidden = S.tab==="competitors" || S.tab==="watch";
+  $("fWeek").parentElement.hidden = S.tab==="competitors";
+  $("addBtn").textContent = {feed:"Log launch",signals:"Log signal",news:"Log news",competitors:"Add competitor",watch:""}[S.tab];
+  $("fdComp").innerHTML = comps().length ? opts(comps().map(c=>c.name).sort()) : `<option value="">Add a competitor first</option>`;
+  $("fdType").innerHTML = opts(FEED_TYPES);
+  $("fdBrand").innerHTML = opts(["All brands",...brands]);
+  $("cpCat").innerHTML = opts(CATEGORIES);
+  $("addBtn").hidden = !S.canWrite || S.tab==="watch";
+  // form selects
+  $("sgBrand").innerHTML = opts(brands);
+  $("sgModule").innerHTML = opts(MODULES);
+  $("sgComp").innerHTML = comps().length ? opts(comps().map(c=>c.name).sort()) : `<option value="">Add a competitor first</option>`;
+  $("nwCat").innerHTML = opts(NEWS_CATS);
+  $("nwBrand").innerHTML = opts(["All brands",...brands]);
+  $("cpBrand").innerHTML = opts(brands);
+}
+
+function renderStats(){
+  const since=weekAgo(), ready=S.ready;
+  $("sWeek").textContent = ready.signals ? sigs().filter(s=>(s.date||"")>=since).length : "–";
+  $("sHigh").textContent = ready.signals ? sigs().filter(s=>+s.impact===3 && (s.status==="New"||s.status==="Reviewing")).length : "–";
+  $("sComp").textContent = ready.competitors ? comps().length : "–";
+  $("sFeed").textContent = ready.feed ? feedItems().filter(f=>(f.date||"")>=daysAgo(30)).length : "–";
+  $("cFeed").textContent = ready.feed ? feedItems().length : "";
+  $("cWatch").textContent = ready.pages ? watchPages().length : "";
+  $("cSig").textContent = ready.signals ? sigs().length : "";
+  $("cNews").textContent = ready.news ? newsItems().length : "";
+  $("cComp").textContent = ready.competitors ? comps().length : "";
+}
+
+function delBtn(kind,id){
+  if(!S.canWrite) return "";
+  const armed = S.armed===kind+"/"+id;
+  return `<button type="button" class="btn small danger${armed?" armed":""}" data-del="${kind}" data-id="${esc(id)}">${armed?"Confirm delete":"Delete"}</button>`;
+}
+
+function emptyState(title, text){ return `<div class="list"><div class="empty"><strong>${esc(title)}</strong><span>${esc(text)}</span></div></div>`; }
+
+function renderSignals(){
+  if(!S.ready.signals) return emptyState("Loading signals…","Connecting to the shared tracker.");
+  const all=sigs();
+  if(!all.length) return emptyState("No signals logged yet", S.canWrite ? "Use Log signal when a competitor changes an offer, page, ad, review pattern or email flow. Add competitors first so they appear in the picker." : "Signals appear here as the team logs them.");
+  const list=filtered(all,"signals");
+  if(!list.length) return emptyState("Nothing matches these filters","Clear a filter to see more signals.");
+  return `<div class="list">${list.map(s=>`
+    <article class="row st-${esc(s.status||"New")}">
+      <div class="meta">
+        <span class="mono">${esc(fmtDate(s.date))}</span>
+        <span class="pill i${+s.impact||1}">IMPACT ${+s.impact||1}</span>
+      </div>
+      <div class="body">
+        <div class="tags"><strong style="color:var(--ink)">${esc(s.competitorName)}</strong><span class="tag brand">${esc(s.brand)}</span><span class="tag">${esc(s.module)}</span>${s.owner?`<span>Owner: ${esc(s.owner)}</span>`:""}</div>
+        <p>${esc(s.summary)}</p>
+        ${s.action?`<p class="act"><span>Action:</span> ${esc(s.action)}</p>`:""}
+        ${safeUrl(s.source)?`<a href="${esc(safeUrl(s.source))}" target="_blank" rel="noopener">Source</a>`:""}
+      </div>
+      <div class="side">
+        <label class="label" for="st-${esc(s.id)}">Status</label>
+        <select id="st-${esc(s.id)}" data-status="${esc(s.id)}" ${S.canWrite?"":"disabled"}>${opts(STATUSES,s.status||"New")}</select>
+        ${delBtn("signals",s.id)}
+      </div>
+    </article>`).join("")}</div>`;
+}
+
+function renderFeed(){
+  if(!S.ready.feed) return emptyState("Loading launches…","Connecting to the shared tracker.");
+  const all=feedItems();
+  if(!all.length) return emptyState("No launches logged yet","Log new pages, site features, AI tools, content pushes and repositioning moves as competitors ship them.");
+  const list=filtered(all,"feed");
+  if(!list.length) return emptyState("Nothing matches these filters","Clear a filter to see more launches.");
+  return `<div class="list">${list.map(f=>`
+    <article class="row">
+      <div class="meta">
+        <span class="mono">${esc(fmtDate(f.date))}</span>
+        <span class="pill i${+f.impact||1}">IMPACT ${+f.impact||1}</span>
+        ${f.confidence && f.confidence!=="Confirmed" ? `<span class="tag" title="How sure we are of the date and details">${esc(f.confidence)}</span>` : ""}
+      </div>
+      <div class="body">
+        <div class="tags"><strong style="color:var(--ink)">${esc(f.competitorName)}</strong><span class="tag">${esc(f.type)}</span><span class="tag brand">${esc(f.brand||"All brands")}</span></div>
+        <h3>${esc(f.title)}</h3>
+        ${f.what?`<p>${esc(f.what)}</p>`:""}
+        ${f.lesson?`<p class="act"><span>For us:</span> ${esc(f.lesson)}</p>`:""}
+        ${safeUrl(f.source)?`<a href="${esc(safeUrl(f.source))}" target="_blank" rel="noopener">Source</a>`:""}
+      </div>
+      <div class="side">${delBtn("feed",f.id)}</div>
+    </article>`).join("")}</div>`;
+}
+
+function renderWatch(){
+  if(!S.ready.runs || !S.ready.pages) return emptyState("Loading site watch…","Connecting to the shared tracker.");
+  const run = S.runs.find(inTrack);
+  if(!run) return emptyState("No crawl results yet","The weekly crawler reads competitor sitemaps and blog feeds, then posts what changed here.");
+  const fmtN = n => (n==null?"–":Number(n).toLocaleString());
+  const rows = Object.entries(run.competitors||{}).sort((a,b)=>(b[1].urlCount||0)-(a[1].urlCount||0));
+  const total = rows.reduce((s,[,c])=>s+(c.urlCount||0),0);
+  const byName = Object.fromEntries(comps().map(c=>[c.id,c]));
+  const table = `<div class="tablewrap"><table>
+    <thead><tr><th class="label">Competitor</th><th class="label">Status</th><th class="label">Pages in sitemap</th><th class="label">Change</th><th class="label">Where they build pages (top sections)</th><th class="label">Research links</th></tr></thead>
+    <tbody>${rows.map(([cid,c])=>{
+      const comp = byName[cid] || {name:c.name, domain:c.domain};
+      const secs = Object.entries(c.topSections||{}).filter(([s])=>s!=="(home)").slice(0,6);
+      const st = c.status||"ok";
+      const stLabel = {ok:"Tracking",baseline:"Baseline",blocked:"Blocks bots",error:"Error",partial:"Partial"}[st]||st;
+      return `<tr>
+        <td><strong>${esc(c.name)}</strong><div class="path">${esc(c.domain||"")}</div></td>
+        <td><span class="status ${esc(st)}" title="${esc(c.note||"")}">${esc(stLabel)}</span></td>
+        <td class="num">${fmtN(c.urlCount)}</td>
+        <td class="delta">${st==="blocked"?"–":`<span class="up">+${fmtN(c.addedCount||0)}</span> / <span class="down">−${fmtN(c.removedCount||0)}</span>`}</td>
+        <td><div class="tags">${secs.map(([s,n])=>`<span class="tag">/${esc(s)} <span class="mono">${fmtN(n)}</span></span>`).join("") || (st==="blocked"?"Track manually with the links":"")}</div></td>
+        <td style="min-width:220px">${intelLinks(comp)}</td>
+      </tr>`; }).join("")}</tbody></table></div>`;
+  const list = filtered(watchPages(),"watch");
+  const items = !watchPages().length ? emptyState("Nothing new yet","New pages appear here after the next crawl compares against this baseline.")
+    : !list.length ? emptyState("Nothing matches these filters","Clear a filter to see more.")
+    : `<div class="list">${list.slice(0,300).map(p=>`
+      <article class="row">
+        <div class="meta"><span class="mono">${esc(fmtDate(p.date))}</span><span class="tag">${esc(WATCH_KINDS[p.kind]||p.kind)}</span></div>
+        <div class="body">
+          <div class="tags"><strong style="color:var(--ink)">${esc(p.competitorName)}</strong>${p.section?`<span>${esc(p.section)}</span>`:""}</div>
+          <h3>${safeUrl(p.url)?`<a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener">${esc(p.title||p.url)}</a>`:esc(p.title)}</h3>
+          <div class="path">${esc((p.url||"").replace(/^https?:\/\//,""))}</div>
+        </div>
+        <div class="side">${S.canWrite?`<button type="button" class="btn small" data-promote="${esc(p.id)}">${p.kind==="industry"?"Log as news":"Log as launch"}</button>`:""}${delBtn("pages",p.id)}</div>
+      </article>`).join("")}</div>`;
+  return `<div class="stack">
+    <div class="runbar"><span>Last crawl <b>${esc(fmtDate(run.date))}</b></span><span>Sites <b>${rows.length}</b></span><span>Pages tracked <b>${fmtN(total)}</b></span><span>Runs on file <b>${S.runs.filter(inTrack).length}</b></span></div>
+    ${table}
+    <h2 style="font-size:17px">New pages, posts and headlines</h2>
+    ${items}
+  </div>`;
+}
+
+// Turn a raw crawl item into a Launch feed entry (or Industry news) with the form prefilled
+function promote(id){
+  const p = S.pages.find(x=>x.id===id); if(!p) return;
+  if(p.kind==="industry"){
+    S.tab="news"; render(); hideForms(); $("formNews").hidden=false;
+    $("nwDate").value=p.date||today(); $("nwHead").value=p.title||""; $("nwSource").value=p.url||""; $("nwHead").focus();
+    return;
+  }
+  S.tab="feed"; render(); hideForms(); $("formFeed").hidden=false;
+  $("fdDate").value=p.date||today(); $("fdTitle").value=p.title||""; $("fdSource").value=p.url||"";
+  if([...$("fdComp").options].some(o=>o.value===p.competitorName)) $("fdComp").value=p.competitorName;
+  $("fdType").value = p.kind==="post" ? "Content strategy" : p.kind==="product" ? "Product line" : "New page or section";
+  $("fdLesson").focus();
+}
+
+function renderNews(){
+  if(!S.ready.news) return emptyState("Loading news…","Connecting to the shared tracker.");
+  const all=newsItems();
+  if(!all.length) return emptyState("No industry news logged yet", "Log tariff changes, supplier price increases, M&A, recalls and trade show launches here.");
+  const list=filtered(all,"news");
+  if(!list.length) return emptyState("Nothing matches these filters","Clear a filter to see more news.");
+  return `<div class="list">${list.map(n=>`
+    <article class="row">
+      <div class="meta">
+        <span class="mono">${esc(fmtDate(n.date))}</span>
+        <span class="pill i${+n.impact||1}">IMPACT ${+n.impact||1}</span>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="tag">${esc(n.category)}</span><span class="tag brand">${esc(n.brand||"All brands")}</span></div>
+        <h3>${esc(n.headline)}</h3>
+        ${n.summary?`<p>${esc(n.summary)}</p>`:""}
+        ${safeUrl(n.source)?`<a href="${esc(safeUrl(n.source))}" target="_blank" rel="noopener">Source</a>`:""}
+      </div>
+      <div class="side">${delBtn("news",n.id)}</div>
+    </article>`).join("")}</div>`;
+}
+
+function renderCompetitors(){
+  if(!S.ready.competitors) return emptyState("Loading competitors…","Connecting to the shared tracker.");
+  const all=comps();
+  if(!all.length) return emptyState("No competitors on this track yet", "Add the 3–5 sites you lose deals to for each brand. Start with Tier 1.");
+  const list=filtered(all,"competitors").sort((a,b)=>(a.tier-b.tier)||String(a.brand).localeCompare(b.brand)||a.name.localeCompare(b.name));
+  if(!list.length) return emptyState("Nothing matches these filters","Clear a filter to see more competitors.");
+  const acts = name => [...sigs(),...feedItems()].filter(s=>s.competitorName===name);
+  const lastSig = name => { const d=acts(name).map(s=>s.date).sort().pop(); return d?fmtDate(d):"None yet"; };
+  const count = name => acts(name).length;
+  return `<div class="tablewrap"><table>
+    <thead><tr><th class="label">Competitor</th><th class="label">Type</th><th class="label">Competes with</th><th class="label">Tier</th><th class="label">Entries</th><th class="label">Latest</th><th class="label">Why we watch</th><th class="label">Research links</th><th></th></tr></thead>
+    <tbody>${list.map(c=>`<tr>
+      <td><strong>${esc(c.name)}</strong>${safeUrl(c.url)?`<br><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.url.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>`:""}${safeUrl(c.watchUrl)?`<br><a href="${esc(safeUrl(c.watchUrl))}" target="_blank" rel="noopener">Watch page</a>`:""}</td>
+      <td>${c.category?`<span class="tag">${esc(c.category)}</span>`:""}</td>
+      <td><span class="tag brand">${esc(c.brand)}</span></td>
+      <td class="num">${+c.tier===1?"Tier 1":"Tier 2"}</td>
+      <td class="num">${count(c.name)}</td>
+      <td class="num">${esc(lastSig(c.name))}</td>
+      <td style="max-width:320px">${esc(c.notes)}</td>
+      <td style="min-width:220px">${intelLinks(c)}</td>
+      <td>${delBtn("competitors",c.id)}</td>
+    </tr>`).join("")}</tbody></table></div>`;
+}
+
+function render(){
+  renderControls(); renderStats();
+  $("view").innerHTML = S.tab==="feed" ? renderFeed() : S.tab==="watch" ? renderWatch() : S.tab==="signals" ? renderSignals() : S.tab==="news" ? renderNews() : renderCompetitors();
+}
+
+// ---------- Forms ----------
+const FORM = {feed:"formFeed", signals:"formSignals", news:"formNews", competitors:"formCompetitors"};
+function hideForms(){ Object.values(FORM).forEach(id=>$(id).hidden=true); }
+$("addBtn").addEventListener("click",()=>{
+  const f=$(FORM[S.tab]); const open=f.hidden; hideForms(); f.hidden=!open;
+  if(open){ ["sgDate","nwDate","fdDate"].forEach(id=>{ if(!$(id).value) $(id).value=today(); }); f.querySelector("input,select,textarea")?.focus(); }
+});
+document.querySelectorAll("[data-cancel]").forEach(b=>b.addEventListener("click",hideForms));
+
+async function save(collection, data, msgId, form){
+  const msg=$(msgId);
+  if(!S.db){ msg.textContent="The shared tracker isn't connected in this view, so nothing was saved."; msg.className="msg err"; return; }
+  msg.textContent="Saving…"; msg.className="msg";
+  try{
+    await S.db.collection(collection).add({...data, track:S.track, createdAt:Date.now()});
+    form.reset(); msg.textContent="Saved."; setTimeout(()=>{ if(msg.textContent==="Saved.") msg.textContent=""; },2500);
+    ["sgDate","nwDate","fdDate"].forEach(id=>$(id).value=today());
+  }catch(e){
+    msg.className="msg err";
+    msg.textContent = e?.code==="invalid_argument" ? "You have view-only access, so this can't be saved. Ask the owner for Contributor access." :
+                      e?.code==="quota_exceeded" ? "The tracker is full. Delete old Ignored signals to make room." :
+                      "Couldn't save. Check your connection and try again.";
+    if(e?.code==="invalid_argument"){ S.canWrite=false; render(); }
+  }
+}
+
+$("formFeed").addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!$("fdComp").value){ $("fdMsg").textContent="Add the competitor on the Competitors tab first."; $("fdMsg").className="msg err"; return; }
+  save("feed",{
+    date:$("fdDate").value, competitorName:$("fdComp").value, type:$("fdType").value, brand:$("fdBrand").value,
+    impact:+$("fdImpact").value, confidence:$("fdConf").value, title:$("fdTitle").value.trim(),
+    what:$("fdWhat").value.trim(), lesson:$("fdLesson").value.trim(), source:$("fdSource").value.trim()
+  },"fdMsg",e.target);
+});
+$("formSignals").addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!$("sgComp").value){ $("sgMsg").textContent="Add the competitor on the Competitors tab first."; $("sgMsg").className="msg err"; return; }
+  save("signals",{
+    date:$("sgDate").value, competitorName:$("sgComp").value, brand:$("sgBrand").value, module:$("sgModule").value,
+    impact:+$("sgImpact").value, owner:$("sgOwner").value.trim(), summary:$("sgSummary").value.trim(),
+    action:$("sgAction").value.trim(), source:$("sgSource").value.trim(), status:"New"
+  },"sgMsg",e.target);
+});
+$("formNews").addEventListener("submit",e=>{
+  e.preventDefault();
+  save("news",{
+    date:$("nwDate").value, category:$("nwCat").value, brand:$("nwBrand").value, impact:+$("nwImpact").value,
+    headline:$("nwHead").value.trim(), summary:$("nwSummary").value.trim(), source:$("nwSource").value.trim()
+  },"nwMsg",e.target);
+});
+$("formCompetitors").addEventListener("submit",e=>{
+  e.preventDefault();
+  save("competitors",{
+    name:$("cpName").value.trim(), url:$("cpUrl").value.trim(), brand:$("cpBrand").value, tier:+$("cpTier").value, category:$("cpCat").value, watchUrl:$("cpWatch").value.trim(), notes:$("cpNotes").value.trim()
+  },"cpMsg",e.target);
+});
+
+// ---------- Interactions ----------
+document.querySelectorAll("[data-track]").forEach(b=>b.addEventListener("click",()=>{ S.track=b.dataset.track; S.armed=null; hideForms(); $("fBrand").value=""; render(); }));
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{ S.tab=b.dataset.tab; S.armed=null; hideForms(); $("fModule").value=""; render(); }));
+["fBrand","fModule","fStatus","fImpact","fWeek"].forEach(id=>$(id).addEventListener("change",render));
+let qT; $("fQ").addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(render,150); });
+
+$("view").addEventListener("change",async e=>{
+  const id=e.target.dataset.status; if(!id||!S.db) return;
+  try{ await S.db.doc("signals/"+id).update({status:e.target.value}); }catch{ showNotice("Couldn't update the status. Try again."); }
+});
+$("view").addEventListener("click",async e=>{
+  const pr=e.target.closest("[data-promote]"); if(pr){ promote(pr.dataset.promote); return; }
+  const b=e.target.closest("[data-del]"); if(!b||!S.db) return;
+  const key=b.dataset.del+"/"+b.dataset.id;
+  if(S.armed!==key){ S.armed=key; render(); return; }       // first click arms, second confirms
+  S.armed=null;
+  try{ await S.db.doc(key).delete(); }catch{ showNotice("Couldn't delete that record. Try again."); render(); }
+});
+
+// ---------- Weekly digest (paste into Teams) ----------
+$("copyDigest").addEventListener("click",()=>{
+  const since=weekAgo(), label=S.track==="w4h"?"web4half brands":"Magnetguys";
+  const top = (arr) => arr.filter(r=>(r.date||"")>=since && (+r.impact||0)>=2).sort((a,b)=>(b.impact-a.impact)||String(b.date).localeCompare(a.date)).slice(0,5);
+  const s=top(sigs()), n=top(newsItems()), f=top(feedItems());
+  let t=`Promo Intel digest: ${label}, week ending ${fmtDate(today())}\n\nNew launches\n`;
+  t += f.length ? f.map((x,i)=>`${i+1}. [${x.type}] ${x.competitorName}: ${x.title}${x.lesson?`\n   For us: ${x.lesson}`:""}`).join("\n") : "No impact 2+ launches this week.";
+  t += `\n\nTop competitor moves\n`;
+  t += s.length ? s.map((x,i)=>`${i+1}. [Impact ${x.impact}] ${x.competitorName} vs ${x.brand} (${x.module}): ${x.summary}${x.action?`\n   Action: ${x.action}`:""}`).join("\n") : "No impact 2+ signals this week.";
+  t += `\n\nIndustry\n` + (n.length ? n.map((x,i)=>`${i+1}. [${x.category}] ${x.headline}${x.summary?` - ${x.summary}`:""}`).join("\n") : "No impact 2+ news this week.");
+  const btn=$("copyDigest");
+  const done = ok => { btn.textContent = ok ? "Digest copied" : "Copy failed"; setTimeout(()=>btn.textContent="Copy weekly digest",2000); };
+  try{
+    navigator.clipboard.writeText(t).then(()=>done(true)).catch(()=>fallbackCopy(t,done));
+  }catch{ fallbackCopy(t,done); }
+});
+function fallbackCopy(t,done){
+  const ta=document.createElement("textarea"); ta.value=t; ta.style.position="fixed"; ta.style.opacity="0";
+  document.body.appendChild(ta); ta.select(); let ok=false; try{ ok=document.execCommand("copy"); }catch{} ta.remove(); done(ok);
+}
+
+function showNotice(text){ const n=$("notice"); n.textContent=text; n.hidden=!text; }
+
+// ---------- Data connection ----------
+render();
+(async()=>{
+  const timer=setTimeout(()=>{ if(!Object.values(S.ready).every(Boolean)) showNotice("The shared tracker can't be reached yet. Records will appear once it connects."); },10000);
+  const db = window.claude ? await window.claude.use("db") : null;
+  if(!db){ clearTimeout(timer); showNotice("Sign in on claude.ai to see and log tracker records."); S.canWrite=false; Object.keys(S.ready).forEach(k=>S.ready[k]=true); render(); return; }
+  S.db=db;
+  const user = await window.claude.use("user");
+  if(user){ const c=await user.can("data.write"); if(c===false) S.canWrite=false; }
+  const sub=(name,q)=>q.onSnapshot(snap=>{
+    S[name]=snap.docs.map(d=>({id:d.id,...d.data()}));
+    if(!snap.metadata.fromCache) S.ready[name]=true; else if(snap.size) S.ready[name]=true;
+    if(Object.values(S.ready).every(Boolean)){ clearTimeout(timer); showNotice(""); }
+    render();
+  }, err=>{ S.ready[name]=true; showNotice("Lost the connection to the tracker. Reload the page to reconnect."); render(); });
+  sub("competitors", db.collection("competitors").limit(500));
+  sub("signals", db.collection("signals").orderBy("date","desc").limit(1000));
+  sub("news", db.collection("news").orderBy("date","desc").limit(500));
+  sub("feed", db.collection("feed").orderBy("date","desc").limit(1000));
+  sub("runs", db.collection("runs").orderBy("runAt","desc").limit(12));
+  sub("pages", db.collection("pages").orderBy("date","desc").limit(1000));
+})();
+</script>

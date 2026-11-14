@@ -3,3 +3,6 @@ config/database.php
 app/tmp/*
 app/config/database.php
 !empty
+intel/out/docs/
+intel/out/artifact_batches*.json
+__pycache__/

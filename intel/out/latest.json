@@ -1,0 +1,1032 @@
+{
+ "runAt": "2026-11-14T02:23:48+00:00",
+ "competitors": {
+  "4imprint": {
+   "name": "4imprint",
+   "domain": "www.4imprint.com",
+   "sitemapSeeds": [
+    "https://www.4imprint.com/sitemap.xml"
+   ],
+   "sitemapFiles": 5,
+   "urlCount": 32259,
+   "errors": [],
+   "byKind": {
+    "page": 689,
+    "product": 30880,
+    "content": 690
+   },
+   "topSections": {
+    "product": 29875,
+    "tag": 1653,
+    "blog": 362,
+    "article": 184,
+    "taggroup": 94,
+    "mall": 20,
+    "sgroup": 15,
+    "hot": 14,
+    "sale": 14,
+    "new": 14,
+    "(home)": 1,
+    "pricedrops": 1,
+    "reviews": 1,
+    "video": 1,
+    "embroidered-apparel": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "customink": {
+   "name": "Custom Ink",
+   "domain": "www.customink.com",
+   "sitemapSeeds": [
+    "https://www.customink.com/sitemaps/custom.xml",
+    "https://www.customink.com/sitemaps/design_ideas.xml",
+    "https://www.customink.com/sitemaps/fundraising.xml",
+    "https://www.customink.com/sitemaps/inkofweek.xml",
+    "https://www.customink.com/sitemaps/inkofweek1.xml",
+    "https://www.customink.com/sitemaps/main.xml",
+    "https://www.customink.com/sitemaps/sitemap-lps.xml",
+    "https://www.customink.com/sitemaps/sitemap-plps.xml",
+    "https://www.customink.com/sitemaps/sitemap-filtered-plps.xml",
+    "https://www.customink.com/sitemaps/sitemap-pdps.xml",
+    "https://www.customink.com/sitemaps/stores.xml"
+   ],
+   "sitemapFiles": 11,
+   "urlCount": 114299,
+   "errors": [],
+   "byKind": {
+    "page": 86668,
+    "content": 426,
+    "product": 27205
+   },
+   "topSections": {
+    "photos": 87209,
+    "products": 26361,
+    "fundraising": 230,
+    "custom": 161,
+    "design_ideas": 119,
+    "t-shirts": 107,
+    "help_center": 32,
+    "ink": 31,
+    "audience": 21,
+    "about": 10,
+    "design-highlights": 9,
+    "tools": 5,
+    "(home)": 1,
+    "super-rush": 1,
+    "reviews": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": [
+    "https://www.customink.com/blog/feed/"
+   ]
+  },
+  "epromos": {
+   "name": "ePromos",
+   "domain": "www.epromos.com",
+   "sitemapSeeds": [
+    "https://www.epromos.com/xmlsitemap.php"
+   ],
+   "sitemapFiles": 6,
+   "urlCount": 5226,
+   "errors": [],
+   "byKind": {
+    "page": 492,
+    "content": 315,
+    "product": 4419
+   },
+   "topSections": {
+    "product": 4423,
+    "blog": 228,
+    "brands": 74,
+    "education": 74,
+    "collections": 46,
+    "apparel": 35,
+    "office": 25,
+    "drinkware": 24,
+    "bags": 21,
+    "automotive-tools": 20,
+    "health-wellness": 18,
+    "sports-outdoor": 15,
+    "home-kitchen-pets": 14,
+    "technology-mobile": 12,
+    "press": 10
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "qlp": {
+   "name": "Quality Logo Products",
+   "domain": "www.qualitylogoproducts.com",
+   "sitemapSeeds": [
+    "https://www.qualitylogoproducts.com/sitemap.xml"
+   ],
+   "sitemapFiles": 21,
+   "urlCount": 28032,
+   "errors": [],
+   "byKind": {
+    "page": 27486,
+    "content": 523,
+    "product": 23
+   },
+   "topSections": {
+    "tradeshow-promotions": 2362,
+    "stress-balls": 1528,
+    "pen-promotional": 994,
+    "custom-pens": 963,
+    "custom-bags": 653,
+    "custom-totebags": 600,
+    "insulated-travel-mugs": 501,
+    "bottle-personalized-water": 491,
+    "custom-cups": 433,
+    "desktop-items": 413,
+    "blog": 411,
+    "custom-waterbottles": 395,
+    "bag-tote": 367,
+    "custom-magnets": 338,
+    "custom-travelmugs": 323
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "totallypromotional": {
+   "name": "Totally Promotional",
+   "domain": "www.totallypromotional.com",
+   "sitemapSeeds": [
+    "https://www.totallypromotional.com/sitemap-index.xml"
+   ],
+   "sitemapFiles": 5,
+   "urlCount": 20713,
+   "errors": [],
+   "byKind": {
+    "page": 20651,
+    "product": 16,
+    "content": 46
+   },
+   "topSections": {
+    "brands": 112,
+    "in-the-news": 30,
+    "stress-balls": 21,
+    "bags": 19,
+    "lanyards": 17,
+    "barware": 12,
+    "kitchen-products": 12,
+    "technology-mobile": 11,
+    "can-coolers-and-koozies": 9,
+    "sport-and-water-bottles": 9,
+    "jackets": 9,
+    "food-and-snacks": 9,
+    "pens": 9,
+    "drinkware": 8,
+    "table-covers": 7
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": [
+    "https://blog.totallypromotional.com/feed/"
+   ],
+   "feedErrors": [
+    "https://blog.totallypromotional.com/feed/ -> HTTP 520"
+   ]
+  },
+  "vistaprint": {
+   "name": "Vistaprint",
+   "domain": "www.vistaprint.com",
+   "sitemapSeeds": [
+    "https://www.vistaprint.com/sitemaps/main.xml",
+    "https://www.vistaprint.com/sitemaps/category.xml",
+    "https://www.vistaprint.com/sitemaps/product.xml",
+    "https://www.vistaprint.com/sitemaps/tlp/1.xml",
+    "https://www.vistaprint.com/sitemaps/tlp/2.xml",
+    "https://www.vistaprint.com/sitemaps/discovery.xml",
+    "https://www.vistaprint.com/hub/sitemap-galaxies.xml",
+    "https://www.vistaprint.com/sitemaps/inspiration/logos.xml",
+    "https://www.vistaprint.com/entitymap.json",
+    "https://www.vistaprint.com/es/sitemaps/main.xml",
+    "https://www.vistaprint.com/es/sitemaps/category.xml",
+    "https://www.vistaprint.com/es/sitemaps/product.xml",
+    "https://www.vistaprint.com/es/sitemaps/tlp/1.xml",
+    "https://www.vistaprint.com/es/sitemaps/tlp/2.xml",
+    "https://www.vistaprint.com/es/sitemaps/discovery.xml",
+    "https://www.vistaprint.com/es/hub/sitemaps.xml"
+   ],
+   "sitemapFiles": 27,
+   "urlCount": 23121,
+   "errors": [
+    "https://www.vistaprint.com/entitymap.json -> HTTP 200"
+   ],
+   "byKind": {
+    "page": 17983,
+    "product": 304,
+    "content": 4834
+   },
+   "topSections": {
+    "es": 9156,
+    "logomaker": 4520,
+    "signs-posters": 2807,
+    "stationery": 1646,
+    "marketing-materials": 1542,
+    "hub": 735,
+    "business-cards": 641,
+    "labels-stickers": 525,
+    "packaging": 409,
+    "clothing-bags": 374,
+    "photo-gifts": 336,
+    "promotional-products": 228,
+    "holiday": 63,
+    "digital-marketing": 25,
+    "shop-by-collections": 13
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "nationalpen": {
+   "name": "National Pen",
+   "domain": "www.pens.com",
+   "sitemapSeeds": [
+    "https://www.pens.com/sitemapindex.xml"
+   ],
+   "sitemapFiles": 81,
+   "urlCount": 9155,
+   "errors": [],
+   "byKind": {
+    "product": 8652,
+    "content": 11,
+    "page": 492
+   },
+   "topSections": {
+    "us": 9155
+   },
+   "status": "baseline",
+   "addedCount": 0,
+   "removedCount": 0,
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "swag": {
+   "name": "Swag.com / Swag Pro",
+   "domain": "swag.com",
+   "sitemapSeeds": [
+    "https://swag.com/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 8411,
+   "errors": [],
+   "byKind": {
+    "page": 4335,
+    "product": 4075,
+    "content": 1
+   },
+   "topSections": {
+    "collections": 4321,
+    "product": 4076,
+    "(home)": 1,
+    "our-story": 1,
+    "contact": 1,
+    "faq": 1,
+    "distribute": 1,
+    "in-a-box": 1,
+    "reviews": 1,
+    "privacy-policy": 1,
+    "custom-swag": 1,
+    "past-work": 1,
+    "gifting": 1,
+    "companystores": 1,
+    "commitment-to-accessibility": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": [
+    "https://swag.com/blog/feed"
+   ]
+  },
+  "swagup": {
+   "name": "SwagUp",
+   "domain": "www.swagup.com",
+   "sitemapSeeds": [
+    "https://www.swagup.com/sitemap.xml",
+    "https://www.swagup.com/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 741,
+   "errors": [],
+   "byKind": {
+    "page": 183,
+    "content": 558
+   },
+   "topSections": {
+    "blog": 549,
+    "integrations": 65,
+    "customer-stories": 33,
+    "collections": 24,
+    "book-time-with-me": 16,
+    "blog-categories": 9,
+    "quiz-result": 6,
+    "(home)": 1,
+    "fulfillment-performance": 1,
+    "terms-of-use": 1,
+    "membership-terms-of-service": 1,
+    "return-refund-policy": 1,
+    "gallery": 1,
+    "subscribe": 1,
+    "shop-terms-and-conditions": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "stickermule": {
+   "name": "Sticker Mule",
+   "domain": "www.stickermule.com",
+   "sitemapSeeds": [
+    "https://cdn.stickermule.com/core/sitemaps/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 1413,
+   "errors": [],
+   "byKind": {
+    "page": 985,
+    "content": 337,
+    "product": 91
+   },
+   "topSections": {
+    "faqs": 703,
+    "write": 317,
+    "uses": 164,
+    "products": 89,
+    "stickermule": 63,
+    "template": 28,
+    "deals": 4,
+    "legal": 2,
+    "integrations": 2,
+    "about": 1,
+    "careers": 1,
+    "stats": 1,
+    "automatic-discounts": 1,
+    "commissions": 1,
+    "military": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "buildasign": {
+   "name": "BuildASign",
+   "domain": "www.buildasign.com",
+   "sitemapSeeds": [
+    "https://www.buildasign.com/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 945,
+   "errors": [],
+   "byKind": {
+    "page": 930,
+    "product": 7,
+    "content": 8
+   },
+   "topSections": {
+    "custom-signs": 105,
+    "safety-signs": 53,
+    "bumper-stickers": 52,
+    "feather-flags": 49,
+    "custom-banners": 47,
+    "garden-flags": 42,
+    "custom-decals": 39,
+    "real-estate-signs": 36,
+    "sandwich-boards": 35,
+    "parking-signs": 34,
+    "magnetic-signs": 32,
+    "license-plates": 28,
+    "window-clings": 25,
+    "magnetic-bumper-stickers": 22,
+    "jumbo-cards": 20
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "gotprint": {
+   "name": "GotPrint",
+   "domain": "www.gotprint.com",
+   "sitemapSeeds": [
+    "https://www.gotprint.com/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 350,
+   "errors": [],
+   "byKind": {
+    "page": 85,
+    "product": 188,
+    "content": 77
+   },
+   "topSections": {
+    "products": 189,
+    "resources": 75,
+    "company": 30,
+    "services": 30,
+    "pages": 17,
+    "user": 5,
+    "promo": 2,
+    "home.html": 1,
+    "shop": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "uprinting": {
+   "name": "UPrinting",
+   "domain": "www.uprinting.com",
+   "sitemapSeeds": [
+    "https://www.uprinting.com/sitemap.xml"
+   ],
+   "sitemapFiles": 1,
+   "urlCount": 1201,
+   "errors": [],
+   "byKind": {
+    "page": 1161,
+    "product": 6,
+    "content": 34
+   },
+   "topSections": {
+    "support": 37,
+    "printing-101": 34,
+    "custom-jackets": 16,
+    "custom-sweatshirts": 11,
+    "custom-workwear": 10,
+    "custom-tshirts": 10,
+    "custom-hats": 9,
+    "custom-polo-shirts": 8,
+    "custom-bags": 2,
+    "(home)": 1,
+    "sitemap.html": 1,
+    "warning-and-safety-signs.html": 1,
+    "wall-graphics.html": 1,
+    "wall-art-and-decor.html": 1,
+    "vinyl-printing.html": 1
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [
+    {
+     "date": "2026-11-13",
+     "url": "https://www.uprinting.com/yard-signs.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "https://www.uprinting.com/floor-graphics.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "https://www.uprinting.com/",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-06",
+     "url": "https://www.uprinting.com/mailer-boxes.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-06",
+     "url": "https://www.uprinting.com/magnetic-calendar-printing.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "https://www.uprinting.com/shipping-and-mailer-envelopes.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "https://www.uprinting.com/poly-mailers.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "https://www.uprinting.com/8.5x11-bulk-booklets.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "https://www.uprinting.com/5.5x8.5-bulk-booklets.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "https://www.uprinting.com/12x12-bulk-booklets.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-03",
+     "url": "https://www.uprinting.com/white-paper-bags.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-03",
+     "url": "https://www.uprinting.com/recycled-kraft-paper-bags.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-11-03",
+     "url": "https://www.uprinting.com/custom-stand-up-pouches.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "https://www.uprinting.com/wine-mailer-boxes.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "https://www.uprinting.com/shipping-boxes.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "https://www.uprinting.com/product-boxes.html",
+     "kind": "product"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "https://www.uprinting.com/book-shipping-boxes.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "https://www.uprinting.com/sticker-sheets.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "https://www.uprinting.com/hard-hat-stickers.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "https://www.uprinting.com/reviews.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "https://www.uprinting.com/plastic-business-cards.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "https://www.uprinting.com/safety-stickers.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "https://www.uprinting.com/metallic-labels.html",
+     "kind": "page"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "https://www.uprinting.com/cut-to-size-metallic-stickers.html",
+     "kind": "page"
+    }
+   ],
+   "feeds": []
+  },
+  "positivepromotions": {
+   "name": "Positive Promotions",
+   "domain": "positivepromotions.com",
+   "sitemapSeeds": [
+    "https://positivepromotions.com/sitemap.xml"
+   ],
+   "sitemapFiles": 8,
+   "urlCount": 23906,
+   "errors": [],
+   "byKind": {
+    "page": 2021,
+    "content": 340,
+    "product": 21545
+   },
+   "topSections": {
+    "tech-promotional-items-and-branded-gifts-for-it-companies": 49,
+    "blog": 45,
+    "real-estate-appreciation": 37,
+    "law-firm-promotional-products-gifts-and-giveaways": 34,
+    "christmas-gifts": 33,
+    "veterinary-gifts-and-promotional-products": 33,
+    "yearsofservicegifts": 33,
+    "christmas-technology-gifts": 32,
+    "fitness-promotional-products-gym-swag-and-trainer-gifts": 32,
+    "recognition-themes": 31,
+    "auto-repair-shop-promotional-products-and-mechanic-gifts": 31,
+    "construction-promotional-items-and-contractor-gifts": 31,
+    "dental-office-appreciation": 27,
+    "automotive-dealerships": 26,
+    "salon-swag-spa-gifts-and-promotional-items": 26
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
+   "removedSample": [],
+   "recentLastmod": [],
+   "feeds": []
+  },
+  "everythingbranded": {
+   "name": "EverythingBranded",
+   "domain": "www.everythingbranded.com",
+   "status": "blocked"
+  },
+  "orientaltrading": {
+   "name": "Oriental Trading",
+   "domain": "www.orientaltrading.com",
+   "status": "blocked"
+  }
+ },
+ "posts": [
+  {
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "title": "History of the Hoodie: A Timeline From the 1930s to Today",
+   "link": "https://www.customink.com/blog/history-of-the-hoodie/",
+   "date": "2026-11-09",
+   "categories": [
+    "Ink is More Than You Think"
+   ]
+  },
+  {
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "title": "Trade Show Booth Supplies: 10 Custom Essentials for Your Table, Backdrop, and Aisle",
+   "link": "https://www.customink.com/blog/trade-show-booth-supplies-guide/",
+   "date": "2026-11-07",
+   "categories": [
+    "Trade Shows"
+   ]
+  },
+  {
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "title": "Swag Ideas for Every Use Case: What to Order for Work, Groups, and Events",
+   "link": "https://www.customink.com/blog/swag-ideas-for-every-use-case/",
+   "date": "2026-11-06",
+   "categories": [
+    "Ink is More Than You Think"
+   ]
+  },
+  {
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "title": "Custom USB Drives Guide: How to Order Branded Flash Drives People Actually Keep",
+   "link": "https://www.customink.com/blog/custom-usb-drives-guide/",
+   "date": "2026-11-04",
+   "categories": [
+    "Office Supplies",
+    "Promotional Products Buying Guides"
+   ]
+  },
+  {
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "title": "Custom Mouse Pads & Branded Desk Accessories: Office Swag for Teams & Events",
+   "link": "https://www.customink.com/blog/custom-desk-mats-mouse-pads-guide/",
+   "date": "2026-11-02",
+   "categories": [
+    "Office Supplies",
+    "Promotional Products Buying Guides"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "Ultimate Guide to Corporate Holiday Gifting: How to Curate and Deliver Top Swag",
+   "link": "https://swag.com/blog/the-ultimate-guide-to-corporate-holiday-gifting-how-to-plan-manage-and-scale-your-holiday-gift-program",
+   "date": "2026-11-12",
+   "categories": [
+    "Swag Ideas & Merch"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "Do You Need International Fulfillment Centers? A Guide to Global Swag Distribution",
+   "link": "https://swag.com/blog/do-you-need-international-fulfillment-centers-a-guide-to-global-swag-distribution",
+   "date": "2026-11-10",
+   "categories": [
+    "Swag Ideas & Merch"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "Print on Demand vs. Inventory-Based Swag Fulfillment: Which Is Right for You?",
+   "link": "https://swag.com/blog/print-on-demand-vs-inventory-based-swag-fulfillment-which-is-right-for-you",
+   "date": "2026-10-23",
+   "categories": [
+    "Swag Ideas & Merch",
+    "Buying Guides & How-Tos"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "Why Versatile Bags Make Better Corporate Gifts",
+   "link": "https://swag.com/blog/why-versatile-bags-make-better-corporate-gifts",
+   "date": "2026-10-20",
+   "categories": [
+    "Corporate Gifting",
+    "Swag Ideas & Merch"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "3 Fall and Holiday Gift Picks From a Swag Expert",
+   "link": "https://swag.com/blog/3-fall-and-holiday-gift-picks-from-a-swag-expert",
+   "date": "2026-10-06",
+   "categories": [
+    "Corporate Gifting",
+    "Swag Ideas & Merch"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "Swag for Customer Success: Rewards, Renewals and Referral Programs That Scale",
+   "link": "https://swag.com/blog/swag-for-customer-success-rewards-renewals-and-referral-programs-that-scale",
+   "date": "2026-09-25",
+   "categories": [
+    "Sales & Marketing",
+    "Swag Management"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "WEBINAR: Manage Excess Swag Responsibly",
+   "link": "https://swag.com/blog/webinar-manage-excess-swag-responsibly",
+   "date": "2026-09-24",
+   "categories": [
+    "Swag Ideas & Merch",
+    "Sustainable Swag"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "How Dialpad Personalized Holiday Gifting With Swag Pro",
+   "link": "https://swag.com/blog/how-dialpad-personalized-holiday-gifting-with-swag-pro",
+   "date": "2026-09-22",
+   "categories": [
+    "Case Study",
+    "Corporate Gifting",
+    "Swag Pro Enterprise"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "How Virta Health Makes Employee Events Easier with Swag.com",
+   "link": "https://swag.com/blog/how-virta-health-makes-employee-events-easier-with-swag-com",
+   "date": "2026-09-22",
+   "categories": [
+    "Swag Ideas & Merch",
+    "Company Events & Celebrations"
+   ]
+  },
+  {
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "title": "How Phase Financial Makes Client Gifting a Set-It-and-Forget-It Experience",
+   "link": "https://swag.com/blog/how-phase-financial-makes-client-gifting-a-set-it-and-forget-it-experience",
+   "date": "2026-09-22",
+   "categories": [
+    "Corporate Gifting",
+    "Swag Management"
+   ]
+  }
+ ],
+ "industry": [
+  {
+   "source": "ASI Central",
+   "title": "Webinar: See ESP+ Stores in Action: Real Use Cases, Real Results",
+   "link": "https://asicentral.com/assets/webinars/see-esp-stores-in-action-real-use-cases-real-results/",
+   "date": "2026-10-29",
+   "categories": [
+    "Distributors",
+    "Resources",
+    "Webinars"
+   ]
+  },
+  {
+   "source": "ASI Central",
+   "title": "How a Family-First Business Turned Relationships Into a Century of Growth",
+   "link": "https://asicentral.com/assets/success-stories/how-a-family-first-business-turned-relationships-into-a-century-of-growth/",
+   "date": "2026-10-29",
+   "categories": [
+    "Success Stories",
+    "Suppliers"
+   ]
+  },
+  {
+   "source": "ASI Central",
+   "title": "ASI Names Promo Industry\u2019s Most Influential Leaders in 2026 Counselor Power 50",
+   "link": "https://asicentral.com/press-releases/asi-names-promo-industrys-most-influential-leaders-in-2026-counselor-power-50/",
+   "date": "2026-10-27",
+   "categories": [
+    "Press Releases"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "AI: From Adoption To Advantage",
+   "link": "https://www.ppai.org/media-hub/ai-from-adoption-to-advantage/",
+   "date": "2026-11-13",
+   "categories": [
+    "Exclusive Insights For Professional Members"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "What\u2019s New In Branded Merch?",
+   "link": "https://www.ppai.org/media-hub/whats-new-in-branded-merch/",
+   "date": "2026-11-13",
+   "categories": [
+    "Cap America",
+    "Growth Strategies & Best Practices",
+    "Hirsch",
+    "PCNA",
+    "Perfect Promotions",
+    "Storm Creek",
+    "Terry Town",
+    "Voices, Ideas & Perspectives"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "Vantage Apparel Names Nikki Stella CEO",
+   "link": "https://www.ppai.org/media-hub/vantage-apparel-names-nikki-stella-ceo/",
+   "date": "2026-11-13",
+   "categories": [
+    "Must Read",
+    "Today\u2019s Leading Articles",
+    "Top Stories",
+    "Vantage Apparel"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "PromoWire (11/10-11/11): News And Notes From Around The Industry",
+   "link": "https://www.ppai.org/media-hub/promowire-11-10-11-11-news-and-notes-from-around-the-industry/",
+   "date": "2026-11-12",
+   "categories": [
+    "Clayton Kendall",
+    "Concord",
+    "Concord Marketing Solutions",
+    "Proforma"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "Beyond Automation: What\u2019s Next For AI In Branded Merch?",
+   "link": "https://www.ppai.org/media-hub/beyond-automation-whats-next-for-ai-in-branded-merch/",
+   "date": "2026-11-10",
+   "categories": [
+    "Must Read",
+    "Technology & Digital Transformation",
+    "Today\u2019s Leading Articles",
+    "Voices, Ideas & Perspectives"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "Updated Guidance For State-Level Packaging EPR Laws",
+   "link": "https://www.ppai.org/media-hub/updated-guidance-for-state-level-packaging-epr-laws/",
+   "date": "2026-11-10",
+   "categories": [
+    "Exclusive Insights For Professional Members"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "PPAI Updates Guidance On State-Level Packaging EPR Laws",
+   "link": "https://www.ppai.org/media-hub/ppai-updates-guidance-on-state-level-packaging-epr-laws/",
+   "date": "2026-11-10",
+   "categories": [
+    "EPR",
+    "Ethics & Sustainable Business",
+    "Must Read",
+    "Public Affairs",
+    "What's Happening At The Association"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "PromoWire (11/5-11/9): News And Notes From Around The Industry",
+   "link": "https://www.ppai.org/media-hub/promowire-11-5-11-9-news-and-notes-from-around-the-industry/",
+   "date": "2026-11-10",
+   "categories": [
+    "HPG",
+    "Imperial",
+    "Reciprocity Road",
+    "Sock Club",
+    "Stahls'",
+    "Storm Creek"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "Harper + Scott Co-Founder Shares Playbook For Merch Sellers",
+   "link": "https://www.ppai.org/media-hub/harper-scott-co-founder-shares-playbook-for-merch-sellers/",
+   "date": "2026-11-09",
+   "categories": [
+    "Growth Strategies & Best Practices",
+    "Must Read"
+   ]
+  },
+  {
+   "source": "PPAI Media Hub",
+   "title": "US, China Make Mutual Pause On Port Fees, Tariff Hikes Official",
+   "link": "https://www.ppai.org/media-hub/u-s-china-make-pause-on-port-fees-tariff-hikes-official/",
+   "date": "2026-11-09",
+   "categories": [
+    "China",
+    "Must Read",
+    "Public Affairs",
+    "Tariffs",
+    "Today\u2019s Leading Articles",
+    "Top Stories",
+    "USTR"
+   ]
+  },
+  {
+   "source": "Print+Promo Marketing",
+   "title": "Are There Benefits to Using QB Solopreneur Instead of QuickBooks Online?",
+   "link": "https://printandpromomarketing.com/post/are-there-benefits-to-using-qb-solopreneur-instead-of-quickbooks-online/",
+   "date": "2026-11-06",
+   "categories": [
+    "Homepage News"
+   ]
+  },
+  {
+   "source": "Print+Promo Marketing",
+   "title": "Lifelong Learning Still Drives Print Sales",
+   "link": "https://printandpromomarketing.com/post/lifelong-learning-still-drives-print-sales/",
+   "date": "2026-11-05",
+   "categories": [
+    "Featured News",
+    "Homepage News"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+  "_comment": "Competitor watch list. 'id' must match the competitor document id in the Promo Intel Desk artifact. 'sitemaps' overrides robots.txt discovery when set; 'robots': true also adds every Sitemap: line from robots.txt. 'feeds' are RSS/Atom URLs; 'discover' pages are scanned for <link rel=alternate> feeds. 'blocked' = site refuses automated requests; track it manually with the links in the tracker.",
+  "user_agent": "Mozilla/5.0 (compatible; PromoIntelBot/1.0; competitor sitemap monitor)",
+  "limits": {
+    "max_sitemap_files": 200,
+    "max_urls": 400000,
+    "max_added_reported": 150,
+    "delay_seconds": 0.4,
+    "recent_days": 30
+  },
+  "competitors": [
+    {
+      "id": "4imprint",
+      "name": "4imprint",
+      "domain": "www.4imprint.com",
+      "robots": true,
+      "sitemaps": [
+        "https://www.4imprint.com/sitemap.xml"
+      ],
+      "discover": [
+        "https://www.4imprint.com/blog"
+      ]
+    },
+    {
+      "id": "customink",
+      "name": "Custom Ink",
+      "domain": "www.customink.com",
+      "robots": true,
+      "feeds": [
+        "https://www.customink.com/blog/feed/"
+      ]
+    },
+    {
+      "id": "epromos",
+      "name": "ePromos",
+      "domain": "www.epromos.com",
+      "robots": true,
+      "discover": [
+        "https://www.epromos.com/education"
+      ]
+    },
+    {
+      "id": "qlp",
+      "name": "Quality Logo Products",
+      "domain": "www.qualitylogoproducts.com",
+      "robots": true,
+      "discover": [
+        "https://www.qualitylogoproducts.com/blog/"
+      ]
+    },
+    {
+      "id": "totallypromotional",
+      "name": "Totally Promotional",
+      "domain": "www.totallypromotional.com",
+      "robots": false,
+      "sitemaps": [
+        "https://www.totallypromotional.com/sitemap-index.xml"
+      ],
+      "feeds": [
+        "https://blog.totallypromotional.com/feed/"
+      ]
+    },
+    {
+      "id": "vistaprint",
+      "name": "Vistaprint",
+      "domain": "www.vistaprint.com",
+      "robots": true
+    },
+    {
+      "id": "nationalpen",
+      "name": "National Pen",
+      "domain": "www.pens.com",
+      "robots": true,
+      "include": ["/us/"]
+    },
+    {
+      "id": "swag",
+      "name": "Swag.com / Swag Pro",
+      "domain": "swag.com",
+      "robots": true,
+      "discover": [
+        "https://swag.com/blog"
+      ]
+    },
+    {
+      "id": "swagup",
+      "name": "SwagUp",
+      "domain": "www.swagup.com",
+      "robots": true,
+      "feeds": [],
+      "discover": [
+        "https://www.swagup.com/blog"
+      ]
+    },
+    {
+      "id": "stickermule",
+      "name": "Sticker Mule",
+      "domain": "www.stickermule.com",
+      "robots": false,
+      "sitemaps": [
+        "https://cdn.stickermule.com/core/sitemaps/sitemap.xml"
+      ],
+      "feeds": [],
+      "discover": [
+        "https://www.stickermule.com/blog"
+      ]
+    },
+    {
+      "id": "buildasign",
+      "name": "BuildASign",
+      "domain": "www.buildasign.com",
+      "robots": true
+    },
+    {
+      "id": "gotprint",
+      "name": "GotPrint",
+      "domain": "www.gotprint.com",
+      "robots": false,
+      "sitemaps": [
+        "https://www.gotprint.com/sitemap.xml"
+      ]
+    },
+    {
+      "id": "uprinting",
+      "name": "UPrinting",
+      "domain": "www.uprinting.com",
+      "robots": true
+    },
+    {
+      "id": "positivepromotions",
+      "name": "Positive Promotions",
+      "domain": "positivepromotions.com",
+      "robots": false,
+      "sitemaps": [
+        "https://positivepromotions.com/sitemap.xml"
+      ]
+    },
+    {
+      "id": "everythingbranded",
+      "name": "EverythingBranded",
+      "domain": "www.everythingbranded.com",
+      "blocked": true
+    },
+    {
+      "id": "orientaltrading",
+      "name": "Oriental Trading",
+      "domain": "www.orientaltrading.com",
+      "blocked": true
+    }
+  ],
+  "industry_feeds": [
+    {
+      "id": "asi",
+      "name": "ASI Central",
+      "url": "https://asicentral.com/feed/"
+    },
+    {
+      "id": "ppai",
+      "name": "PPAI Media Hub",
+      "url": "https://www.ppai.org/feed/?post_type=media-hub"
+    },
+    {
+      "id": "pandpm",
+      "name": "Print+Promo Marketing",
+      "url": "https://printandpromomarketing.com/feed/"
+    }
+  ]
+}
