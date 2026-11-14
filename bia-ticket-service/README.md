@@ -33,7 +33,7 @@ copy config\lead_map.example.json config\lead_map.json   # then fill in the real
 Check that it works:
 
 ```powershell
-python -m pytest                     # 20 tests on sample data, no BIA access needed
+python -m pytest                     # 35 tests on sample data, no BIA or GitLab access needed
 python -m bia_service report         # live numbers from BIA
 ```
 
@@ -107,12 +107,33 @@ python -m bia_service serve --http --host 0.0.0.0 --port 8000
 
 Lead names can be partial (`asha` matches `Asha Menon`). People missing from the lead map show up under **Unmapped**, so gaps in the map are visible.
 
+## Code activity from GitLab (optional)
+
+Tracks how code moves, not how much is typed. It reads **merge requests** (MRs) for one GitLab group, read-only:
+
+| MCP tool | REST route | Answers |
+|---|---|---|
+| `mr_activity(lead?, days?)` | `GET /api/mr-activity?lead=&days=` | Per person: MRs merged, median hours from open to merge, open MRs, reviews pending on them, MRs missing a ticket number |
+| `mr_review_queue(lead?)` | `GET /api/mr-review-queue?lead=` | Open, non-draft MRs nobody has commented on after `REVIEW_WAIT_HOURS` (default 24), longest wait first |
+| `mr_stale(lead?)` | `GET /api/mr-stale?lead=` | Open MRs with no activity for `IDLE_DAYS` (default 3) |
+
+Setup: in GitLab create an access token with **only the `read_api` scope** (best from a dedicated service account that is a Reporter on the group), then set `GITLAB_URL` (self-hosted GitLab: your address), `GITLAB_TOKEN` and `GITLAB_GROUP` in `.env`. Check with `python -m bia_service serve` and ask Claude: *"Which merge requests are waiting for review?"*
+
+Three things to get right:
+
+- **Ticket numbers.** The rule "every MR title or branch starts with the BIA ticket number" is what links code to tickets. Set `TICKET_REGEX` to BIA's real format, and add a GitLab merge check or MR template that enforces it.
+- **People.** Authors are matched to leads through `config/lead_map.json`. If a GitLab display name differs from the BIA name, add the GitLab **username** as an alias.
+- **What it can't see.** Server and IT work (AWS, backups, patching) leaves few MRs, so judge Server/IT on tickets and runbooks. A "waiting for review" MR counts only if nobody commented, so a review done purely by approval click shows as waiting.
+
+Deliberately not measured: commit counts and lines of code. They are easy to inflate and meaningless with AI-written code.
+
 ## Before going live
 
 - [ ] **Rotate the BIA API key.** The current key is written in plain text in the BIA team report skill. Put the new key only in `.env`.
 - [ ] **Use a private repository** for any fork that holds real config. `jafarkv/aaa` is public, so `.env`, `config/lead_map.json` and `data/` are git-ignored on purpose.
 - [ ] Match `DONE_STATUSES` and `ACTIVE_STATUSES` to BIA's real labels.
 - [ ] Have the leads fill in `config/lead_map.json`.
+- [ ] GitLab: create the `read_api` token, set `TICKET_REGEX` to BIA's real ticket format.
 
 ## Known limits (v1)
 
@@ -127,6 +148,8 @@ Lead names can be partial (`asha` matches `Asha Menon`). People missing from the
 | `bia_service/client.py` | Fetches from the BIA API or a JSON file, with a cache (`CACHE_SECONDS`) |
 | `bia_service/metrics.py` | **All metric rules**: ETA buckets, flags, workload, scorecard (pure functions) |
 | `bia_service/lead_map.py` | Maps people to leads, with aliases |
+| `bia_service/gitlab.py` | Reads merge requests from the GitLab group API (paged, cached, read-only) |
+| `bia_service/gitlab_metrics.py` | Code-activity rules: review queue, stale MRs, cycle time, missing ticket numbers |
 | `bia_service/snapshots.py` | Daily snapshots in SQLite, weekly trend |
 | `bia_service/server.py` | MCP tools, REST routes, bearer-token auth |
 | `bia_service/__main__.py` | Command line: `serve`, `snapshot`, `report` |

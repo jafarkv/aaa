@@ -43,6 +43,7 @@ def service(monkeypatch, tmp_path):
     monkeypatch.setenv("BIA_TICKETS_FILE", str(FIXTURES / "tickets_sample.json"))
     monkeypatch.setenv("LEAD_MAP_FILE", str(FIXTURES / "lead_map_sample.json"))
     monkeypatch.setenv("SNAPSHOT_DB", str(tmp_path / "snapshots.db"))
+    monkeypatch.setenv("GITLAB_MRS_FILE", str(FIXTURES / "mrs_sample.json"))
     monkeypatch.setenv("SERVICE_TOKEN", "test-token")
     monkeypatch.delenv("ALLOWED_HOSTS", raising=False)
 

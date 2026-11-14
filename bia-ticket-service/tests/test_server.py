@@ -7,7 +7,8 @@ from starlette.testclient import TestClient
 from bia_service.server import build_http_app, build_mcp
 
 TOOLS = {"eta_health", "action_list", "list_tickets", "get_ticket", "team_workload",
-         "lead_scorecard", "person_summary", "trend"}
+         "lead_scorecard", "person_summary", "trend",
+         "mr_activity", "mr_review_queue", "mr_stale"}
 
 
 def call(mcp, name, args=None):
@@ -76,7 +77,7 @@ def test_rest_routes(http):
     assert http.get("/api/action-list?lead=Lead%20One", headers=AUTH).json()["lead"] == "Lead One"
     assert http.get("/api/action-list?lead=nobody", headers=AUTH).status_code == 400
     board = http.get("/api/dashboard", headers=AUTH).json()
-    assert set(board) == {"eta_health", "scorecard", "workload", "action_list", "trend"}
+    assert set(board) == {"eta_health", "scorecard", "workload", "action_list", "trend", "code_activity"}
     assert http.post("/api/snapshot", headers=AUTH).json()["saved"] == "2026-11-16"
 
 

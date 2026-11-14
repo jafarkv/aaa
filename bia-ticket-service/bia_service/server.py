@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import functools
 import hmac
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -22,9 +22,10 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse, Response
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-from . import metrics, snapshots
+from . import gitlab_metrics, metrics, snapshots
 from .client import BiaError, TicketClient
 from .config import Settings, get_settings
+from .gitlab import GitLabClient, GitLabError
 from .lead_map import LeadMap
 
 
@@ -34,6 +35,7 @@ class Service:
     def __init__(self, settings: Settings | None = None):
         self.settings = settings or get_settings()
         self.client = TicketClient(self.settings)
+        self.gitlab = GitLabClient(self.settings)
         self.rules = metrics.Rules(self.settings.done_statuses, self.settings.active_statuses, self.settings.idle_days)
         self.tz = ZoneInfo(self.settings.timezone)
 
@@ -135,15 +137,51 @@ class Service:
         snapshots.save(self.settings.snapshot_db, today, health, card)
         return {"saved": today.isoformat(), "eta_health": health}
 
+    # ---- code activity (GitLab merge requests) ----
+
+    async def _mrs(self, days: int | None):
+        """Merge requests plus the activity window to use; days is capped at MR_FETCH_DAYS."""
+        days = days or self.settings.mr_days
+        if not 1 <= days <= self.settings.mr_fetch_days:
+            raise ValueError(f"days must be between 1 and {self.settings.mr_fetch_days}.")
+        # GitLab wants UTC; the service clock is local time without tzinfo.
+        since = (self.now() - timedelta(days=self.settings.mr_fetch_days)).replace(tzinfo=self.tz).astimezone(timezone.utc)
+        return days, await self.gitlab.get_mrs(since)
+
+    async def mr_activity(self, lead: str | None = None, days: int | None = None) -> dict[str, Any]:
+        days, mrs = await self._mrs(days)
+        lead_name = self._lead(lead)
+        return {"lead": lead_name, **gitlab_metrics.activity(mrs, self.lead_map, self.now(), days, lead_name)}
+
+    async def mr_review_queue(self, lead: str | None = None) -> dict[str, Any]:
+        _, mrs = await self._mrs(None)
+        lead_name = self._lead(lead)
+        mrs = gitlab_metrics.by_lead(mrs, self.lead_map, lead_name)
+        rows = gitlab_metrics.review_queue(mrs, self.lead_map, self.now(), self.settings.review_wait_hours)
+        return {"lead": lead_name, "wait_hours": self.settings.review_wait_hours, "count": len(rows), "merge_requests": rows}
+
+    async def mr_stale(self, lead: str | None = None) -> dict[str, Any]:
+        _, mrs = await self._mrs(None)
+        lead_name = self._lead(lead)
+        mrs = gitlab_metrics.by_lead(mrs, self.lead_map, lead_name)
+        rows = gitlab_metrics.stale(mrs, self.lead_map, self.now(), self.settings.idle_days)
+        return {"lead": lead_name, "idle_days": self.settings.idle_days, "count": len(rows), "merge_requests": rows}
+
     async def dashboard(self) -> dict[str, Any]:
         """Everything the dashboard's five panels need, in one call."""
-        return {
+        board = {
             "eta_health": await self.eta_health(),
             "scorecard": await self.scorecard(),
             "workload": await self.workload(),
             "action_list": await self.action_list(),
             "trend": {m: (await self.trend(m))["points"] for m in ("overdue", "missing_eta", "eta_coverage_pct")},
         }
+        if self.gitlab.configured:
+            try:
+                board["code_activity"] = await self.mr_activity()
+            except (BiaError, ValueError) as exc:
+                board["code_activity"] = {"error": str(exc)}
+        return board
 
 
 # ------------------------------------------------------------------ MCP door
@@ -235,6 +273,24 @@ def build_mcp(service: Service) -> MCPServer:
         """Weekly trend from daily snapshots. metric: open, overdue, missing_eta, due_this_week, eta_coverage_pct."""
         return await service.trend(metric, weeks)
 
+    @mcp.tool(annotations=READ_ONLY)
+    @_friendly
+    async def mr_activity(lead: str | None = None, days: int = 14) -> dict[str, Any]:
+        """Code activity from GitLab merge requests over the last N days (max 30): per person merged, median hours from open to merge, open MRs, reviews pending, and MRs missing a ticket number. Optional lead name narrows it to that team."""
+        return await service.mr_activity(lead, days)
+
+    @mcp.tool(annotations=READ_ONLY)
+    @_friendly
+    async def mr_review_queue(lead: str | None = None) -> dict[str, Any]:
+        """Open, non-draft merge requests nobody has commented on after the review wait (default 24h), longest wait first. Use to find slow reviews."""
+        return await service.mr_review_queue(lead)
+
+    @mcp.tool(annotations=READ_ONLY)
+    @_friendly
+    async def mr_stale(lead: str | None = None) -> dict[str, Any]:
+        """Open merge requests (drafts included) with no activity for 3+ days: work that may be stuck."""
+        return await service.mr_stale(lead)
+
     # -------------------------------------------------------------- REST door
 
     def _json(handler):
@@ -258,6 +314,19 @@ def build_mcp(service: Service) -> MCPServer:
     mcp.custom_route("/api/workload", methods=["GET"])(_json(lambda r: service.workload(r.query_params.get("lead"))))
     mcp.custom_route("/api/scorecard", methods=["GET"])(_json(lambda r: service.scorecard()))
     mcp.custom_route("/api/dashboard", methods=["GET"])(_json(lambda r: service.dashboard()))
+    def _days(request: Request) -> int | None:
+        raw = request.query_params.get("days")
+        try:
+            return int(raw) if raw else None
+        except ValueError:
+            raise ValueError("days must be a whole number.")
+
+    mcp.custom_route("/api/mr-activity", methods=["GET"])(
+        _json(lambda r: service.mr_activity(r.query_params.get("lead"), _days(r))))
+    mcp.custom_route("/api/mr-review-queue", methods=["GET"])(
+        _json(lambda r: service.mr_review_queue(r.query_params.get("lead"))))
+    mcp.custom_route("/api/mr-stale", methods=["GET"])(
+        _json(lambda r: service.mr_stale(r.query_params.get("lead"))))
     mcp.custom_route("/api/snapshot", methods=["POST"])(_json(lambda r: service.take_snapshot()))
 
     return mcp

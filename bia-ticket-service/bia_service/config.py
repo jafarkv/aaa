@@ -58,6 +58,17 @@ class Settings:
     # An active ticket with no update for this many days is flagged as idle.
     idle_days: int = field(default_factory=lambda: int(os.getenv("IDLE_DAYS", "3")))
 
+    # --- GitLab (optional): code activity from merge requests, read-only ---
+    gitlab_url: str = field(default_factory=lambda: os.getenv("GITLAB_URL", "https://gitlab.com").strip().rstrip("/"))
+    gitlab_token: str = field(default_factory=lambda: os.getenv("GITLAB_TOKEN", "").strip())   # needs read_api scope
+    gitlab_group: str = field(default_factory=lambda: os.getenv("GITLAB_GROUP", "").strip())   # group id or path
+    gitlab_mrs_file: str = field(default_factory=lambda: os.getenv("GITLAB_MRS_FILE", "").strip())  # offline testing
+    # How a ticket number looks in an MR title or branch name. Must match BIA's real format.
+    ticket_regex: str = field(default_factory=lambda: os.getenv("TICKET_REGEX", r"(?i)(?:\b[a-z]{1,5}-\d+\b|#\d+)"))
+    review_wait_hours: int = field(default_factory=lambda: int(os.getenv("REVIEW_WAIT_HOURS", "24")))
+    mr_days: int = field(default_factory=lambda: int(os.getenv("MR_DAYS", "14")))               # default activity window
+    mr_fetch_days: int = field(default_factory=lambda: int(os.getenv("MR_FETCH_DAYS", "30")))   # longest window allowed
+
     lead_map_file: Path = field(default_factory=lambda: _path("LEAD_MAP_FILE", "config/lead_map.json"))
     snapshot_db: Path = field(default_factory=lambda: _path("SNAPSHOT_DB", "data/snapshots.db"))
 
