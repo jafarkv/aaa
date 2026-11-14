@@ -1,0 +1,13 @@
+{
+  "_how_to_use": "Copy to lead_map.json (git-ignored) and replace the names. Each lead lists the people on their team, spelled exactly as BIA shows them. Use aliases when BIA spells a name differently.",
+  "teams": {
+    "Lead A Full Name": ["Developer One", "Developer Two"],
+    "Lead B Full Name": ["Developer Three"],
+    "Lead C Full Name": ["Tester One", "Tester Two"],
+    "Lead D Full Name": ["Server Engineer One"],
+    "Lead E Full Name": ["Email Developer One"]
+  },
+  "aliases": {
+    "Dev One": "Developer One"
+  }
+}

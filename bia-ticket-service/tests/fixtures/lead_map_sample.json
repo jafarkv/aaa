@@ -1,0 +1,9 @@
+{
+  "teams": {
+    "Lead One": ["Dev Alpha", "Dev Beta"],
+    "Lead Two": ["QA Gamma"]
+  },
+  "aliases": {
+    "QA G": "QA Gamma"
+  }
+}
