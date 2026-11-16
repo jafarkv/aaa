@@ -6,3 +6,12 @@ app/config/database.php
 intel/out/docs/
 intel/out/artifact_batches*.json
 __pycache__/
+intel/dbexport/
+intel/out/shots/
+intel/out/b*.json
+intel/out/upload_*
+intel/out/asset_map.json
+intel/out/system_code.json
+intel/out/latest_prev.json
+intel/state/known_urls.json
+intel/state/db_index.json

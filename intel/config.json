@@ -1,5 +1,5 @@
 {
-  "_comment": "Competitor watch list. 'id' must match the competitor document id in the Promo Intel Desk artifact. 'sitemaps' overrides robots.txt discovery when set; 'robots': true also adds every Sitemap: line from robots.txt. 'feeds' are RSS/Atom URLs; 'discover' pages are scanned for <link rel=alternate> feeds. 'blocked' = site refuses automated requests; track it manually with the links in the tracker.",
+  "_comment": "Promo Intel watch list. Competitor 'id' must match the competitor document id in the tracker. 'sitemaps' = explicit sitemap URLs; 'robots': true also reads Sitemap: lines from robots.txt; 'feeds' = RSS/Atom URLs; 'discover' = pages scanned for <link rel=alternate> feeds; 'include' = keep only URLs whose path contains one of these; 'keypages' = pages screenshotted and diffed weekly (homepage is always added); 'blocked' = site refuses bots, track manually; 'paused' = not crawled; 'jobs' = public job board, e.g. {\"ashby\": \"<board>\"}. The Promo Intel environment has open network access, so new sites need no host changes.",
   "user_agent": "Mozilla/5.0 (compatible; PromoIntelBot/1.0; competitor sitemap monitor)",
   "limits": {
     "max_sitemap_files": 200,
@@ -19,7 +19,14 @@
       ],
       "discover": [
         "https://www.4imprint.com/blog"
-      ]
+      ],
+      "keypages": [
+        [
+          "Hot deals",
+          "https://www.4imprint.com/hot"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "customink",
@@ -28,7 +35,22 @@
       "robots": true,
       "feeds": [
         "https://www.customink.com/blog/feed/"
-      ]
+      ],
+      "keypages": [
+        [
+          "Corporate gifts",
+          "https://www.customink.com/ink/business/corporate-gifts"
+        ],
+        [
+          "Drinkware",
+          "https://www.customink.com/products/drinkware/5"
+        ],
+        [
+          "Careers",
+          "https://www.customink.com/about/jobs"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "epromos",
@@ -37,7 +59,18 @@
       "robots": true,
       "discover": [
         "https://www.epromos.com/education"
-      ]
+      ],
+      "keypages": [
+        [
+          "Drinkware",
+          "https://www.epromos.com/drinkware/"
+        ],
+        [
+          "Corporate gifts",
+          "https://www.epromos.com/corporate-gifts/"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "qlp",
@@ -46,7 +79,14 @@
       "robots": true,
       "discover": [
         "https://www.qualitylogoproducts.com/blog/"
-      ]
+      ],
+      "keypages": [
+        [
+          "Corporate gifts",
+          "https://www.qualitylogoproducts.com/corporate-gifts.htm"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "totallypromotional",
@@ -56,22 +96,38 @@
       "sitemaps": [
         "https://www.totallypromotional.com/sitemap-index.xml"
       ],
-      "feeds": [
-        "https://blog.totallypromotional.com/feed/"
-      ]
+      "keypages": [
+        [
+          "Drinkware",
+          "https://www.totallypromotional.com/drinkware.html"
+        ],
+        [
+          "Magnets",
+          "https://www.totallypromotional.com/magnets.html"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "vistaprint",
       "name": "Vistaprint",
       "domain": "www.vistaprint.com",
-      "robots": true
-    },
-    {
-      "id": "nationalpen",
-      "name": "National Pen",
-      "domain": "www.pens.com",
       "robots": true,
-      "include": ["/us/"]
+      "keypages": [
+        [
+          "Promotional products",
+          "https://www.vistaprint.com/promotional-products"
+        ],
+        [
+          "Magnets",
+          "https://www.vistaprint.com/marketing-materials/magnets"
+        ],
+        [
+          "Careers",
+          "https://careers.vista.com/"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "swag",
@@ -80,17 +136,18 @@
       "robots": true,
       "discover": [
         "https://swag.com/blog"
-      ]
-    },
-    {
-      "id": "swagup",
-      "name": "SwagUp",
-      "domain": "www.swagup.com",
-      "robots": true,
-      "feeds": [],
-      "discover": [
-        "https://www.swagup.com/blog"
-      ]
+      ],
+      "keypages": [
+        [
+          "Company stores",
+          "https://swag.com/companystores"
+        ],
+        [
+          "Gifting",
+          "https://swag.com/gifting"
+        ]
+      ],
+      "brand": "Proimprint"
     },
     {
       "id": "stickermule",
@@ -100,16 +157,87 @@
       "sitemaps": [
         "https://cdn.stickermule.com/core/sitemaps/sitemap.xml"
       ],
-      "feeds": [],
       "discover": [
         "https://www.stickermule.com/blog"
-      ]
+      ],
+      "keypages": [
+        [
+          "Deals",
+          "https://www.stickermule.com/deals"
+        ],
+        [
+          "Custom magnets",
+          "https://www.stickermule.com/products/custom-magnets"
+        ]
+      ],
+      "brand": "cmagnets",
+      "jobs": {
+        "ashby": "stickermule"
+      }
     },
     {
       "id": "buildasign",
       "name": "BuildASign",
       "domain": "www.buildasign.com",
-      "robots": true
+      "robots": true,
+      "keypages": [
+        [
+          "Shipping",
+          "https://www.buildasign.com/shipping"
+        ],
+        [
+          "Careers",
+          "https://www.buildasign.com/up/careers/"
+        ]
+      ],
+      "brand": "cmagnets"
+    },
+    {
+      "id": "positivepromotions",
+      "name": "Positive Promotions",
+      "domain": "www.positivepromotions.com",
+      "robots": false,
+      "sitemaps": [
+        "https://positivepromotions.com/sitemap.xml"
+      ],
+      "keypages": [
+        [
+          "Promotional products",
+          "https://www.positivepromotions.com/promotional-products/c/tlvlpp/"
+        ],
+        [
+          "Clearance",
+          "https://www.positivepromotions.com/clearance/c/cl_1001_88/"
+        ]
+      ],
+      "brand": "promo4kids"
+    },
+    {
+      "id": "nationalpen",
+      "name": "National Pen",
+      "domain": "www.pens.com",
+      "robots": true,
+      "include": [
+        "/us/"
+      ],
+      "brand": "Proimprint",
+      "keypages": []
+    },
+    {
+      "id": "swagup",
+      "name": "SwagUp",
+      "domain": "www.swagup.com",
+      "robots": true,
+      "discover": [
+        "https://www.swagup.com/blog"
+      ],
+      "brand": "Proimprint",
+      "keypages": [
+        [
+          "Shops",
+          "https://www.swagup.com/shops"
+        ]
+      ]
     },
     {
       "id": "gotprint",
@@ -118,22 +246,17 @@
       "robots": false,
       "sitemaps": [
         "https://www.gotprint.com/sitemap.xml"
-      ]
+      ],
+      "brand": "cmagnets",
+      "keypages": []
     },
     {
       "id": "uprinting",
       "name": "UPrinting",
       "domain": "www.uprinting.com",
-      "robots": true
-    },
-    {
-      "id": "positivepromotions",
-      "name": "Positive Promotions",
-      "domain": "positivepromotions.com",
-      "robots": false,
-      "sitemaps": [
-        "https://positivepromotions.com/sitemap.xml"
-      ]
+      "robots": true,
+      "brand": "cmagnets",
+      "keypages": []
     },
     {
       "id": "everythingbranded",
@@ -146,6 +269,50 @@
       "name": "Oriental Trading",
       "domain": "www.orientaltrading.com",
       "blocked": true
+    }
+  ],
+  "own": [
+    {
+      "id": "own-proimprint",
+      "name": "Proimprint",
+      "brand": "Proimprint",
+      "domain": "www.proimprint.com",
+      "robots": true
+    },
+    {
+      "id": "own-cmagnets",
+      "name": "cmagnets",
+      "brand": "cmagnets",
+      "domain": "www.custommagnetsdirect.com",
+      "robots": true
+    },
+    {
+      "id": "own-sunglassville",
+      "name": "sunglassville",
+      "brand": "sunglassville",
+      "domain": "www.sunglassville.com",
+      "robots": true
+    },
+    {
+      "id": "own-budgetkeychains",
+      "name": "budgetkeychains",
+      "brand": "budgetkeychains",
+      "domain": "www.budgetkeychains.com",
+      "robots": true
+    },
+    {
+      "id": "own-usumbrella",
+      "name": "usumbrella",
+      "brand": "usumbrella",
+      "domain": "www.usumbrellas.com",
+      "robots": true
+    },
+    {
+      "id": "own-promo4kids",
+      "name": "promo4kids",
+      "brand": "promo4kids",
+      "domain": "www.promo4kids.com",
+      "robots": true
     }
   ],
   "industry_feeds": [

@@ -24,6 +24,7 @@
   --ok:#7FD3A6; --ok-bg:#15301F; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
 .wrap{max-width:1180px;margin:0 auto;padding-block:24px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:20px}
 h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
@@ -111,6 +112,41 @@ td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
 .status{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:4px;white-space:nowrap}
 .status.ok{background:var(--ok-bg);color:var(--ok)} .status.baseline{background:var(--accent-soft);color:var(--accent)}
 .status.blocked,.status.error,.status.partial{background:var(--med-bg);color:var(--med)}
+/* Page watch board */
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card.changed{border-color:var(--med);box-shadow:0 0 0 1px var(--med)}
+.shot{display:block;aspect-ratio:1366/900;max-width:100%;width:100%;object-fit:cover;object-position:top;background:var(--sunk);border-bottom:1px solid var(--line)}
+.shot-ph{aspect-ratio:1366/900;max-width:100%;display:grid;place-items:center;background:var(--sunk);color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+.card .cb{padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{font-family:var(--f-body);font-size:14px;font-weight:600;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:12px;padding:2px 8px;border-radius:5px;background:var(--lo-bg);color:var(--ink);overflow-wrap:anywhere}
+.chip.offer{background:var(--med-bg);color:var(--med)}
+.chip.add{background:var(--ok-bg);color:var(--ok)} .chip.rem{background:var(--hi-bg);color:var(--hi);text-decoration:line-through}
+.card details summary{cursor:pointer;color:var(--muted);font-size:12px}
+.small{font-size:12px;color:var(--muted)}
+.diffgrid{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 12px;font-size:13px}
+.diffgrid dt{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em;padding-top:3px}
+.diffgrid dd{margin:0}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap}
+.thumbs a{display:block;width:150px;max-width:45%}
+.thumbs img{width:100%;aspect-ratio:1366/900;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:6px;display:block}
+/* Gaps */
+.heat td.cell{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.heat tr.own td{background:var(--accent-soft)}
+.heat tr.own td:first-child{font-weight:600}
+.heat th.vert{font-size:11px;white-space:normal;min-width:62px;vertical-align:bottom}
+.gapcard{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:12px 16px;border-top:1px solid var(--line);align-items:baseline}
+.gapcard:first-child{border-top:0}
+.gapcard .nums{font-family:var(--f-mono);font-size:13px;white-space:nowrap;text-align:right}
+.gapcard .nums b{color:var(--hi)}
+@media (max-width:640px){.gapcard{grid-template-columns:minmax(0,1fr)}.gapcard .nums{text-align:left}}
+/* Offer calendar */
+.cal th,.cal td{text-align:center;padding:6px 8px}
+.cal td:first-child,.cal th:first-child{text-align:left;white-space:nowrap}
+.dot{display:inline-block;min-width:22px;padding:1px 6px;border-radius:999px;background:var(--med-bg);color:var(--med);font-family:var(--f-mono);font-size:12px}
+.spark{display:block}
 .empty{padding:36px 20px;text-align:center;color:var(--muted);display:flex;flex-direction:column;gap:6px;align-items:center}
 .empty strong{color:var(--ink);font-family:var(--f-display);font-size:16px}
 .notice{font-size:13px;color:var(--med);background:var(--med-bg);border-radius:8px;padding:8px 12px}
@@ -147,6 +183,8 @@ td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
     <div class="tabs" role="tablist">
       <button type="button" role="tab" data-tab="feed" aria-selected="true">Launch feed<span class="count" id="cFeed"></span></button>
       <button type="button" role="tab" data-tab="watch" aria-selected="false">Site watch<span class="count" id="cWatch"></span></button>
+      <button type="button" role="tab" data-tab="pagewatch" aria-selected="false">Page watch<span class="count" id="cPW"></span></button>
+      <button type="button" role="tab" data-tab="gaps" aria-selected="false">Gaps</button>
       <button type="button" role="tab" data-tab="signals" aria-selected="false">Signals<span class="count" id="cSig"></span></button>
       <button type="button" role="tab" data-tab="news" aria-selected="false">Industry news<span class="count" id="cNews"></span></button>
       <button type="button" role="tab" data-tab="competitors" aria-selected="false">Competitors<span class="count" id="cComp"></span></button>
@@ -244,12 +282,13 @@ const STATUSES = ["New","Reviewing","Actioned","Ignored"];
 const NEWS_CATS = ["Tariffs & duties","Supplier news","M&A","Trade shows","Regulation & recalls","Market data","Industry tech & AI"];
 const FEED_TYPES = ["New page or section","Site feature","AI & tools","Content strategy","Product line","Brand & positioning","Campaign","Partnership & M&A","Performance & ranking"];
 const CATEGORIES = ["E-commerce distributor","Swag platform","Web-to-print giant","Distributor network","New entrant / marketplace","Supplier"];
-const WATCH_KINDS = {page:"New page", content:"New content page", product:"New product", post:"Blog post", industry:"Industry headline"};
+const WATCH_KINDS = {page:"New page", content:"New content page", product:"New product", post:"Blog post", job:"Job posting", industry:"Industry headline"};
 
 const S = {
   track:"w4h", tab:"feed",
   competitors:[], signals:[], news:[], feed:[], runs:[], pages:[],
-  ready:{competitors:false, signals:false, news:false, feed:false, runs:false, pages:false},
+  boards:[], pagechanges:[], gaps:[], sigView:"list",
+  ready:{competitors:false, signals:false, news:false, feed:false, runs:false, pages:false, boards:false, pagechanges:false, gaps:false},
   canWrite:true, db:null, armed:null
 };
 const $ = id => document.getElementById(id);
@@ -298,6 +337,10 @@ function filtered(list, kind){
     if(kind==="feed" && m && r.type!==m) return false;
     if(kind==="competitors" && m && r.category!==m) return false;
     if(kind==="watch" && m && r.kind!==m) return false;
+    if(kind==="board" && m==="changed" && !r.changed) return false;
+    if(kind==="board" && m==="offers" && !(r.offers||[]).length) return false;
+    if(kind==="board" && m==="blocked" && r.status==="ok") return false;
+    if(kind==="board" && m==="home" && r.label!=="Homepage") return false;
     if(kind==="signals" && st && r.status!==st) return false;
     if(kind!=="competitors" && kind!=="watch" && imp && (+r.impact||0) < imp) return false;
     if(kind!=="competitors" && wk && (r.date||"") < since) return false;
@@ -318,17 +361,22 @@ function renderControls(){
   else if(S.tab==="news") keep("fModule", opts(NEWS_CATS,null,"All categories"));
   else if(S.tab==="feed") keep("fModule", opts(FEED_TYPES,null,"All launch types"));
   else if(S.tab==="watch") keep("fModule", `<option value="">Everything new</option>` + Object.entries(WATCH_KINDS).map(([k,v])=>`<option value="${k}">${esc(v)}</option>`).join(""));
-  else keep("fModule", opts(CATEGORIES,null,"All competitor types"));
+  else if(S.tab==="pagewatch") keep("fModule", `<option value="">All watched pages</option><option value="changed">Changed this week</option><option value="offers">Showing offers</option><option value="home">Homepages only</option><option value="blocked">Blocked or errors</option>`);
+  else if(S.tab==="competitors") keep("fModule", opts(CATEGORIES,null,"All competitor types"));
+  if(S.tab==="gaps") $("fModule").hidden=true;
   $("fStatus").hidden = S.tab!=="signals";
   keep("fStatus", opts(STATUSES,null,"Any status"));
-  $("fImpact").hidden = S.tab==="competitors" || S.tab==="watch";
-  $("fWeek").parentElement.hidden = S.tab==="competitors";
+  const noAdd = ["watch","pagewatch","gaps"].includes(S.tab);
+  $("fImpact").hidden = S.tab==="competitors" || noAdd;
+  $("fWeek").parentElement.hidden = S.tab==="competitors" || S.tab==="pagewatch" || S.tab==="gaps";
+  $("fStatus").hidden = S.tab!=="signals";
+  $("fQ").hidden = S.tab==="gaps";
   $("addBtn").textContent = {feed:"Log launch",signals:"Log signal",news:"Log news",competitors:"Add competitor",watch:""}[S.tab];
   $("fdComp").innerHTML = comps().length ? opts(comps().map(c=>c.name).sort()) : `<option value="">Add a competitor first</option>`;
   $("fdType").innerHTML = opts(FEED_TYPES);
   $("fdBrand").innerHTML = opts(["All brands",...brands]);
   $("cpCat").innerHTML = opts(CATEGORIES);
-  $("addBtn").hidden = !S.canWrite || S.tab==="watch";
+  $("addBtn").hidden = !S.canWrite || noAdd;
   // form selects
   $("sgBrand").innerHTML = opts(brands);
   $("sgModule").innerHTML = opts(MODULES);
@@ -359,7 +407,34 @@ function delBtn(kind,id){
 
 function emptyState(title, text){ return `<div class="list"><div class="empty"><strong>${esc(title)}</strong><span>${esc(text)}</span></div></div>`; }
 
+// Signals tab: list view or a week-by-week offer calendar
 function renderSignals(){
+  const toggle = `<div class="seg" role="group" aria-label="Signals view" style="align-self:flex-start">
+    <button type="button" data-sigview="list" aria-pressed="${S.sigView==="list"}">List</button>
+    <button type="button" data-sigview="calendar" aria-pressed="${S.sigView==="calendar"}">Offer calendar</button></div>`;
+  return `<div class="stack">${toggle}${S.sigView==="calendar" ? renderOfferCalendar() : renderSignalList()}</div>`;
+}
+
+function weekStart(d){ const x=new Date(d+"T00:00:00"); const day=(x.getDay()+6)%7; x.setDate(x.getDate()-day); return x.toISOString().slice(0,10); }
+
+function renderOfferCalendar(){
+  if(!S.ready.signals) return emptyState("Loading signals…","Connecting to the shared tracker.");
+  const offers = filtered(sigs(),"signals").filter(s=>s.module==="Offer / coupon" && s.date);
+  if(!offers.length) return emptyState("No offers logged yet","Offers appear here as the weekly page watch spots them on competitor sites, or as the team logs them from competitor emails.");
+  // last 12 weeks, newest on the right
+  const weeks=[]; let w=weekStart(today());
+  for(let i=0;i<12;i++){ weeks.unshift(w); const d=new Date(w+"T00:00:00"); d.setDate(d.getDate()-7); w=d.toISOString().slice(0,10); }
+  const byComp={};
+  offers.forEach(s=>{ const ws=weekStart(s.date); if(ws<weeks[0]) return; (byComp[s.competitorName] ||= {})[ws] = [...((byComp[s.competitorName]||{})[ws]||[]), s]; });
+  const names=Object.keys(byComp).sort();
+  if(!names.length) return emptyState("No offers in the last 12 weeks","Older offers are in the List view.");
+  const wk = d => new Date(d+"T00:00:00").toLocaleDateString(undefined,{day:"numeric",month:"short"});
+  return `<div class="tablewrap"><table class="cal"><thead><tr><th class="label">Competitor</th>${weeks.map(d=>`<th class="label">${esc(wk(d))}</th>`).join("")}</tr></thead>
+    <tbody>${names.map(n=>`<tr><td><strong>${esc(n)}</strong></td>${weeks.map(d=>{ const c=byComp[n][d]||[]; return `<td>${c.length?`<span class="dot" title="${esc(c.map(s=>s.summary).join("\n"))}">${c.length}</span>`:""}</td>`; }).join("")}</tr>`).join("")}</tbody></table></div>
+    <p class="small">Each dot is the number of offers seen that week. Hover for the offer text. Use this to time your own coupon sends before theirs.</p>`;
+}
+
+function renderSignalList(){
   if(!S.ready.signals) return emptyState("Loading signals…","Connecting to the shared tracker.");
   const all=sigs();
   if(!all.length) return emptyState("No signals logged yet", S.canWrite ? "Use Log signal when a competitor changes an offer, page, ad, review pattern or email flow. Add competitors first so they appear in the picker." : "Signals appear here as the team logs them.");
@@ -409,6 +484,105 @@ function renderFeed(){
     </article>`).join("")}</div>`;
 }
 
+// Pages-in-sitemap over the last 12 crawls, as a tiny line
+function spark(cid){
+  const pts = S.runs.filter(inTrack).slice().reverse().map(r=>r.competitors?.[cid]?.urlCount).filter(v=>typeof v==="number");
+  if(pts.length<2) return `<span class="small">Builds weekly</span>`;
+  const W=90,H=24,min=Math.min(...pts),max=Math.max(...pts),rng=(max-min)||1;
+  const xy=pts.map((v,i)=>[ (i/(pts.length-1))*(W-4)+2, H-3-((v-min)/rng)*(H-6) ]);
+  const last=xy[xy.length-1], up=pts[pts.length-1]>=pts[0];
+  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Pages trend ${pts[0]} to ${pts[pts.length-1]}">
+    <polyline points="${xy.map(p=>p.join(",")).join(" ")}" fill="none" stroke="var(--muted)" stroke-width="1.5"/>
+    <circle cx="${last[0]}" cy="${last[1]}" r="2.5" fill="${up?"var(--ok)":"var(--hi)"}"/></svg>`;
+}
+
+// ---------- Page watch: screenshots, offers, banners, nav and tech of the pages that convert ----------
+function chipList(arr, cls="", max=99){ return (arr||[]).slice(0,max).map(x=>`<span class="chip ${cls}">${esc(x)}</span>`).join(""); }
+function diffChips(d){ return d ? chipList(d.added,"add",12)+chipList(d.removed,"rem",12) : ""; }
+
+function renderPageWatch(){
+  if(!S.ready.boards || !S.ready.pagechanges) return emptyState("Loading page watch…","Connecting to the shared tracker.");
+  const board = S.boards.find(inTrack);
+  if(!board) return emptyState("No page checks yet","Each week the crawler opens competitor homepages and key pages, saves a screenshot and records offers, banners, navigation and tech.");
+  const b=$("fBrand").value, q=$("fQ").value.trim().toLowerCase();
+  let pages = filtered(board.pages||[],"board").filter(p=>!b || p.brand===b);
+  if(q) pages = pages.filter(p=>[p.competitorName,p.label,p.title,(p.offers||[]).join(" "),(p.banners||[]).join(" "),(p.tech||[]).join(" ")].join(" ").toLowerCase().includes(q));
+  const changes = S.pagechanges.filter(inTrack).filter(c=>!b || c.brand===b).slice(0,40);
+  const all = board.pages||[];
+  const head = `<div class="runbar"><span>Last check <b>${esc(fmtDate(board.date))}</b></span><span>Pages watched <b>${all.length}</b></span><span>Changed <b>${all.filter(p=>p.changed).length}</b></span><span>Showing offers <b>${all.filter(p=>(p.offers||[]).length).length}</b></span><span>Blocked <b>${all.filter(p=>p.status!=="ok").length}</b></span></div>`;
+  const changeLog = !changes.length ? `<div class="list"><div class="empty"><strong>No changes recorded yet</strong><span>This week's check is the baseline. Changes to offers, banners, headlines, navigation and tech appear here from next week.</span></div></div>`
+   : `<div class="list">${changes.map(c=>{ const ch=c.changes||{}; return `<article class="row">
+      <div class="meta"><span class="mono">${esc(fmtDate(c.date))}</span><span class="tag brand">${esc(c.brand)}</span></div>
+      <div class="body">
+        <div class="tags"><strong style="color:var(--ink)">${esc(c.competitorName)}</strong><span>${esc(c.label)}</span></div>
+        <h3>${esc(c.summary)}</h3>
+        <dl class="diffgrid">
+          ${ch.offers?`<dt>Offers</dt><dd><div class="chips">${diffChips(ch.offers)}</div></dd>`:""}
+          ${ch.banners?`<dt>Banners</dt><dd><div class="chips">${diffChips(ch.banners)}</div></dd>`:""}
+          ${ch.h1?`<dt>Headline</dt><dd><div class="chips">${diffChips(ch.h1)}</div></dd>`:""}
+          ${ch.nav?`<dt>Navigation</dt><dd><div class="chips">${diffChips(ch.nav)}</div></dd>`:""}
+          ${ch.tech?`<dt>Tech</dt><dd><div class="chips">${diffChips(ch.tech)}</div></dd>`:""}
+          ${ch.content?`<dt>Careers page</dt><dd><div class="chips">${diffChips(ch.content)}</div></dd>`:""}
+          ${ch.title?`<dt>Page title</dt><dd><span class="chip rem">${esc(ch.title.from)}</span> <span class="chip add">${esc(ch.title.to)}</span></dd>`:""}
+        </dl>
+        <div class="thumbs">${c.prevShot?`<a href="${esc(c.prevShot)}" target="_blank" rel="noopener" title="Before"><img src="${esc(c.prevShot)}" alt="Before: ${esc(c.competitorName)} ${esc(c.label)}" loading="lazy"></a>`:""}${c.shot?`<a href="${esc(c.shot)}" target="_blank" rel="noopener" title="After"><img src="${esc(c.shot)}" alt="After: ${esc(c.competitorName)} ${esc(c.label)}" loading="lazy"></a>`:""}</div>
+        ${safeUrl(c.url)?`<a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">Open page</a>`:""}
+      </div>
+      <div class="side">${S.canWrite?`<button type="button" class="btn small" data-promotechange="${esc(c.id)}">Log as launch</button>`:""}</div>
+    </article>`; }).join("")}</div>`;
+  const cards = !pages.length ? emptyState("Nothing matches these filters","Clear a filter to see more pages.") : `<div class="board">${pages.map(p=>{
+    const st = p.status!=="ok" ? `<span class="status blocked">Blocked</span>` : p.changed ? `<span class="status partial">Changed</span>` : p.baseline ? `<span class="status baseline">Baseline</span>` : `<span class="status ok">No change</span>`;
+    return `<article class="card${p.changed?" changed":""}">
+      ${p.shot?`<a href="${esc(p.shot)}" target="_blank" rel="noopener"><img class="shot" src="${esc(p.shot)}" alt="${esc(p.competitorName)} ${esc(p.label)} screenshot" loading="lazy"></a>`:`<div class="shot-ph">${p.status!=="ok"?"Site blocked the browser":"No screenshot"}</div>`}
+      <div class="cb">
+        <div class="tags"><strong style="color:var(--ink)">${esc(p.competitorName)}</strong><span>${esc(p.label)}</span>${st}</div>
+        ${p.title?`<p class="small" style="margin:0">${esc(p.title)}</p>`:""}
+        ${(p.banners||[]).length?`<div class="chips">${chipList(p.banners,"",2)}</div>`:""}
+        ${(p.offers||[]).length?`<div><div class="label">Offers and promises</div><div class="chips">${chipList(p.offers,"offer",6)}</div></div>`:""}
+        ${(p.tech||[]).length?`<details><summary>Tech stack (${p.tech.length})</summary><div class="chips" style="margin-top:6px">${chipList(p.tech)}</div></details>`:""}
+        ${(p.nav||[]).length?`<details><summary>Navigation (${p.nav.length})</summary><div class="chips" style="margin-top:6px">${chipList(p.nav)}</div></details>`:""}
+        ${safeUrl(p.url)?`<a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener" class="small">Open live page</a>`:""}
+      </div></article>`; }).join("")}</div>`;
+  return `<div class="stack">${head}<h2 style="font-size:17px">What changed</h2>${changeLog}<h2 style="font-size:17px">Pages right now</h2>${cards}</div>`;
+}
+
+// ---------- Gaps: page types competitors invest in that our brands lack ----------
+function renderGaps(){
+  if(!S.ready.gaps) return emptyState("Loading gaps…","Connecting to the shared tracker.");
+  const g = S.gaps.find(inTrack);
+  if(!g) return emptyState("No gap analysis yet","The weekly crawl counts page types on every competitor site and on our own brand sites.");
+  const types = g.types||[], comps = (g.sites||[]).filter(s=>!s.own), own = (g.sites||[]).filter(s=>s.own);
+  const brand = $("fBrand").value || "Proimprint";
+  const me = own.find(s=>s.brand===brand) || own[0];
+  const median = a => { const s=[...a].sort((x,y)=>x-y); const m=Math.floor(s.length/2); return s.length? (s.length%2? s[m] : (s[m-1]+s[m])/2) : 0; };
+  // a gap = most competitors have real depth here and we have little
+  const gaps = types.map(t=>{
+    const vals = comps.map(c=>c.counts?.[t.key]||0);
+    const med = median(vals), leader = comps.reduce((a,c)=>((c.counts?.[t.key]||0)>(a.counts?.[t.key]||0)?c:a), comps[0]||{});
+    const mine = me?.counts?.[t.key]||0;
+    const have = vals.filter(v=>v>=5).length;
+    return {t, med, leader, lead:leader?.counts?.[t.key]||0, mine, have, score: (mine < Math.max(3, med*0.25) && have>=3) ? have*10 + Math.log10(med+1) : 0};
+  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,6);
+  const gapList = !me ? "" : !gaps.length ? `<div class="list"><div class="empty"><strong>No clear gaps for ${esc(me.name)}</strong><span>${esc(me.name)} matches or beats the typical competitor on every page type tracked.</span></div></div>`
+    : `<div class="list">${gaps.map(x=>`<div class="gapcard">
+        <div><h3 style="margin:0 0 4px">${esc(x.t.label)}</h3>
+          <span class="small">${x.have} of ${comps.length} competitors have 5+ pages. Leader: ${esc(x.leader.name)}.</span>
+          <div class="links" style="margin-top:6px">${(x.leader.examples?.[x.t.key]||[]).slice(0,3).map(u=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").slice(0,48))}</a>`).join("")}</div></div>
+        <div class="nums">${esc(me.name)} <b>${x.mine.toLocaleString()}</b> · median ${Math.round(x.med).toLocaleString()} · ${esc(x.leader.name)} ${x.lead.toLocaleString()}</div>
+      </div>`).join("")}</div>`;
+  const colMax = Object.fromEntries(types.map(t=>[t.key, Math.max(1,...(g.sites||[]).map(s=>s.counts?.[t.key]||0))]));
+  const heat = (k,v) => v ? `background:color-mix(in srgb, var(--accent) ${Math.round(8+40*Math.log10(v+1)/Math.log10(colMax[k]+1))}%, transparent)` : "";
+  const row = s => `<tr class="${s.own?"own":""}"><td>${esc(s.name)}${s.own?` <span class="small">(ours)</span>`:""}</td>${types.map(t=>{ const v=s.counts?.[t.key]||0; return `<td class="cell" style="${heat(t.key,v)}" title="${esc((s.examples?.[t.key]||[]).join("\n"))}">${v?v.toLocaleString():"·"}</td>`; }).join("")}</tr>`;
+  const table = `<div class="tablewrap"><table class="heat"><thead><tr><th class="label">Site</th>${types.map(t=>`<th class="label vert">${esc(t.label)}</th>`).join("")}</tr></thead>
+    <tbody>${own.map(row).join("")}${comps.sort((a,b)=>(b.urlCount||0)-(a.urlCount||0)).map(row).join("")}</tbody></table></div>`;
+  return `<div class="stack">
+    <div class="runbar"><span>Counted <b>${esc(fmtDate(g.date))}</b></span><span>Comparing <b>${esc(me?.name||"")}</b> with <b>${comps.length}</b> competitors</span><span class="small">Pick another brand in the brand filter</span></div>
+    <h2 style="font-size:17px">Biggest gaps for ${esc(me?.name||"")}</h2>${gapList}
+    <h2 style="font-size:17px">Page types by site</h2>${table}
+    <p class="small">Counts are landing-style pages found in each site's sitemap (products and blog posts excluded, except guides, FAQs and reviews, which are counted by folder). Hover a number to see example URLs.</p>
+  </div>`;
+}
+
 function renderWatch(){
   if(!S.ready.runs || !S.ready.pages) return emptyState("Loading site watch…","Connecting to the shared tracker.");
   const run = S.runs.find(inTrack);
@@ -418,7 +592,7 @@ function renderWatch(){
   const total = rows.reduce((s,[,c])=>s+(c.urlCount||0),0);
   const byName = Object.fromEntries(comps().map(c=>[c.id,c]));
   const table = `<div class="tablewrap"><table>
-    <thead><tr><th class="label">Competitor</th><th class="label">Status</th><th class="label">Pages in sitemap</th><th class="label">Change</th><th class="label">Where they build pages (top sections)</th><th class="label">Research links</th></tr></thead>
+    <thead><tr><th class="label">Competitor</th><th class="label">Status</th><th class="label">Pages in sitemap</th><th class="label">Change</th><th class="label">Trend</th><th class="label">Where they build pages (top sections)</th><th class="label">Research links</th></tr></thead>
     <tbody>${rows.map(([cid,c])=>{
       const comp = byName[cid] || {name:c.name, domain:c.domain};
       const secs = Object.entries(c.topSections||{}).filter(([s])=>s!=="(home)").slice(0,6);
@@ -428,7 +602,8 @@ function renderWatch(){
         <td><strong>${esc(c.name)}</strong><div class="path">${esc(c.domain||"")}</div></td>
         <td><span class="status ${esc(st)}" title="${esc(c.note||"")}">${esc(stLabel)}</span></td>
         <td class="num">${fmtN(c.urlCount)}</td>
-        <td class="delta">${st==="blocked"?"–":`<span class="up">+${fmtN(c.addedCount||0)}</span> / <span class="down">−${fmtN(c.removedCount||0)}</span>`}</td>
+        <td class="delta">${st==="blocked"||st==="paused"?"–":`<span class="up">+${fmtN(c.addedCount||0)}</span> / <span class="down">−${fmtN(c.removedCount||0)}</span>`}</td>
+        <td>${spark(cid)}</td>
         <td><div class="tags">${secs.map(([s,n])=>`<span class="tag">/${esc(s)} <span class="mono">${fmtN(n)}</span></span>`).join("") || (st==="blocked"?"Track manually with the links":"")}</div></td>
         <td style="min-width:220px">${intelLinks(comp)}</td>
       </tr>`; }).join("")}</tbody></table></div>`;
@@ -516,7 +691,7 @@ function renderCompetitors(){
 
 function render(){
   renderControls(); renderStats();
-  $("view").innerHTML = S.tab==="feed" ? renderFeed() : S.tab==="watch" ? renderWatch() : S.tab==="signals" ? renderSignals() : S.tab==="news" ? renderNews() : renderCompetitors();
+  $("view").innerHTML = S.tab==="feed" ? renderFeed() : S.tab==="watch" ? renderWatch() : S.tab==="pagewatch" ? renderPageWatch() : S.tab==="gaps" ? renderGaps() : S.tab==="signals" ? renderSignals() : S.tab==="news" ? renderNews() : renderCompetitors();
 }
 
 // ---------- Forms ----------
@@ -589,6 +764,16 @@ $("view").addEventListener("change",async e=>{
 });
 $("view").addEventListener("click",async e=>{
   const pr=e.target.closest("[data-promote]"); if(pr){ promote(pr.dataset.promote); return; }
+  const sv=e.target.closest("[data-sigview]"); if(sv){ S.sigView=sv.dataset.sigview; render(); return; }
+  const pc=e.target.closest("[data-promotechange]"); if(pc){
+    const c=S.pagechanges.find(x=>x.id===pc.dataset.promotechange); if(!c) return;
+    S.tab="feed"; render(); hideForms(); $("formFeed").hidden=false;
+    $("fdDate").value=c.date||today(); $("fdTitle").value=`${c.label}: ${c.summary.replace(/^Changed: /,"")}`; $("fdSource").value=c.url||"";
+    if([...$("fdComp").options].some(o=>o.value===c.competitorName)) $("fdComp").value=c.competitorName;
+    $("fdType").value = c.changes?.offers ? "Campaign" : c.changes?.tech ? "Site feature" : "New page or section";
+    const ch=c.changes||{}; $("fdWhat").value=[ch.offers&&("New offers: "+ch.offers.added.join(" | ")), ch.banners&&("New banners: "+ch.banners.added.join(" | ")), ch.nav&&("Nav added: "+ch.nav.added.join(", ")), ch.tech&&("Tech added: "+ch.tech.added.join(", ")+(ch.tech.removed.length?"; removed: "+ch.tech.removed.join(", "):""))].filter(Boolean).join("\n");
+    $("fdLesson").focus(); return;
+  }
   const b=e.target.closest("[data-del]"); if(!b||!S.db) return;
   const key=b.dataset.del+"/"+b.dataset.id;
   if(S.armed!==key){ S.armed=key; render(); return; }       // first click arms, second confirms
@@ -640,5 +825,8 @@ render();
   sub("feed", db.collection("feed").orderBy("date","desc").limit(1000));
   sub("runs", db.collection("runs").orderBy("runAt","desc").limit(12));
   sub("pages", db.collection("pages").orderBy("date","desc").limit(1000));
+  sub("boards", db.collection("boards").orderBy("date","desc").limit(3));
+  sub("pagechanges", db.collection("pagechanges").orderBy("date","desc").limit(300));
+  sub("gaps", db.collection("gaps").orderBy("date","desc").limit(3));
 })();
 </script>

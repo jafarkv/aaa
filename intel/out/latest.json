@@ -1,12 +1,9 @@
 {
- "runAt": "2026-11-14T02:23:48+00:00",
+ "runAt": "2026-11-16T06:08:37+00:00",
  "competitors": {
   "4imprint": {
    "name": "4imprint",
    "domain": "www.4imprint.com",
-   "sitemapSeeds": [
-    "https://www.4imprint.com/sitemap.xml"
-   ],
    "sitemapFiles": 5,
    "urlCount": 32259,
    "errors": [],
@@ -32,41 +29,92 @@
     "video": 1,
     "embroidered-apparel": 1
    },
+   "gaps": {
+    "deals": 15,
+    "proof": 1,
+    "speed": 14,
+    "eco": 9,
+    "brands": 10,
+    "stores": 4,
+    "occasion": 6,
+    "industry": 9,
+    "price": 1,
+    "guide": 546,
+    "faq": 87
+   },
+   "gapExamples": {
+    "deals": [
+     "https://www.4imprint.com/sale",
+     "https://www.4imprint.com/pricedrops",
+     "https://www.4imprint.com/sale/sg/1"
+    ],
+    "proof": [
+     "https://www.4imprint.com/reviews"
+    ],
+    "speed": [
+     "https://www.4imprint.com/tag/1/24-hour",
+     "https://www.4imprint.com/tag/1/24-hour/sg/1",
+     "https://www.4imprint.com/tag/1/24-hour/sg/189"
+    ],
+    "eco": [
+     "https://www.4imprint.com/tag/727/usa-made",
+     "https://www.4imprint.com/recyclable-plastic-bags",
+     "https://www.4imprint.com/taggroup/135/sustainable-cotton"
+    ],
+    "brands": [
+     "https://www.4imprint.com/taggroup/44/brand",
+     "https://www.4imprint.com/tag/196/nike",
+     "https://www.4imprint.com/tag/718/adidas"
+    ],
+    "stores": [
+     "https://www.4imprint.com/tag/634/tool-kits",
+     "https://www.4imprint.com/tag/567/tech-kits",
+     "https://www.4imprint.com/tag/730/display-kits"
+    ],
+    "occasion": [
+     "https://www.4imprint.com/sgroup/6/office-and-awards",
+     "https://www.4imprint.com/tag/136/awards-and-recognition",
+     "https://www.4imprint.com/sgroup/194/trade-show-and-signage"
+    ],
+    "industry": [
+     "https://www.4imprint.com/tag/670/gym-and-workout-towels",
+     "https://www.4imprint.com/tag/154/sports-and-fitness",
+     "https://www.4imprint.com/tag/158/healthcare"
+    ],
+    "price": [
+     "https://www.4imprint.com/mall/220/4imprint-budget-savers"
+    ],
+    "guide": [
+     "https://www.4imprint.com/blog",
+     "https://www.4imprint.com/blog/amplify",
+     "https://www.4imprint.com/blog/industrynews"
+    ],
+    "faq": [
+     "https://www.4imprint.com/blog/faq",
+     "https://www.4imprint.com/blog/faq/what-is-the-best-giveaway-for-marketing",
+     "https://www.4imprint.com/blog/faq/ways-to-distribute-corporate-gifts-so-employees-feel-valued"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": []
   },
   "customink": {
    "name": "Custom Ink",
    "domain": "www.customink.com",
-   "sitemapSeeds": [
-    "https://www.customink.com/sitemaps/custom.xml",
-    "https://www.customink.com/sitemaps/design_ideas.xml",
-    "https://www.customink.com/sitemaps/fundraising.xml",
-    "https://www.customink.com/sitemaps/inkofweek.xml",
-    "https://www.customink.com/sitemaps/inkofweek1.xml",
-    "https://www.customink.com/sitemaps/main.xml",
-    "https://www.customink.com/sitemaps/sitemap-lps.xml",
-    "https://www.customink.com/sitemaps/sitemap-plps.xml",
-    "https://www.customink.com/sitemaps/sitemap-filtered-plps.xml",
-    "https://www.customink.com/sitemaps/sitemap-pdps.xml",
-    "https://www.customink.com/sitemaps/stores.xml"
-   ],
-   "sitemapFiles": 11,
-   "urlCount": 114299,
+   "sitemapFiles": 16,
+   "urlCount": 209594,
    "errors": [],
    "byKind": {
     "page": 86668,
     "content": 426,
-    "product": 27205
+    "product": 122500
    },
    "topSections": {
+    "products": 121656,
     "photos": 87209,
-    "products": 26361,
     "fundraising": 230,
     "custom": 161,
     "design_ideas": 119,
@@ -81,22 +129,96 @@
     "super-rush": 1,
     "reviews": 1
    },
+   "gaps": {
+    "industry": 3405,
+    "brands": 83,
+    "eco": 46,
+    "deals": 132,
+    "price": 13,
+    "occasion": 2410,
+    "guide": 152,
+    "design": 2,
+    "faq": 35,
+    "speed": 53,
+    "stores": 11,
+    "samples": 1,
+    "proof": 2
+   },
+   "gapExamples": {
+    "industry": [
+     "https://www.customink.com/t-shirts/school-t-shirts",
+     "https://www.customink.com/t-shirts/school-club-shirts",
+     "https://www.customink.com/custom/school-spirit-wear"
+    ],
+    "brands": [
+     "https://www.customink.com/custom/carhartt",
+     "https://www.customink.com/custom/nike-golf-shirts-for-men",
+     "https://www.customink.com/custom/nike-golf-shirts"
+    ],
+    "eco": [
+     "https://www.customink.com/t-shirts/organic-cotton-t-shirts",
+     "https://www.customink.com/custom/made-in-usa-t-shirts",
+     "https://www.customink.com/t-shirts/recycled-t-shirts"
+    ],
+    "deals": [
+     "https://www.customink.com/t-shirts/special-education-shirts",
+     "https://www.customink.com/photos/special-edition-m-m-s",
+     "https://www.customink.com/photos/tags/special-needs"
+    ],
+    "price": [
+     "https://www.customink.com/custom/cheap-school-uniforms",
+     "https://www.customink.com/t-shirts/bulk-tie-dye-shirts",
+     "https://www.customink.com/custom/cheap-duffle-bags"
+    ],
+    "occasion": [
+     "https://www.customink.com/custom/wedding-koozie-koolers",
+     "https://www.customink.com/custom/graduation-yard-signs",
+     "https://www.customink.com/fundraising"
+    ],
+    "guide": [
+     "https://www.customink.com/design_ideas/search/family-reunion",
+     "https://www.customink.com/design_ideas/search/college-club",
+     "https://www.customink.com/design_ideas/search/sorority"
+    ],
+    "design": [
+     "https://www.customink.com/fundraising/design-templates",
+     "https://www.customink.com/tools/t-shirts-logo-maker"
+    ],
+    "faq": [
+     "https://www.customink.com/help_center/fundraising-where-is-my-dashboard-and-what-does-it-do",
+     "https://www.customink.com/help_center/fundraising-can-i-buy-extra-items-from-my-own-fundraiser",
+     "https://www.customink.com/help_center/fundraising-i-ordered-from-a-custom-ink-fundraiser-when-will-i-get-my-shirt"
+    ],
+    "speed": [
+     "https://www.customink.com/photos/krush-k-pop-rush-club",
+     "https://www.customink.com/photos/tags/hero-rush",
+     "https://www.customink.com/photos/rush-arts-chamber-singers"
+    ],
+    "stores": [
+     "https://www.customink.com/photos/bbcs-yearbook-distribution",
+     "https://www.customink.com/photos/ready-for-distribution",
+     "https://www.customink.com/photos/tags/yearbook-distribution-party"
+    ],
+    "samples": [
+     "https://www.customink.com/photos/eagerly-waiting-for-free-samples"
+    ],
+    "proof": [
+     "https://www.customink.com/reviews",
+     "https://www.customink.com/products/bags/briefcase-messenger-bags/essential-portfolio-messenger-bag/2372900"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": [
     "https://www.customink.com/blog/feed/"
-   ]
+   ],
+   "facetAdded": 95295
   },
   "epromos": {
    "name": "ePromos",
    "domain": "www.epromos.com",
-   "sitemapSeeds": [
-    "https://www.epromos.com/xmlsitemap.php"
-   ],
    "sitemapFiles": 6,
    "urlCount": 5226,
    "errors": [],
@@ -122,32 +244,94 @@
     "technology-mobile": 12,
     "press": 10
    },
+   "gaps": {
+    "stores": 15,
+    "occasion": 29,
+    "eco": 7,
+    "brands": 88,
+    "speed": 1,
+    "proof": 2,
+    "industry": 39,
+    "deals": 4,
+    "guide": 308,
+    "faq": 3,
+    "price": 5
+   },
+   "gapExamples": {
+    "stores": [
+     "https://www.epromos.com/capabilities/gift-packaging-fulfillment/",
+     "https://www.epromos.com/capabilities/corporate-gifting/",
+     "https://www.epromos.com/what-we-do/branded-company-stores/"
+    ],
+    "occasion": [
+     "https://www.epromos.com/collections/spring-gifts-giveaways/",
+     "https://www.epromos.com/collections/valentines-day/",
+     "https://www.epromos.com/holiday-hub/"
+    ],
+    "eco": [
+     "https://www.epromos.com/collections/organic/",
+     "https://www.epromos.com/collections/eco-friendly/",
+     "https://www.epromos.com/collections/sustainable/"
+    ],
+    "brands": [
+     "https://www.epromos.com/capabilities/brand-strategy/",
+     "https://www.epromos.com/brands/nike/",
+     "https://www.epromos.com/brands/spyder/"
+    ],
+    "speed": [
+     "https://www.epromos.com/services/rush-service/"
+    ],
+    "proof": [
+     "https://www.epromos.com/services/case-studies/emmory-reagan-shapses-foundation/",
+     "https://www.epromos.com/reviews/"
+    ],
+    "industry": [
+     "https://www.epromos.com/collections/education-school/",
+     "https://www.epromos.com/collections/back-to-school/",
+     "https://www.epromos.com/collections/house-real-estate/"
+    ],
+    "deals": [
+     "https://www.epromos.com/collections/closeouts/",
+     "https://www.epromos.com/collections/year-end-specials/",
+     "https://www.epromos.com/support/terms-conditions-sale/"
+    ],
+    "guide": [
+     "https://www.epromos.com/resources/how-to-add-your-logo/",
+     "https://www.epromos.com/blog/",
+     "https://www.epromos.com/resources/accessibility/"
+    ],
+    "faq": [
+     "https://www.epromos.com/support/terms-conditions-sale/",
+     "https://www.epromos.com/resources/faqs/",
+     "https://www.epromos.com/support/privacy-security/"
+    ],
+    "price": [
+     "https://www.epromos.com/holiday-gifting-by-budget",
+     "https://www.epromos.com/corporate-gifts/corporate-gifts-5-to-10/",
+     "https://www.epromos.com/corporate-gifts/corporate-gifts-20-to-50/"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": []
   },
   "qlp": {
    "name": "Quality Logo Products",
    "domain": "www.qualitylogoproducts.com",
-   "sitemapSeeds": [
-    "https://www.qualitylogoproducts.com/sitemap.xml"
-   ],
    "sitemapFiles": 21,
-   "urlCount": 28032,
+   "urlCount": 28017,
    "errors": [],
    "byKind": {
-    "page": 27486,
+    "page": 27471,
     "content": 523,
     "product": 23
    },
    "topSections": {
     "tradeshow-promotions": 2362,
     "stress-balls": 1528,
-    "pen-promotional": 994,
+    "pen-promotional": 987,
     "custom-pens": 963,
     "custom-bags": 653,
     "custom-totebags": 600,
@@ -157,24 +341,94 @@
     "desktop-items": 413,
     "blog": 411,
     "custom-waterbottles": 395,
-    "bag-tote": 367,
+    "bag-tote": 365,
     "custom-magnets": 338,
     "custom-travelmugs": 323
    },
+   "gaps": {
+    "stores": 280,
+    "industry": 375,
+    "occasion": 2674,
+    "price": 58,
+    "eco": 1021,
+    "brands": 217,
+    "deals": 16,
+    "speed": 7,
+    "faq": 65,
+    "guide": 411
+   },
+   "gapExamples": {
+    "stores": [
+     "https://www.qualitylogoproducts.com/personalized-sewing-kits.htm",
+     "https://www.qualitylogoproducts.com/corporate-gifts.htm",
+     "https://www.qualitylogoproducts.com/custom-technology-kits.htm"
+    ],
+    "industry": [
+     "https://www.qualitylogoproducts.com/promotional-automotive-accessories.htm",
+     "https://www.qualitylogoproducts.com/dental-hygiene.htm",
+     "https://www.qualitylogoproducts.com/school-supplies.htm"
+    ],
+    "occasion": [
+     "https://www.qualitylogoproducts.com/tower-awards.htm",
+     "https://www.qualitylogoproducts.com/desktop-awards.htm",
+     "https://www.qualitylogoproducts.com/holidays.htm"
+    ],
+    "price": [
+     "https://www.qualitylogoproducts.com/bulk-face-shields.htm",
+     "https://www.qualitylogoproducts.com/cheap-disposable-pens.htm",
+     "https://www.qualitylogoproducts.com/wholesale-and-trade.htm"
+    ],
+    "eco": [
+     "https://www.qualitylogoproducts.com/custom-eco-friendly-water-bottles.htm",
+     "https://www.qualitylogoproducts.com/custom-usa-made-hats.htm",
+     "https://www.qualitylogoproducts.com/eco-friendly-promotional-products.htm"
+    ],
+    "brands": [
+     "https://www.qualitylogoproducts.com/orca-brand-promotional-products.htm",
+     "https://www.qualitylogoproducts.com/corkcicle-brand-promotional-products.htm",
+     "https://www.qualitylogoproducts.com/miir-brand-promotional-products.htm"
+    ],
+    "deals": [
+     "https://www.qualitylogoproducts.com/promotional-products-sale.htm",
+     "https://www.qualitylogoproducts.com/closeout-promotional-items.htm",
+     "https://www.qualitylogoproducts.com/faq/discounts-for-resellers.htm"
+    ],
+    "speed": [
+     "https://www.qualitylogoproducts.com/rush-promotional-products.htm",
+     "https://www.qualitylogoproducts.com/faq/do-you-offer-rush-service.htm",
+     "https://www.qualitylogoproducts.com/custom-magnets/24-hour-business-card.htm"
+    ],
+    "faq": [
+     "https://www.qualitylogoproducts.com/faq/actual-imprint-area.htm",
+     "https://www.qualitylogoproducts.com/faq/all-about-white-imprints.htm",
+     "https://www.qualitylogoproducts.com/faq/artwork-intellectual-property-ownership.htm"
+    ],
+    "guide": [
+     "https://www.qualitylogoproducts.com/blog/what-are-the-differences-between-a-padfolio-and-portfolio/",
+     "https://www.qualitylogoproducts.com/blog/embroidery-vs-screen-printing-whats-the-difference/",
+     "https://www.qualitylogoproducts.com/blog/apparel-logo-print-location/"
+    ]
+   },
    "status": "ok",
-   "addedCount": 0,
-   "removedCount": 0,
-   "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
+   "addedCount": 2,
+   "removedCount": 17,
+   "added": [
+    {
+     "url": "https://www.qualitylogoproducts.com/custom-wristbands-bracelets/stress-relief-silicone-wristband-tactiletouch.htm",
+     "kind": "page",
+     "section": "custom-wristbands-bracelets"
+    },
+    {
+     "url": "https://www.qualitylogoproducts.com/embroidered-beanies/fleece-lined-beanie-winteridge.htm",
+     "kind": "page",
+     "section": "embroidered-beanies"
+    }
+   ],
    "feeds": []
   },
   "totallypromotional": {
    "name": "Totally Promotional",
    "domain": "www.totallypromotional.com",
-   "sitemapSeeds": [
-    "https://www.totallypromotional.com/sitemap-index.xml"
-   ],
    "sitemapFiles": 5,
    "urlCount": 20713,
    "errors": [],
@@ -200,55 +454,94 @@
     "drinkware": 8,
     "table-covers": 7
    },
+   "gaps": {
+    "eco": 246,
+    "occasion": 115,
+    "industry": 146,
+    "stores": 165,
+    "price": 38,
+    "brands": 202,
+    "speed": 4,
+    "deals": 10,
+    "design": 93,
+    "guide": 30
+   },
+   "gapExamples": {
+    "eco": [
+     "https://www.totallypromotional.com/mr-recycle-stress-reliever.html",
+     "https://www.totallypromotional.com/recycled-cotton-pocket-drawstring-bag.html",
+     "https://www.totallypromotional.com/vaquero-recycled-leather-journal.html"
+    ],
+    "occasion": [
+     "https://www.totallypromotional.com/awareness-ribbon-stress-reliever.html",
+     "https://www.totallypromotional.com/valentine-heart-stress-reliever.html",
+     "https://www.totallypromotional.com/awareness-duck.html"
+    ],
+    "industry": [
+     "https://www.totallypromotional.com/construction-hat-stress-ball.html",
+     "https://www.totallypromotional.com/easy-slide-fitness-discs.html",
+     "https://www.totallypromotional.com/heart-fitness-step-pedometer.html"
+    ],
+    "stores": [
+     "https://www.totallypromotional.com/travel-sewing-kit.html",
+     "https://www.totallypromotional.com/travel-sewing-kit-full-color.html",
+     "https://www.totallypromotional.com/clean-up-pet-kit.html"
+    ],
+    "price": [
+     "https://www.totallypromotional.com/budget-tire-gauge.html",
+     "https://www.totallypromotional.com/budget-hipster-fanny-packs.html",
+     "https://www.totallypromotional.com/budget-hipster-fanny-packs-blank.html"
+    ],
+    "brands": [
+     "https://www.totallypromotional.com/18-oz-yeti-chug-engraved.html",
+     "https://www.totallypromotional.com/26-oz-yeti-chug-engraved.html",
+     "https://www.totallypromotional.com/36-oz-yeti-chug-engraved.html"
+    ],
+    "speed": [
+     "https://www.totallypromotional.com/bolle-rush-safety-glasses.html",
+     "https://www.totallypromotional.com/rush-stylus-highlighter-pen.html",
+     "https://www.totallypromotional.com/neon-rush-stylus-highlighter-pen.html"
+    ],
+    "deals": [
+     "https://www.totallypromotional.com/polyester-drawstring-bag-17x20-closeout.html",
+     "https://www.totallypromotional.com/tri-color-drawstring-bag-closeout.html",
+     "https://www.totallypromotional.com/everyday-drawstring-bag-closeout.html"
+    ],
+    "design": [
+     "https://www.totallypromotional.com/background-lip-balm-template-2214.html",
+     "https://www.totallypromotional.com/background-lip-balm-template-2222.html",
+     "https://www.totallypromotional.com/valentines-lip-balm-template-2223.html"
+    ],
+    "guide": [
+     "https://www.totallypromotional.com/in-the-news/25th-anniversary.html",
+     "https://www.totallypromotional.com/in-the-news/brand-name-products-increase-at-totally-promotional.html",
+     "https://www.totallypromotional.com/in-the-news/congressman-warren-davidson.html"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
-   "feeds": [
-    "https://blog.totallypromotional.com/feed/"
-   ],
-   "feedErrors": [
-    "https://blog.totallypromotional.com/feed/ -> HTTP 520"
-   ]
+   "feeds": []
   },
   "vistaprint": {
    "name": "Vistaprint",
    "domain": "www.vistaprint.com",
-   "sitemapSeeds": [
-    "https://www.vistaprint.com/sitemaps/main.xml",
-    "https://www.vistaprint.com/sitemaps/category.xml",
-    "https://www.vistaprint.com/sitemaps/product.xml",
-    "https://www.vistaprint.com/sitemaps/tlp/1.xml",
-    "https://www.vistaprint.com/sitemaps/tlp/2.xml",
-    "https://www.vistaprint.com/sitemaps/discovery.xml",
-    "https://www.vistaprint.com/hub/sitemap-galaxies.xml",
-    "https://www.vistaprint.com/sitemaps/inspiration/logos.xml",
-    "https://www.vistaprint.com/entitymap.json",
-    "https://www.vistaprint.com/es/sitemaps/main.xml",
-    "https://www.vistaprint.com/es/sitemaps/category.xml",
-    "https://www.vistaprint.com/es/sitemaps/product.xml",
-    "https://www.vistaprint.com/es/sitemaps/tlp/1.xml",
-    "https://www.vistaprint.com/es/sitemaps/tlp/2.xml",
-    "https://www.vistaprint.com/es/sitemaps/discovery.xml",
-    "https://www.vistaprint.com/es/hub/sitemaps.xml"
-   ],
    "sitemapFiles": 27,
-   "urlCount": 23121,
+   "urlCount": 23126,
    "errors": [
     "https://www.vistaprint.com/entitymap.json -> HTTP 200"
    ],
    "byKind": {
-    "page": 17983,
+    "page": 17988,
     "product": 304,
     "content": 4834
    },
    "topSections": {
-    "es": 9156,
+    "es": 9157,
     "logomaker": 4520,
-    "signs-posters": 2807,
-    "stationery": 1646,
+    "signs-posters": 2808,
+    "stationery": 1649,
     "marketing-materials": 1542,
     "hub": 735,
     "business-cards": 641,
@@ -261,54 +554,142 @@
     "digital-marketing": 25,
     "shop-by-collections": 13
    },
+   "gaps": {
+    "deals": 454,
+    "industry": 4968,
+    "brands": 49,
+    "occasion": 800,
+    "stores": 12,
+    "eco": 40,
+    "design": 7371,
+    "speed": 118,
+    "guide": 5396,
+    "price": 4,
+    "samples": 5
+   },
+   "gapExamples": {
+    "deals": [
+     "https://www.vistaprint.com/data-sale-opt-out",
+     "https://www.vistaprint.com/sales-tax-policy",
+     "https://www.vistaprint.com/military-discount"
+    ],
+    "industry": [
+     "https://www.vistaprint.com/legal-matters",
+     "https://www.vistaprint.com/shop-by-collections/health-fitness",
+     "https://www.vistaprint.com/clothing-bags/bags/luggage-gym-duffel-bags"
+    ],
+    "brands": [
+     "https://www.vistaprint.com/brand-ambassador-program/ambassador-stories",
+     "https://www.vistaprint.com/brand-ambassador-program",
+     "https://www.vistaprint.com/promotional-products/brands"
+    ],
+    "occasion": [
+     "https://www.vistaprint.com/promotional-products/writing-office/awards-recognition",
+     "https://www.vistaprint.com/personalized-christmas-gifts",
+     "https://www.vistaprint.com/signs-posters/holiday-christmas-signage"
+    ],
+    "stores": [
+     "https://www.vistaprint.com/sample-kits/free-business-card-sample-kit",
+     "https://www.vistaprint.com/sample-kits/business-sample-kit",
+     "https://www.vistaprint.com/sample-kits/free-business-card-sample-kit/business-card-samples"
+    ],
+    "eco": [
+     "https://www.vistaprint.com/business-cards/bamboo",
+     "https://www.vistaprint.com/business-cards/recycled-matte",
+     "https://www.vistaprint.com/signs-posters/aluminum-a-frame-signs/templates/food-beverage-industry/organic-food-stores"
+    ],
+    "design": [
+     "https://www.vistaprint.com/logomaker",
+     "https://www.vistaprint.com/photo-gifts/custom-mugs-glassware-drinkware/tall-latte-mugs/templates",
+     "https://www.vistaprint.com/photo-gifts/custom-mugs-glassware-drinkware/tall-latte-mugs/templates/business-theme"
+    ],
+    "speed": [
+     "https://www.vistaprint.com/holiday/fast-ship-holiday-cards",
+     "https://www.vistaprint.com/business-cards/fast-delivery/next-day",
+     "https://www.vistaprint.com/holiday/fast-ship-holiday-cards/templates"
+    ],
+    "guide": [
+     "https://www.vistaprint.com/signs-posters/aluminum-a-frame-signs/templates/education-services-industry/elementary-schools",
+     "https://www.vistaprint.com/signs-posters/aluminum-a-frame-signs/templates/education-services-industry/special-education",
+     "https://www.vistaprint.com/signs-posters/aluminum-a-frame-signs/templates/education-services-industry/child-care"
+    ],
+    "price": [
+     "https://www.vistaprint.com/business-cards/standard/templates/custom/bulk",
+     "https://www.vistaprint.com/clothing-bags/bulk-printing",
+     "https://www.vistaprint.com/clothing-bags/t-shirts/bulk-t-shirts-printing"
+    ],
+    "samples": [
+     "https://www.vistaprint.com/promotional-products/free-samples/drinkware-free-samples",
+     "https://www.vistaprint.com/promotional-products/free-samples/technology-free-samples",
+     "https://www.vistaprint.com/promotional-products/free-samples/writing-office-free-samples"
+    ]
+   },
    "status": "ok",
-   "addedCount": 0,
-   "removedCount": 0,
-   "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
-   "feeds": []
-  },
-  "nationalpen": {
-   "name": "National Pen",
-   "domain": "www.pens.com",
-   "sitemapSeeds": [
-    "https://www.pens.com/sitemapindex.xml"
+   "addedCount": 9,
+   "removedCount": 4,
+   "added": [
+    {
+     "url": "https://www.vistaprint.com/clothing-bags/hats/trucker-caps/port-company-r-brushed-twill-low-profile-cap",
+     "kind": "page",
+     "section": "clothing-bags"
+    },
+    {
+     "url": "https://www.vistaprint.com/clothing-bags/hats/trucker-caps/vistaprint-6-panel-baseball-cap",
+     "kind": "page",
+     "section": "clothing-bags"
+    },
+    {
+     "url": "https://www.vistaprint.com/es/articulos-de-papeleria/notas-personales/plantillas/dias-festivos-tema/dia-del-padre",
+     "kind": "page",
+     "section": "es"
+    },
+    {
+     "url": "https://www.vistaprint.com/es/ropa-bolsas/gorras/camionero/gorra-de-beisbol-de-6-paneles-de-vistaprint",
+     "kind": "page",
+     "section": "es"
+    },
+    {
+     "url": "https://www.vistaprint.com/es/ropa-bolsas/gorras/camionero/gorra-perfil-bajo-de-sarga-cepillada-de-port-company-r",
+     "kind": "page",
+     "section": "es"
+    },
+    {
+     "url": "https://www.vistaprint.com/signs-posters/canopy-tent-half-walls",
+     "kind": "page",
+     "section": "signs-posters"
+    },
+    {
+     "url": "https://www.vistaprint.com/stationery/greeting-cards/templates/fathers-day-occasion",
+     "kind": "page",
+     "section": "stationery"
+    },
+    {
+     "url": "https://www.vistaprint.com/stationery/greeting-cards/templates/retro-styles",
+     "kind": "page",
+     "section": "stationery"
+    },
+    {
+     "url": "https://www.vistaprint.com/stationery/note-cards/templates/holiday-theme/fathers-day",
+     "kind": "page",
+     "section": "stationery"
+    }
    ],
-   "sitemapFiles": 81,
-   "urlCount": 9155,
-   "errors": [],
-   "byKind": {
-    "product": 8652,
-    "content": 11,
-    "page": 492
-   },
-   "topSections": {
-    "us": 9155
-   },
-   "status": "baseline",
-   "addedCount": 0,
-   "removedCount": 0,
-   "recentLastmod": [],
    "feeds": []
   },
   "swag": {
    "name": "Swag.com / Swag Pro",
    "domain": "swag.com",
-   "sitemapSeeds": [
-    "https://swag.com/sitemap.xml"
-   ],
    "sitemapFiles": 1,
-   "urlCount": 8411,
+   "urlCount": 8404,
    "errors": [],
    "byKind": {
-    "page": 4335,
-    "product": 4075,
+    "page": 4329,
+    "product": 4074,
     "content": 1
    },
    "topSections": {
-    "collections": 4321,
-    "product": 4076,
+    "collections": 4315,
+    "product": 4075,
     "(home)": 1,
     "our-story": 1,
     "contact": 1,
@@ -323,61 +704,53 @@
     "companystores": 1,
     "commitment-to-accessibility": 1
    },
+   "gaps": {
+    "brands": 373,
+    "occasion": 153,
+    "industry": 67,
+    "faq": 1,
+    "proof": 2,
+    "stores": 2
+   },
+   "gapExamples": {
+    "brands": [
+     "https://swag.com/collections/brands",
+     "https://swag.com/collections/brands?page=2",
+     "https://swag.com/collections/brands?page=3"
+    ],
+    "occasion": [
+     "https://swag.com/collections/holiday",
+     "https://swag.com/collections/holiday?page=2",
+     "https://swag.com/collections/holiday?page=3"
+    ],
+    "industry": [
+     "https://swag.com/collections/fitness-recreation",
+     "https://swag.com/collections/fitness-recreation?page=2",
+     "https://swag.com/collections/fitness-recreation?page=3"
+    ],
+    "faq": [
+     "https://swag.com/faq"
+    ],
+    "proof": [
+     "https://swag.com/reviews",
+     "https://swag.com/past-work"
+    ],
+    "stores": [
+     "https://swag.com/gifting",
+     "https://swag.com/companystores"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
-   "removedCount": 0,
+   "removedCount": 1,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": [
     "https://swag.com/blog/feed"
    ]
   },
-  "swagup": {
-   "name": "SwagUp",
-   "domain": "www.swagup.com",
-   "sitemapSeeds": [
-    "https://www.swagup.com/sitemap.xml",
-    "https://www.swagup.com/sitemap.xml"
-   ],
-   "sitemapFiles": 1,
-   "urlCount": 741,
-   "errors": [],
-   "byKind": {
-    "page": 183,
-    "content": 558
-   },
-   "topSections": {
-    "blog": 549,
-    "integrations": 65,
-    "customer-stories": 33,
-    "collections": 24,
-    "book-time-with-me": 16,
-    "blog-categories": 9,
-    "quiz-result": 6,
-    "(home)": 1,
-    "fulfillment-performance": 1,
-    "terms-of-use": 1,
-    "membership-terms-of-service": 1,
-    "return-refund-policy": 1,
-    "gallery": 1,
-    "subscribe": 1,
-    "shop-terms-and-conditions": 1
-   },
-   "status": "ok",
-   "addedCount": 0,
-   "removedCount": 0,
-   "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
-   "feeds": []
-  },
   "stickermule": {
    "name": "Sticker Mule",
    "domain": "www.stickermule.com",
-   "sitemapSeeds": [
-    "https://cdn.stickermule.com/core/sitemaps/sitemap.xml"
-   ],
    "sitemapFiles": 1,
    "urlCount": 1413,
    "errors": [],
@@ -403,20 +776,76 @@
     "commissions": 1,
     "military": 1
    },
+   "gaps": {
+    "guide": 319,
+    "industry": 5,
+    "deals": 10,
+    "faq": 766,
+    "design": 30,
+    "occasion": 13,
+    "price": 3,
+    "brands": 1,
+    "eco": 5,
+    "speed": 1
+   },
+   "gapExamples": {
+    "guide": [
+     "https://www.stickermule.com/stickermule/blog",
+     "https://www.stickermule.com/write",
+     "https://www.stickermule.com/write/stickermule/updates-november-2-8-2026"
+    ],
+    "industry": [
+     "https://www.stickermule.com/legal/privacy",
+     "https://www.stickermule.com/legal/terms",
+     "https://www.stickermule.com/military"
+    ],
+    "deals": [
+     "https://www.stickermule.com/automatic-discounts",
+     "https://www.stickermule.com/deals",
+     "https://www.stickermule.com/deals/subscribe"
+    ],
+    "faq": [
+     "https://www.stickermule.com/support/chat",
+     "https://www.stickermule.com/stickermule/faqs/acrylic-charms",
+     "https://www.stickermule.com/stickermule/faqs/pins"
+    ],
+    "design": [
+     "https://www.stickermule.com/templates",
+     "https://www.stickermule.com/template/acrylic-charms",
+     "https://www.stickermule.com/template/custom-pins"
+    ],
+    "occasion": [
+     "https://www.stickermule.com/events",
+     "https://www.stickermule.com/uses/christmas-stickers",
+     "https://www.stickermule.com/uses/graduation-stickers"
+    ],
+    "price": [
+     "https://www.stickermule.com/uses/bulk-stickers",
+     "https://www.stickermule.com/uses/wholesale-stickers",
+     "https://www.stickermule.com/faqs/stickermule/how-to-ship-coffee-cheap"
+    ],
+    "brands": [
+     "https://www.stickermule.com/uses/hydro-flask-stickers"
+    ],
+    "eco": [
+     "https://www.stickermule.com/faqs/stickermule/are-paper-labels-eco-friendly",
+     "https://www.stickermule.com/faqs/stickermule/are-your-products-recyclable",
+     "https://www.stickermule.com/faqs/stickermule/packaging-tape-eco-friendly"
+    ],
+    "speed": [
+     "https://www.stickermule.com/faqs/stickermule/can-you-rush-my-order"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
-   "feeds": []
+   "feeds": [],
+   "openJobs": 3
   },
   "buildasign": {
    "name": "BuildASign",
    "domain": "www.buildasign.com",
-   "sitemapSeeds": [
-    "https://www.buildasign.com/sitemap.xml"
-   ],
    "sitemapFiles": 1,
    "urlCount": 945,
    "errors": [],
@@ -442,20 +871,1194 @@
     "magnetic-bumper-stickers": 22,
     "jumbo-cards": 20
    },
+   "gaps": {
+    "industry": 122,
+    "occasion": 81,
+    "faq": 2,
+    "deals": 15,
+    "stores": 6,
+    "guide": 1,
+    "proof": 1
+   },
+   "gapExamples": {
+    "industry": [
+     "https://www.buildasign.com/parking-signs/browse-hotel-parking",
+     "https://www.buildasign.com/garden-flags/browse-patriotic-healthcare",
+     "https://www.buildasign.com/jumbo-cards/browse-school-banners"
+    ],
+    "occasion": [
+     "https://www.buildasign.com/garden-flags/browse-graduation-sports",
+     "https://www.buildasign.com/feather-flags/browse-events",
+     "https://www.buildasign.com/custom-banners/browse-valentines-day"
+    ],
+    "faq": [
+     "https://www.buildasign.com/help",
+     "https://www.buildasign.com/faq"
+    ],
+    "deals": [
+     "https://www.buildasign.com/feather-flags/browse-car-sales",
+     "https://www.buildasign.com/retail-sales",
+     "https://www.buildasign.com/custom-signs/browse-garage-sale"
+    ],
+    "stores": [
+     "https://www.buildasign.com/sandwich-boards/browse-restaurant-bundles",
+     "https://www.buildasign.com/sandwich-boards/browse-panel-and-frame-bundles",
+     "https://www.buildasign.com/sandwich-boards/browse-retail-bundles"
+    ],
+    "guide": [
+     "https://www.buildasign.com/magnetic-business-cards/education"
+    ],
+    "proof": [
+     "https://www.buildasign.com/reviews"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
+   "feeds": []
+  },
+  "positivepromotions": {
+   "name": "Positive Promotions",
+   "domain": "www.positivepromotions.com",
+   "sitemapFiles": 8,
+   "urlCount": 23886,
+   "errors": [],
+   "byKind": {
+    "page": 2022,
+    "content": 342,
+    "product": 21522
+   },
+   "topSections": {
+    "tech-promotional-items-and-branded-gifts-for-it-companies": 49,
+    "blog": 45,
+    "real-estate-appreciation": 37,
+    "law-firm-promotional-products-gifts-and-giveaways": 34,
+    "christmas-gifts": 33,
+    "veterinary-gifts-and-promotional-products": 33,
+    "yearsofservicegifts": 33,
+    "christmas-technology-gifts": 32,
+    "fitness-promotional-products-gym-swag-and-trainer-gifts": 32,
+    "recognition-themes": 31,
+    "auto-repair-shop-promotional-products-and-mechanic-gifts": 31,
+    "construction-promotional-items-and-contractor-gifts": 31,
+    "dental-office-appreciation": 27,
+    "automotive-dealerships": 26,
+    "salon-swag-spa-gifts-and-promotional-items": 26
+   },
+   "gaps": {
+    "occasion": 570,
+    "stores": 25,
+    "industry": 553,
+    "guide": 181,
+    "deals": 17,
+    "brands": 17,
+    "price": 2,
+    "eco": 12,
+    "faq": 40,
+    "proof": 30,
+    "design": 2,
+    "speed": 26
+   },
+   "gapExamples": {
+    "occasion": [
+     "https://www.positivepromotions.com/employee-appreciation-recognition-gifts/c/m_1001_6/",
+     "https://www.positivepromotions.com/patriotic-giveaways/c/to_1001_77/",
+     "https://www.positivepromotions.com/christmas-gifts/c/to_1001_530/"
+    ],
+    "stores": [
+     "https://www.positivepromotions.com/custom-first-aid-kits/c/navpp_1001_201/",
+     "https://www.positivepromotions.com/build-your-own-amenity-kit/c/to_1001_536/",
+     "https://www.positivepromotions.com/custom-amenity-kits/c/navpp_1001_228/"
+    ],
+    "industry": [
+     "https://www.positivepromotions.com/teacher-t-shirts/c/tlvledu_1001_2/",
+     "https://www.positivepromotions.com/teacher-awards/c/tlvledu_1001_4/",
+     "https://www.positivepromotions.com/school-bus-safety-activities/c/tlvledu_1001_21/"
+    ],
+    "guide": [
+     "https://www.positivepromotions.com/education/c/tlvledu/",
+     "https://www.positivepromotions.com/early-childhood-education/c/eduearlychildhoodeducation/",
+     "https://www.positivepromotions.com/education-recruitment/c/to_1001_542/"
+    ],
+    "deals": [
+     "https://www.positivepromotions.com/deals-of-the-week/c/e_1001_214/",
+     "https://www.positivepromotions.com/clearance/c/cl_1001_88/",
+     "https://www.positivepromotions.com/smart-ways-to-deal-with-stress-educational-activities-book-personalization-available/p/kcb-705/"
+    ],
+    "brands": [
+     "https://www.positivepromotions.com/brands/c/cabrands/",
+     "https://www.positivepromotions.com/build-your-brand/c/busbuildyourbrand/",
+     "https://www.positivepromotions.com/build-your-brand-apparel/c/tlvlbus_1001_62/"
+    ],
+    "price": [
+     "https://www.positivepromotions.com/under-5/c/under5dollars/",
+     "https://www.positivepromotions.com/under-5/c/to_1001_633/"
+    ],
+    "eco": [
+     "https://www.positivepromotions.com/eco-friendly/c/ecofriendly/",
+     "https://www.positivepromotions.com/eco-friendly-recycled-materials/c/to_1001_621/",
+     "https://www.positivepromotions.com/eco-friendly-natural-materials/c/to_1001_623/"
+    ],
+    "faq": [
+     "https://www.positivepromotions.com/frequently-asked-questions/c/tmp-faq/",
+     "https://www.positivepromotions.com/support-squad-unisex-t-shirt/p/tsh1217/",
+     "https://www.positivepromotions.com/support-flag-unisex-2-sided-t-shirt-silkscreened-personalization-available/p/psh1077/"
+    ],
+    "proof": [
+     "https://www.positivepromotions.com/blog-successstories/c/blog-successstories/",
+     "https://www.positivepromotions.com/non-woven-large-portfolio-personalization-available/p/os-6103/",
+     "https://www.positivepromotions.com/arlington-wireless-charging-portfolio/p/ost-805/"
+    ],
+    "design": [
+     "https://www.positivepromotions.com/positive-design-lab/c/positive design lab/",
+     "https://www.positivepromotions.com/free-certificate-templates-r/a/23-r/"
+    ],
+    "speed": [
+     "https://www.positivepromotions.com/quickship/a/quickship/",
+     "https://www.positivepromotions.com/for-all-you-do-we-appreciate-you/f/all/24-hour-quick-ship/c/bistheme_1001_19/",
+     "https://www.positivepromotions.com/one-person-can-make-a-difference/f/all/24-hour-quick-ship/c/bistheme_1001_32/"
+    ]
+   },
+   "status": "ok",
+   "addedCount": 21,
+   "removedCount": 41,
+   "added": [
+    {
+     "url": "https://www.positivepromotions.com/carhartt-174adultunisex-force-174-12-zip-grid-fleece-performance-pullover-embroidered/p/aos8380/",
+     "kind": "product",
+     "section": "carhartt-174adultunisex-force-174-12-zip-grid-fleece-performance-pullover-embroidered"
+    },
+    {
+     "url": "https://www.positivepromotions.com/carhartt-adult-unisex-full-swing-washed-duck-active-jacket-embroidered/p/aos8383/",
+     "kind": "product",
+     "section": "carhartt-adult-unisex-full-swing-washed-duck-active-jacket-embroidered"
+    },
+    {
+     "url": "https://www.positivepromotions.com/carhartt-adult-unisex-midweight-1-4-zip-sweater-fleece-pullover-embroidered-personalization/p/aos8379/",
+     "kind": "product",
+     "section": "carhartt-adult-unisex-midweight-1-4-zip-sweater-fleece-pullover-embroidered-personalization"
+    },
+    {
+     "url": "https://www.positivepromotions.com/carhartt-adult-unisex-montana-rugged-flex-duck-jacket-embroidered-personalization/p/aos8382/",
+     "kind": "product",
+     "section": "carhartt-adult-unisex-montana-rugged-flex-duck-jacket-embroidered-personalization"
+    },
+    {
+     "url": "https://www.positivepromotions.com/carhartt-adult-unisex-montana-rugged-flex-duck-vest-embroidered-personalization/p/aos8381/",
+     "kind": "product",
+     "section": "carhartt-adult-unisex-montana-rugged-flex-duck-vest-embroidered-personalization"
+    },
+    {
+     "url": "https://www.positivepromotions.com/employee-recognition-our-success-begins-with-an-awesome-team-coldflow-bottle-30-oz-all-day-hydration-carry-all-bag-gift-set/p/vp11181/",
+     "kind": "product",
+     "section": "employee-recognition-our-success-begins-with-an-awesome-team-coldflow-bottle-30-oz-all-day-hydration-carry-all-bag-gift-set"
+    },
+    {
+     "url": "https://www.positivepromotions.com/holiday-happy-new-year-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available/p/gc-214/",
+     "kind": "product",
+     "section": "holiday-happy-new-year-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/holiday-merry-christmas-and-a-happy-new-year-2027-red-foil-stamped-greeting-card-calendar-one-color-personalization-available/p/gc-202/",
+     "kind": "product",
+     "section": "holiday-merry-christmas-and-a-happy-new-year-2027-red-foil-stamped-greeting-card-calendar-one-color-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/holiday-snowflakes-mink-fleece-throw-blanket-50-x-60-embroidered-personalization-available/p/gnp4879/",
+     "kind": "product",
+     "section": "holiday-snowflakes-mink-fleece-throw-blanket-50-x-60-embroidered-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/holiday-tis-the-season-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available/p/gc-212/",
+     "kind": "product",
+     "section": "holiday-tis-the-season-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/holiday-warmest-holiday-wishes-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available/p/gc-207/",
+     "kind": "product",
+     "section": "holiday-warmest-holiday-wishes-2027-gold-foil-stamped-greeting-card-calendar-one-color-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/jeremy-test-page/a/jeremytestpage/",
+     "kind": "page",
+     "section": "jeremy-test-page"
+    },
+    {
+     "url": "https://www.positivepromotions.com/nike-174-adultunisex-dri-fit-stride-performance-12-zip-pullover-embroidered-personalization/p/aos8376/",
+     "kind": "product",
+     "section": "nike-174-adultunisex-dri-fit-stride-performance-12-zip-pullover-embroidered-personalization"
+    },
+    {
+     "url": "https://www.positivepromotions.com/nike-adult-unisex-dri-fit-primary-crewneck-sweatshirt-embroidered-personalization-available/p/aos8375/",
+     "kind": "product",
+     "section": "nike-adult-unisex-dri-fit-primary-crewneck-sweatshirt-embroidered-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/nike-adult-unisex-therma-fit-pocket-1-4-zip-pullover-embroidered-personalization-available/p/aos8378/",
+     "kind": "product",
+     "section": "nike-adult-unisex-therma-fit-pocket-1-4-zip-pullover-embroidered-personalization-available"
+    },
+    {
+     "url": "https://www.positivepromotions.com/nike-womens-dri-fit-stride-performance-12-zip-pullover-embroidered-personalization/p/aos8377/",
+     "kind": "product",
+     "section": "nike-womens-dri-fit-stride-performance-12-zip-pullover-embroidered-personalization"
+    },
+    {
+     "url": "https://www.positivepromotions.com/our-pharmacy-team-is-a-treat-to-work-with-reusable-food-storage-bag/p/g-1368k/",
+     "kind": "product",
+     "section": "our-pharmacy-team-is-a-treat-to-work-with-reusable-food-storage-bag"
+    },
+    {
+     "url": "https://www.positivepromotions.com/pharmacy-periodic-table-hudson-15-computer-laptop-backpack-with-30-40-oz-tumbler-pocket-trolley-strap/p/bp1073k/",
+     "kind": "product",
+     "section": "pharmacy-periodic-table-hudson-15-computer-laptop-backpack-with-30-40-oz-tumbler-pocket-trolley-strap"
+    },
+    {
+     "url": "https://www.positivepromotions.com/pharmacy-periodic-table-hydrosip-double-wall-stainless-vacuum-insulated-tumbler-30-oz-with-handle/p/tm2923k/",
+     "kind": "product",
+     "section": "pharmacy-periodic-table-hydrosip-double-wall-stainless-vacuum-insulated-tumbler-30-oz-with-handle"
+    },
+    {
+     "url": "https://www.positivepromotions.com/pharmacy-team-guided-by-science-driven-by-care-38-motivational-clip-umbrella-with-safety-reflective-trim/p/g-2267w/",
+     "kind": "content",
+     "section": "pharmacy-team-guided-by-science-driven-by-care-38-motivational-clip-umbrella-with-safety-reflective-trim"
+    },
+    {
+     "url": "https://www.positivepromotions.com/pharmacy-team-guided-by-science-driven-by-care-motivational-word-cloud-roll-up-eco-blanket/p/gn13308/",
+     "kind": "content",
+     "section": "pharmacy-team-guided-by-science-driven-by-care-motivational-word-cloud-roll-up-eco-blanket"
+    }
+   ],
+   "feeds": []
+  },
+  "nationalpen": {
+   "name": "National Pen",
+   "domain": "www.pens.com",
+   "sitemapFiles": 81,
+   "urlCount": 9029,
+   "errors": [],
+   "byKind": {
+    "product": 8526,
+    "content": 11,
+    "page": 492
+   },
+   "topSections": {
+    "us": 9029
+   },
+   "gaps": {
+    "guide": 7,
+    "proof": 18,
+    "occasion": 24,
+    "price": 15,
+    "brands": 25,
+    "industry": 10,
+    "samples": 1,
+    "deals": 9,
+    "eco": 3,
+    "stores": 1,
+    "speed": 1,
+    "faq": 1
+   },
+   "gapExamples": {
+    "guide": [
+     "https://www.pens.com/us/p/good-value-duallink-5v-charging-cable-with-usb-hub/prd-rik5ot5i/",
+     "https://www.pens.com/us/p/recycled-smooth-write-gel-pen/prd-wxidwcnl/",
+     "https://www.pens.com/us/p/roll-write-fidget-pen/prd-j0xt4kmu/"
+    ],
+    "proof": [
+     "https://www.pens.com/us/p/5x7-pebble-grain-portfolio/prd-1qw2nkey/",
+     "https://www.pens.com/us/p/85x11-pebble-grain-portfolio/prd-ipoy4rfc/",
+     "https://www.pens.com/us/p/vinyl-portfolio/prd-fubjbrll/"
+    ],
+    "occasion": [
+     "https://www.pens.com/us/c/personalized-graduation-gifts",
+     "https://www.pens.com/us/c/dental-giveaway-promotional-products",
+     "https://www.pens.com/us/c/custom-business-holiday-cards"
+    ],
+    "price": [
+     "https://www.pens.com/us/c/corporate-birthday-cards-in-bulk",
+     "https://www.pens.com/us/c/bulk-personalized-pens",
+     "https://www.pens.com/us/c/low-cost-promotional-apparel"
+    ],
+    "brands": [
+     "https://www.pens.com/us/c/nike-custom-apparel",
+     "https://www.pens.com/us/c/eddie-bauer-custom-apparel",
+     "https://www.pens.com/us/c/columbia"
+    ],
+    "industry": [
+     "https://www.pens.com/us/c/dental-giveaway-promotional-products",
+     "https://www.pens.com/us/c/school-promotional-items",
+     "https://www.pens.com/us/c/healthcare-promotional-gifts-giveaways"
+    ],
+    "samples": [
+     "https://www.pens.com/us/c/promotional-products-free-samples"
+    ],
+    "deals": [
+     "https://www.pens.com/us/c/clearance-pens-writing",
+     "https://www.pens.com/us/c/clearance-stationery-office",
+     "https://www.pens.com/us/c/promotional-items-on-sale"
+    ],
+    "eco": [
+     "https://www.pens.com/us/c/personalized-recycled-tote-bags",
+     "https://www.pens.com/us/c/made-in-the-usa",
+     "https://www.pens.com/us/c/recycled-promotional-products"
+    ],
+    "stores": [
+     "https://www.pens.com/us/c/custom-planter-grow-kits"
+    ],
+    "speed": [
+     "https://www.pens.com/us/c/rush-promotional-products"
+    ],
+    "faq": [
+     "https://www.pens.com/us/s/faq"
+    ]
+   },
+   "status": "ok",
+   "addedCount": 206,
+   "removedCount": 332,
+   "added": [
+    {
+     "url": "https://www.pens.com/us/p/12-oz-matte-tranquil-mug-bamboo-lid/prd-vsyxsbse/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/14oz-sienna-double-wall-tumbler/prd-guorx04g/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/47-brand-trawler-snapback-cap/prd-pnjujtkx6/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-hooded-full-zip-windbreaker/prd-oidmzp1eq/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-mens-entrada-26-jersey/prd-zyexttoer/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-mens-quarter-zip-ultimate365-pullover/prd-nrgqhqw0j/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-mens-textured-stripe-polo/prd-psdfvxdfo/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-mens-ultimate365-polo/prd-scmnxvamr/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-compression-racerback-techfit-sports-bra/prd-nm0keu4e4/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-full-zip-ultimate365-jacket/prd-pr74vuktz/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-micro-pique-polo/prd-mvhyuvmer/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-performance-legging-with-pockets/prd-qtpeiycru/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-sleeveless-v-neck-quickset-jersey/prd-q8psq9w62/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adidas-womens-sport-t-shirt/prd-dobt26oxr/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adult-heavyweight-cotton-colorblast-t-shirt/prd-ntz8kpwbn/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/adult-long-sleeve-raglan-jersey-t-shirt/prd-qsielp0tk/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/allmade-adult-v-neck-triblend-t-shirt/prd-qwhozx1mo/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/allpro-mens-melange-performance-polo/prd-n1vivtby4/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/allpro-womens-performance-pro-lock-performance-t-shirt/prd-p8vj6ojys/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/american-apparel-adult-french-terry-ex-top/prd-ojhbuw0e8/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/american-apparel-adult-garment-dyed-heavyweight-cotton-t-shirt/prd-pgbrtqb32/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/american-apparel-womens-fleece-reflex-crewneck/prd-nksllxxph/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/badger-adult-fleece-hoodie/prd-nr2ewfo1a/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/badger-mens-hooded-b-core-t-shirt/prd-srgxwo5fr/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/bella-canvas-adult-heavyweight-t-shirt/prd-npkfewec0/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/bella-canvas-adult-quarter-zip-pullover/prd-dazqgrczy/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/bella-canvas-adult-triblend-t-shirt/prd-ntkzrwwox/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/bella-canvas-adult-v-neck-t-shirt/prd-r8ydkqjou/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/bella-canvas-womens-racerback-jersey-tank-top/prd-p3oxqh4fb/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/cap-america-water-resistant-perforated-premium-snapback-cap/prd-mbdsghy2d/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/carhartt-force-mens-long-sleeve-shirt/prd-mnkkwi03c/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/carhartt-force-short-sleeve-pocket-t-shirt/prd-noomolfth/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/carhartt-mens-long-sleeve-t-shirt/prd-nzbc0ldwn/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/carhartt-workwear-pocket-long-sleeve-t-shirt/prd-py2k5bydt/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/champion-adult-long-sleeve-t-shirt/prd-ooaae0fbh/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/champion-adult-powerblend-hoodie/prd-pvy0z4gqf/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/champion-mens-powerblend-hoodie/prd-oqy2aisbp/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-alligator/prd-vnxptarc/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-bear/prd-imj4i5wl/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-bulldog/prd-dheuwenb/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-cow/prd-eurqyhxj/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-eagle/prd-mmjlra3m/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-elephant/prd-tc2b8nqj/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-frog/prd-lao2fr89/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-horse/prd-zzqki3e1/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-lion/prd-f845ql1c/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-pig/prd-t2gdnayp/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-tiger/prd-c3adcc84/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/chelsea-teddy-bear-7-bean-bag-buddies-wolf/prd-4egrkaju/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/columbia-heavyweight-city-trek-beanie/prd-py8hklit4/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/columbia-mens-soft-shell-gate-racer-ii-jacket/prd-poj8nywbi/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/columbia-womens-fleece-full-zip-jacket/prd-pumqqc71r/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/columbia-womens-lightweight-skien-valley-jacket/prd-nrjql5ds1/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/columbia-womens-quilted-sienna-hill-jacket/prd-nq8hg0a6t/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/comfort-colors-adult-garment-dyed-hoodie/prd-qy9kmfosv/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/core-365-mens-ripstop-climate-jacket/prd-onalrg6e0/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/core-365-mens-twill-operate-shirt/prd-pxgpw7xod/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/core365-adult-chromasoft-fusion-t-shirt/prd-q6wr4kszk/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/cornerstone-mens-snag-proof-tactical-polo/prd-qcf8nbswe/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/devon-jones-mens-pima-pique-polo/prd-ovjz7mlmg/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/devon-jones-womens-crownlux-performance-polo/prd-rvvalwf5z/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/devon-jones-womens-shawl-collar-raleigh-top/prd-mxpsdfxej/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/district-mens-concert-tee-t-shirt/prd-orgzwiupx/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/district-mens-french-terry-hoodie/prd-mzf6upcra/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/district-wash-mens-fleece-hoodie/prd-qic8qg7zl/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/district-womens-fleece-perfect-tri-jogger/prd-purbhstzl/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/dri-duck-truman-cap/prd-oxwwa7kvn/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/eddie-bauer-full-zip-microfleece-jacket/prd-ne8ytr4j9/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/eddie-bauer-womens-fleece-vest/prd-ohjb1kgfd/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/eddie-bauer-womens-full-zip-microfleece-jacket/prd-qz9wpvcse/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/fairway-greene-womens-claire-polo/prd-nxdzjvu13/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/foldable-fran-5-oz-recycled-cotton-tote-bag/prd-6j5wlvda/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/gildan-adult-dryblend-t-shirt/prd-ihkw6h4oj/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/gildan-adult-heavy-blend-sweatpants-/prd-pbj1erak2/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/gildan-softstyle-cvc-t-shirt/prd-qrlueme26/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/gildan-womens-ultra-cotton-t-shirt/prd-pgg0g75jt/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/gildan-youth-cotton-t-shirt/prd-mim7n007t/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/greg-norman-mens-mesh-play-dry-polo/prd-q07gjncfj/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/greg-norman-mens-micro-pique-spinner-polo/prd-q6lsubxx6/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/hanes-adult-beefy-t-retro-street-t-shirt/prd-j0kstrz5l/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/hanes-mens-workwear-t-shirt-pocket/prd-orxupwebn/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/hanes-womens-essential-t-t-shirt/prd-pvhdwwk2p/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/hanes-womens-long-sleeve-authentic-t-shirt/prd-pvtoztnpc/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/harriton-adult-climabloc-station-jacket/prd-pozegmuu2/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/harriton-mens-advantage-tactical-polo/prd-r0xxobczs/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/harriton-mens-easy-blend-polo/prd-zwq8tqfib/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/harriton-mens-full-zip-fleece-jacket/prd-ms8pykpie/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/harriton-womens-charge-polo/prd-nr5wnirlx/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/huk-womens-kc-print-coldfront-hoodie/prd-dgakwprxd/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/imperial-wrightson-snapback-cap/prd-odzxzmqvv/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/independent-trading-co-adult-heavyweight-lux-crewneck/prd-qcglyb29v/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/independent-trading-co-mens-fleece-perform-pants/prd-qnraxjeud/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/infinity-her-gaby-snapback-cap/prd-pamqam9aq/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/j-america-adult-triblend-fleece-sweatshirt/prd-oxwyzrelp/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/j-america-sport-lace-hooded-sweatshirt/prd-oiiwegn0v/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/jaanuu-womens-6-pocket-ceri-scrub-jacket/prd-mbxpknxss/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/jaanuu-womens-insulated-phantom-vest/prd-edvvxbon2/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/jerzees-adult-premium-cotton-t-shirt/prd-oqptdj7oc/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/jerzees-adult-rugged-hoodie/prd-zubfihpp8/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/keepme-jute-tall-tote/prd-no8hgojwd/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/lane-seven-adult-heavyweight-fleece-hoodie/prd-qg28thgia/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/legacy-back-nine-cap/prd-n8nahpto6/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/legacy-twill-heritage-snapback-cap/prd-qjvsjaa0y/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/marmot-mens-lightweight-tempo-jacket/prd-pwzbttnyw/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/marmot-womens-half-zip-rocklin-jacket/prd-q7664zili/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/mens-long-sleeve-performance-zone-t-shirt/prd-ospx39ozv/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/mercer-mettle-womens-puffy-parka/prd-qb5acyb3j/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/mercer-mettle-womens-quarter-zip-textured-pullover/prd-p4givyg4q/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/mv-sport-womens-quarter-zip-zelda-pullover/prd-nt3akpfgw/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/nautica-adult-fleece-anchor-bomber-jacket/prd-muhmtt0vz/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/next-level-apparel-adult-santa-barbara-crewneck/prd-nqh76aoik/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/next-level-apparel-womens-boxy-heavyweight-t-shirt/prd-mioknqgsg/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/next-level-youth-cvc-t-shirt/prd-ohbvbqmvx/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/nike-womens-heather-dri-fit-polo/prd-p3gkdzlje/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/nike-womens-long-sleeve-dri-fit-micro-pique-20-polo/prd-pilggf0h1/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/nike-youth-team-rlegend-t-shirt/prd-mkgfuuz0t/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/north-end-womens-quarter-zip-jacquard-eclipse-pullover/prd-obfhrz2eo/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/north-end-womens-quarter-zip-radar-top/prd-pqfchl8i8/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/north-end-womens-snap-up-jaq-polo/prd-l1kgmldzr/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/oakley-mens-team-issue-hydrolix-hoodie/prd-ocmhtprrh/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/ogio-5-panel-performance-snapback-cap/prd-pazzlvtqi/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/ogio-womens-origin-jacket/prd-qr7efwi3n/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/paragon-mens-long-sleeve-hooded-bahama-t-shirt/prd-mca7dif1n/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-12-zip-soft-shell-jacket/prd-m3j2powfq/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-3in1-vortex-jacket/prd-omznstiba/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-active-soft-shell-jacket/prd-q2smre7d8/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-broadcloth-gingham-shirt/prd-mjj6roizw/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-mens-full-zip-stretch-fleece-accord-sweatshirt/prd-phpye3vs7/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-mens-mesh-rapid-dry-polo/prd-oyl0orabs/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-microfleece-jacket/prd-psbznzz5e/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-pro-camouflage-series-cap/prd-oda1htvpx/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-silk-touch-performance-14-zip/prd-nenbiyyrw/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-tech-rain-jacket/prd-qd7npp4hf/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-womens-collective-soft-shell-jacket/prd-pv7btzouv/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-womens-colorblock-jacket/prd-mz5lgw2vd/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-womens-micro-mesh-dry-zone-polo/prd-p5zyhybo0/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-womens-microfleece-jacket/prd-ptrj9xupl/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-authority-womens-pique-superpro-react-polo/prd-ysthbqedy/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-co-adult-fleece-core-crewneck-with-pocket/prd-pixgapwpt/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-company-adult-essential-t-shirt-with-pocket/prd-ou9quhbjk/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-company-core-fleece-full-zip-hooded-sweatshirt/prd-oo7c75kwv/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-company-essential-fleece-sweatpant/prd-qecumqf8n/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-company-mens-full-zip-fleece-core-sweatshirt/prd-p1slalbr8/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/port-company-womens-long-sleeve-v-neck-fan-favorite-t-shirt/prd-pqap9p0ae/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/rabbit-skins-youth-cotton-jersey-t-shirt/prd-mu0s4undf/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/realtree-adult-colorblock-performance-t-shirt/prd-qpwowtap7/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/richardson-printed-mesh-trucker-hat/prd-mg0axfzvf/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/richardson-snapback-trucker-cap/prd-qvpkult6q/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/richardson-tactical-trucker-hat/prd-qeh0n4oys/",
+     "kind": "product",
+     "section": "us"
+    },
+    {
+     "url": "https://www.pens.com/us/p/sport-tek-colorblock-raglan-jacket/prd-lyam3a8rw/",
+     "kind": "product",
+     "section": "us"
+    }
+   ],
+   "feeds": []
+  },
+  "swagup": {
+   "name": "SwagUp",
+   "domain": "www.swagup.com",
+   "sitemapFiles": 1,
+   "urlCount": 741,
+   "errors": [],
+   "byKind": {
+    "page": 183,
+    "content": 558
+   },
+   "topSections": {
+    "blog": 549,
+    "integrations": 65,
+    "customer-stories": 33,
+    "collections": 24,
+    "book-time-with-me": 16,
+    "blog-categories": 9,
+    "quiz-result": 6,
+    "(home)": 1,
+    "fulfillment-performance": 1,
+    "terms-of-use": 1,
+    "membership-terms-of-service": 1,
+    "return-refund-policy": 1,
+    "gallery": 1,
+    "subscribe": 1,
+    "shop-terms-and-conditions": 1
+   },
+   "gaps": {
+    "stores": 6,
+    "guide": 558,
+    "eco": 1,
+    "occasion": 10,
+    "proof": 34,
+    "industry": 3,
+    "price": 2,
+    "brands": 2,
+    "faq": 1
+   },
+   "gapExamples": {
+    "stores": [
+     "https://www.swagup.com/fulfillment-performance",
+     "https://www.swagup.com/collections/branded-swag-packs",
+     "https://www.swagup.com/swag-pack-generator"
+    ],
+    "guide": [
+     "https://www.swagup.com/blog",
+     "https://www.swagup.com/blog-categories/culture",
+     "https://www.swagup.com/blog-categories/features"
+    ],
+    "eco": [
+     "https://www.swagup.com/collections/eco-swag"
+    ],
+    "occasion": [
+     "https://www.swagup.com/collections/new-hire-swag",
+     "https://www.swagup.com/collections/conference-swag",
+     "https://www.swagup.com/collections/holiday-swag"
+    ],
+    "proof": [
+     "https://www.swagup.com/customer-stories",
+     "https://www.swagup.com/testimonials",
+     "https://www.swagup.com/customer-stories/adding-a-personal-touch-to-onboarding-with-doist"
+    ],
+    "industry": [
+     "https://www.swagup.com/collections/construction-swag",
+     "https://www.swagup.com/collections/medical-swag",
+     "https://www.swagup.com/collections/realtor-swag"
+    ],
+    "price": [
+     "https://www.swagup.com/collections/budget-friendly-swag",
+     "https://www.swagup.com/quiz-result/event-bulk"
+    ],
+    "brands": [
+     "https://www.swagup.com/collections/swag-retail-brands",
+     "https://www.swagup.com/customer-stories/build-brand-presence-with-updater"
+    ],
+    "faq": [
+     "https://www.swagup.com/faq"
+    ]
+   },
+   "status": "ok",
+   "addedCount": 0,
+   "removedCount": 0,
+   "added": [],
    "feeds": []
   },
   "gotprint": {
    "name": "GotPrint",
    "domain": "www.gotprint.com",
-   "sitemapSeeds": [
-    "https://www.gotprint.com/sitemap.xml"
-   ],
    "sitemapFiles": 1,
    "urlCount": 350,
    "errors": [],
@@ -475,20 +2078,43 @@
     "home.html": 1,
     "shop": 1
    },
+   "gaps": {
+    "deals": 3,
+    "occasion": 6,
+    "guide": 75,
+    "industry": 17
+   },
+   "gapExamples": {
+    "deals": [
+     "https://www.gotprint.com/company/coupons.html",
+     "https://www.gotprint.com/services/design/special-shapes/info.html",
+     "https://www.gotprint.com/company/terms/sale.html"
+    ],
+    "occasion": [
+     "https://www.gotprint.com/promo/holiday-gifts.html",
+     "https://www.gotprint.com/pages/industries/trade-shows/info.html",
+     "https://www.gotprint.com/pages/industries/event-marketing/info.html"
+    ],
+    "guide": [
+     "https://www.gotprint.com/resources/preparing-files.html",
+     "https://www.gotprint.com/resources/help.html",
+     "https://www.gotprint.com/resources/accessibility.html"
+    ],
+    "industry": [
+     "https://www.gotprint.com/pages/industries/trade-shows/info.html",
+     "https://www.gotprint.com/pages/industries/automotive/info.html",
+     "https://www.gotprint.com/pages/industries/sports/info.html"
+    ]
+   },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": []
   },
   "uprinting": {
    "name": "UPrinting",
    "domain": "www.uprinting.com",
-   "sitemapSeeds": [
-    "https://www.uprinting.com/sitemap.xml"
-   ],
    "sitemapFiles": 1,
    "urlCount": 1201,
    "errors": [],
@@ -514,172 +2140,74 @@
     "wall-art-and-decor.html": 1,
     "vinyl-printing.html": 1
    },
-   "status": "ok",
-   "addedCount": 0,
-   "removedCount": 0,
-   "added": [],
-   "removedSample": [],
-   "recentLastmod": [
-    {
-     "date": "2026-11-13",
-     "url": "https://www.uprinting.com/yard-signs.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "https://www.uprinting.com/floor-graphics.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "https://www.uprinting.com/",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "https://www.uprinting.com/mailer-boxes.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "https://www.uprinting.com/magnetic-calendar-printing.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "https://www.uprinting.com/shipping-and-mailer-envelopes.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "https://www.uprinting.com/poly-mailers.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "https://www.uprinting.com/8.5x11-bulk-booklets.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "https://www.uprinting.com/5.5x8.5-bulk-booklets.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "https://www.uprinting.com/12x12-bulk-booklets.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "https://www.uprinting.com/white-paper-bags.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "https://www.uprinting.com/recycled-kraft-paper-bags.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "https://www.uprinting.com/custom-stand-up-pouches.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "https://www.uprinting.com/wine-mailer-boxes.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "https://www.uprinting.com/shipping-boxes.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "https://www.uprinting.com/product-boxes.html",
-     "kind": "product"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "https://www.uprinting.com/book-shipping-boxes.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "https://www.uprinting.com/sticker-sheets.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "https://www.uprinting.com/hard-hat-stickers.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "https://www.uprinting.com/reviews.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "https://www.uprinting.com/plastic-business-cards.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "https://www.uprinting.com/safety-stickers.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "https://www.uprinting.com/metallic-labels.html",
-     "kind": "page"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "https://www.uprinting.com/cut-to-size-metallic-stickers.html",
-     "kind": "page"
-    }
-   ],
-   "feeds": []
-  },
-  "positivepromotions": {
-   "name": "Positive Promotions",
-   "domain": "positivepromotions.com",
-   "sitemapSeeds": [
-    "https://positivepromotions.com/sitemap.xml"
-   ],
-   "sitemapFiles": 8,
-   "urlCount": 23906,
-   "errors": [],
-   "byKind": {
-    "page": 2021,
-    "content": 340,
-    "product": 21545
+   "gaps": {
+    "occasion": 43,
+    "deals": 7,
+    "industry": 27,
+    "eco": 4,
+    "stores": 5,
+    "design": 17,
+    "brands": 20,
+    "price": 20,
+    "guide": 34,
+    "faq": 37
    },
-   "topSections": {
-    "tech-promotional-items-and-branded-gifts-for-it-companies": 49,
-    "blog": 45,
-    "real-estate-appreciation": 37,
-    "law-firm-promotional-products-gifts-and-giveaways": 34,
-    "christmas-gifts": 33,
-    "veterinary-gifts-and-promotional-products": 33,
-    "yearsofservicegifts": 33,
-    "christmas-technology-gifts": 32,
-    "fitness-promotional-products-gym-swag-and-trainer-gifts": 32,
-    "recognition-themes": 31,
-    "auto-repair-shop-promotional-products-and-mechanic-gifts": 31,
-    "construction-promotional-items-and-contractor-gifts": 31,
-    "dental-office-appreciation": 27,
-    "automotive-dealerships": 26,
-    "salon-swag-spa-gifts-and-promotional-items": 26
+   "gapExamples": {
+    "occasion": [
+     "https://www.uprinting.com/trade-show-display.html",
+     "https://www.uprinting.com/printed-christmas-gifts.html",
+     "https://www.uprinting.com/holiday.html"
+    ],
+    "deals": [
+     "https://www.uprinting.com/retail-and-point-of-sale",
+     "https://www.uprinting.com/sales-sheet-printing.html",
+     "https://www.uprinting.com/low-clearance-signs.html"
+    ],
+    "industry": [
+     "https://www.uprinting.com/restaurant-supplies",
+     "https://www.uprinting.com/restaurant-printing.html",
+     "https://www.uprinting.com/restaurant-packaging.html"
+    ],
+    "eco": [
+     "https://www.uprinting.com/recycled-products",
+     "https://www.uprinting.com/made-in-usa",
+     "https://www.uprinting.com/recycling-signs.html"
+    ],
+    "stores": [
+     "https://www.uprinting.com/booth-bundle.html",
+     "https://www.uprinting.com/press-kit",
+     "https://www.uprinting.com/gift-boxes.html"
+    ],
+    "design": [
+     "https://www.uprinting.com/COVID-19-free-design-templates",
+     "https://www.uprinting.com/yard-signs-design-templates.html",
+     "https://www.uprinting.com/what-is-a-dieline-template.html"
+    ],
+    "brands": [
+     "https://www.uprinting.com/hydro-flask-stickers.html",
+     "https://www.uprinting.com/custom-workwear/carhartt-workwear.html",
+     "https://www.uprinting.com/custom-tshirts/under-armour-tshirts.html"
+    ],
+    "price": [
+     "https://www.uprinting.com/bulk-sticker-printing.html",
+     "https://www.uprinting.com/bulk-poster-printing.html",
+     "https://www.uprinting.com/bulk-catalog-printing.html"
+    ],
+    "guide": [
+     "https://www.uprinting.com/printing-101/what-is-variable-data-printing.html",
+     "https://www.uprinting.com/printing-101/what-is-spot-color.html",
+     "https://www.uprinting.com/printing-101/what-is-screen-printing.html"
+    ],
+    "faq": [
+     "https://www.uprinting.com/support/taxes-pricing/",
+     "https://www.uprinting.com/support/stickers-labels/",
+     "https://www.uprinting.com/support/signs-banners/"
+    ]
    },
    "status": "ok",
    "addedCount": 0,
    "removedCount": 0,
    "added": [],
-   "removedSample": [],
-   "recentLastmod": [],
    "feeds": []
   },
   "everythingbranded": {
@@ -693,340 +2221,458 @@
    "status": "blocked"
   }
  },
- "posts": [
-  {
-   "competitorId": "customink",
-   "competitorName": "Custom Ink",
-   "title": "History of the Hoodie: A Timeline From the 1930s to Today",
-   "link": "https://www.customink.com/blog/history-of-the-hoodie/",
-   "date": "2026-11-09",
-   "categories": [
-    "Ink is More Than You Think"
-   ]
+ "own": {
+  "own-proimprint": {
+   "name": "Proimprint",
+   "brand": "Proimprint",
+   "domain": "www.proimprint.com",
+   "urlCount": 41748,
+   "byKind": {
+    "page": 39591,
+    "content": 2124,
+    "product": 33
+   },
+   "topSections": {
+    "blog": 2015,
+    "(home)": 2,
+    "custom-printed-pep-4000-mah-power-banks": 2,
+    "promotional-60-x-80-blankets": 2,
+    "promotional-pvc-key-holders": 2,
+    "custom-short-sleeve-polo-shirts": 1,
+    "24-hour": 1,
+    "a4": 1,
+    "custom-gadgets-accessories": 1,
+    "custom-acrylic-keytags": 1,
+    "administrative-professionals-day": 1,
+    "aeroloft": 1,
+    "custom-air-fresheners": 1,
+    "allmade": 1,
+    "custom-personal-care-amenities": 1
+   },
+   "gaps": {
+    "speed": 1,
+    "occasion": 272,
+    "industry": 116,
+    "brands": 378,
+    "stores": 231,
+    "deals": 6,
+    "eco": 367,
+    "price": 16,
+    "faq": 1,
+    "proof": 1,
+    "guide": 2015
+   },
+   "gapExamples": {
+    "speed": [
+     "https://www.proimprint.com/24-Hour"
+    ],
+    "occasion": [
+     "https://www.proimprint.com/Appreciation-and-Recognition-Days",
+     "https://www.proimprint.com/Custom-Awards-Trophies",
+     "https://www.proimprint.com/Custom-Awards-Recognition"
+    ],
+    "industry": [
+     "https://www.proimprint.com/Automotive-Promotional-Products",
+     "https://www.proimprint.com/School-Promotions",
+     "https://www.proimprint.com/Promotional-Church-Religious-Products"
+    ],
+    "brands": [
+     "https://www.proimprint.com/Callaway",
+     "https://www.proimprint.com/CamelBak",
+     "https://www.proimprint.com/Carhartt"
+    ],
+    "stores": [
+     "https://www.proimprint.com/Custom-Corporate-Gifts",
+     "https://www.proimprint.com/Custom-First-Aid-Kits",
+     "https://www.proimprint.com/Custom-Gift-Boxes"
+    ],
+    "deals": [
+     "https://www.proimprint.com/Cyber-Monday-Sale",
+     "https://www.proimprint.com/Proimprint-Deals",
+     "https://www.proimprint.com/Promotional-Backpacks-with-Earbud-Outlet"
+    ],
+    "eco": [
+     "https://www.proimprint.com/Custom-Eco-Friendly-Promotional-Products",
+     "https://www.proimprint.com/Promotional-Products-Made-in-USA",
+     "https://www.proimprint.com/Custom-Natural-Ecofriendly-Tote-Bags"
+    ],
+    "price": [
+     "https://www.proimprint.com/Customized-Budget-Kooler-Bags",
+     "https://www.proimprint.com/Personalized-Budget-Lunch-Bags",
+     "https://www.proimprint.com/Customized-Budget-12-Pack-Coolers"
+    ],
+    "faq": [
+     "https://www.proimprint.com/Faqs"
+    ],
+    "proof": [
+     "https://www.proimprint.com/Reviews"
+    ],
+    "guide": [
+     "https://www.proimprint.com/blog/",
+     "https://www.proimprint.com/blog/year-end-corporate-gifting-ideas/",
+     "https://www.proimprint.com/blog/breast-cancer-awareness-myths-and-facts/"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   },
-  {
-   "competitorId": "customink",
-   "competitorName": "Custom Ink",
-   "title": "Trade Show Booth Supplies: 10 Custom Essentials for Your Table, Backdrop, and Aisle",
-   "link": "https://www.customink.com/blog/trade-show-booth-supplies-guide/",
-   "date": "2026-11-07",
-   "categories": [
-    "Trade Shows"
-   ]
+  "own-cmagnets": {
+   "name": "cmagnets",
+   "brand": "cmagnets",
+   "domain": "www.custommagnetsdirect.com",
+   "urlCount": 10019,
+   "byKind": {
+    "page": 7479,
+    "content": 2540
+   },
+   "topSections": {
+    "blog": 2533,
+    "(home)": 1,
+    "1-12x3-25-custom-square-and-round-edge-magnets": 1,
+    "1-25x2-5-custom-square-or-round-edge-magnets": 1,
+    "1-25x2-75-custom-square-or-round-edge-magnets": 1,
+    "1.25x4-custom-magnets": 1,
+    "1-25x5-25-custom-square-or-round-edge-magnets": 1,
+    "1-25x9-custom-square-or-round-edge-magnets": 1,
+    "1.5x7-custom-magnets": 1,
+    "1.5x10-custom-magnets": 1,
+    "1-5x2-custom-square-or-round-edge-magnets": 1,
+    "1.5x2.5-custom-magnets": 1,
+    "1-5x3-custom-square-or-round-edge-magnets": 1,
+    "1-5x3-25-custom-square-or-round-edge-magnets": 1,
+    "1-5x3-5-custom-square-or-round-edge-magnets": 1
+   },
+   "gaps": {
+    "occasion": 9,
+    "industry": 19,
+    "deals": 1,
+    "eco": 2,
+    "proof": 1,
+    "guide": 2533
+   },
+   "gapExamples": {
+    "occasion": [
+     "https://www.custommagnetsdirect.com/Aids-Awareness-Day-Magnets",
+     "https://www.custommagnetsdirect.com/Custom-Awareness-Magnets",
+     "https://www.custommagnetsdirect.com/Breast-Cancer-Awareness-Magnets"
+    ],
+    "industry": [
+     "https://www.custommagnetsdirect.com/Church-Magnets",
+     "https://www.custommagnetsdirect.com/Contractor-Magnetic-Signs-Trucks-Cars",
+     "https://www.custommagnetsdirect.com/Healthcare-Shaped-Magnets"
+    ],
+    "deals": [
+     "https://www.custommagnetsdirect.com/Mothers-Day-Special-Magnets"
+    ],
+    "eco": [
+     "https://www.custommagnetsdirect.com/Recycle-Shaped-Magnets",
+     "https://www.custommagnetsdirect.com/Customized-Bamboo-Magnetic-Power-Clips"
+    ],
+    "proof": [
+     "https://www.custommagnetsdirect.com/reviews"
+    ],
+    "guide": [
+     "https://www.custommagnetsdirect.com/blog/",
+     "https://www.custommagnetsdirect.com/blog/seasonal-magnets/seasonal-magnets-for-year-round-promotions/",
+     "https://www.custommagnetsdirect.com/blog/business-marketing-ideas/best-promotional-materials-for-small-businesses/"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   },
-  {
-   "competitorId": "customink",
-   "competitorName": "Custom Ink",
-   "title": "Swag Ideas for Every Use Case: What to Order for Work, Groups, and Events",
-   "link": "https://www.customink.com/blog/swag-ideas-for-every-use-case/",
-   "date": "2026-11-06",
-   "categories": [
-    "Ink is More Than You Think"
-   ]
+  "own-sunglassville": {
+   "name": "sunglassville",
+   "brand": "sunglassville",
+   "domain": "www.sunglassville.com",
+   "urlCount": 2157,
+   "byKind": {
+    "page": 339,
+    "content": 1818
+   },
+   "topSections": {
+    "blog": 1818,
+    "(home)": 1,
+    "custom-sunglasses-specials": 1,
+    "blank-sunglasses": 1,
+    "custom-classic-sunglasses": 1,
+    "designer-sunglasses": 1,
+    "ecofriendly-promotional-products": 1,
+    "custom-fun-sunglasses": 1,
+    "hand-fans": 1,
+    "custom-kids-sunglasses": 1,
+    "custom-malibu-sunglasses": 1,
+    "custom-aviator-sunglasses": 1,
+    "custom-neon-sunglasses": 1,
+    "new-arrival-sunglasses": 1,
+    "custom-novelty-sunglasses": 1
+   },
+   "gaps": {
+    "deals": 1,
+    "eco": 13,
+    "occasion": 4,
+    "brands": 1,
+    "faq": 1,
+    "proof": 1,
+    "guide": 1818
+   },
+   "gapExamples": {
+    "deals": [
+     "https://www.sunglassville.com/Custom-Sunglasses-Specials"
+    ],
+    "eco": [
+     "https://www.sunglassville.com/EcoFriendly-Promotional-Products",
+     "https://www.sunglassville.com/Custom-Printed-Bamboo-Fashion-Sunglasses",
+     "https://www.sunglassville.com/Customized-Jagger-Recycled-Frame-Sunglasses"
+    ],
+    "occasion": [
+     "https://www.sunglassville.com/Wedding-Sunglasses-Favors",
+     "https://www.sunglassville.com/Imprinted-Christmas-Art-Pinhole-Sunglasses",
+     "https://www.sunglassville.com/Wedding-Party-Sunglasses"
+    ],
+    "brands": [
+     "https://www.sunglassville.com/Promotional-Under-Armour-Instinct-Sunglasses"
+    ],
+    "faq": [
+     "https://www.sunglassville.com/faqs"
+    ],
+    "proof": [
+     "https://www.sunglassville.com/testimonials"
+    ],
+    "guide": [
+     "https://www.sunglassville.com/blog/",
+     "https://www.sunglassville.com/blog/custom-sunglasses/choosing-custom-sunglasses-for-events/",
+     "https://www.sunglassville.com/blog/party-sunglasses/party-favor-sunglasses-ideas-to-match-every-celebration/"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   },
-  {
-   "competitorId": "customink",
-   "competitorName": "Custom Ink",
-   "title": "Custom USB Drives Guide: How to Order Branded Flash Drives People Actually Keep",
-   "link": "https://www.customink.com/blog/custom-usb-drives-guide/",
-   "date": "2026-11-04",
-   "categories": [
-    "Office Supplies",
-    "Promotional Products Buying Guides"
-   ]
+  "own-budgetkeychains": {
+   "name": "budgetkeychains",
+   "brand": "budgetkeychains",
+   "domain": "www.budgetkeychains.com",
+   "urlCount": 145,
+   "byKind": {
+    "page": 145
+   },
+   "topSections": {
+    "(home)": 1,
+    "best-sellers": 1,
+    "custom-metal-keychains": 1,
+    "custom-bottle-opener-keychains": 1,
+    "custom-acrylic-keytags": 1,
+    "custom-carabiner-keychains": 1,
+    "custom-compasses-keychains": 1,
+    "custom-flashlight-keychains": 1,
+    "custom-pointer-keychains": 1,
+    "custom-tape-measures-keychains": 1,
+    "custom-tools-hardware-keychains": 1,
+    "custom-novelty-keychains": 1,
+    "custom-plastic-keychains": 1,
+    "custom-coiled-keychains": 1,
+    "custom-leather-keychains": 1
+   },
+   "gaps": {
+    "eco": 1,
+    "industry": 1,
+    "occasion": 3,
+    "faq": 1,
+    "proof": 1
+   },
+   "gapExamples": {
+    "eco": [
+     "https://www.budgetkeychains.com/Personalized-Eco-Friendly-Keychains"
+    ],
+    "industry": [
+     "https://www.budgetkeychains.com/Personalized-Real-Estate-Keychains"
+    ],
+    "occasion": [
+     "https://www.budgetkeychains.com/Personalized-Wedding-Keychains",
+     "https://www.budgetkeychains.com/Custom-Wedding-Favors-Westfield-Keychains",
+     "https://www.budgetkeychains.com/Personalized-Wedding-Favors-Keychains"
+    ],
+    "faq": [
+     "https://www.budgetkeychains.com/faqs"
+    ],
+    "proof": [
+     "https://www.budgetkeychains.com/testimonials"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   },
-  {
-   "competitorId": "customink",
-   "competitorName": "Custom Ink",
-   "title": "Custom Mouse Pads & Branded Desk Accessories: Office Swag for Teams & Events",
-   "link": "https://www.customink.com/blog/custom-desk-mats-mouse-pads-guide/",
-   "date": "2026-11-02",
-   "categories": [
-    "Office Supplies",
-    "Promotional Products Buying Guides"
-   ]
+  "own-usumbrella": {
+   "name": "usumbrella",
+   "brand": "usumbrella",
+   "domain": "www.usumbrellas.com",
+   "urlCount": 1800,
+   "byKind": {
+    "page": 544,
+    "content": 1256
+   },
+   "topSections": {
+    "blog": 1256,
+    "(home)": 2,
+    "custom-auto-open-close-umbrellas": 1,
+    "custom-printed-anti-wind-umbrellas": 1,
+    "custom-beach-umbrellas": 1,
+    "custom-fashion-umbrellas-logo": 1,
+    "custom-folding-umbrellas": 1,
+    "custom-market-umbrellas": 1,
+    "custom-mini-umbrellas": 1,
+    "custom-patio-umbrellas": 1,
+    "custom-personal-umbrellas": 1,
+    "custom-printed-golf-umbrellas": 1,
+    "custom-rain-gear": 1,
+    "custom-standard-umbrellas": 1,
+    "custom-totes-umbrellas": 1
+   },
+   "gaps": {
+    "occasion": 7,
+    "deals": 1,
+    "faq": 1,
+    "proof": 1,
+    "guide": 1256
+   },
+   "gapExamples": {
+    "occasion": [
+     "https://www.usumbrellas.com/Custom-Wedding-Umbrellas",
+     "https://www.usumbrellas.com/Custom-Outdoor-Favorites/Event-Tents",
+     "https://www.usumbrellas.com/10x20-Custom-Event-Tent-Canopy"
+    ],
+    "deals": [
+     "https://www.usumbrellas.com/Custom-Promotional-Umbrellas-Great-Deals"
+    ],
+    "faq": [
+     "https://www.usumbrellas.com/faqs"
+    ],
+    "proof": [
+     "https://www.usumbrellas.com/testimonials"
+    ],
+    "guide": [
+     "https://www.usumbrellas.com/blog/",
+     "https://www.usumbrellas.com/blog/golf-umbrellas/choosing-the-right-promotional-golf-umbrella/",
+     "https://www.usumbrellas.com/blog/event-and-outdoor-marketing/creating-branded-shade-areas-with-custom-umbrellas/"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "Ultimate Guide to Corporate Holiday Gifting: How to Curate and Deliver Top Swag",
-   "link": "https://swag.com/blog/the-ultimate-guide-to-corporate-holiday-gifting-how-to-plan-manage-and-scale-your-holiday-gift-program",
-   "date": "2026-11-12",
-   "categories": [
-    "Swag Ideas & Merch"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "Do You Need International Fulfillment Centers? A Guide to Global Swag Distribution",
-   "link": "https://swag.com/blog/do-you-need-international-fulfillment-centers-a-guide-to-global-swag-distribution",
-   "date": "2026-11-10",
-   "categories": [
-    "Swag Ideas & Merch"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "Print on Demand vs. Inventory-Based Swag Fulfillment: Which Is Right for You?",
-   "link": "https://swag.com/blog/print-on-demand-vs-inventory-based-swag-fulfillment-which-is-right-for-you",
-   "date": "2026-10-23",
-   "categories": [
-    "Swag Ideas & Merch",
-    "Buying Guides & How-Tos"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "Why Versatile Bags Make Better Corporate Gifts",
-   "link": "https://swag.com/blog/why-versatile-bags-make-better-corporate-gifts",
-   "date": "2026-10-20",
-   "categories": [
-    "Corporate Gifting",
-    "Swag Ideas & Merch"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "3 Fall and Holiday Gift Picks From a Swag Expert",
-   "link": "https://swag.com/blog/3-fall-and-holiday-gift-picks-from-a-swag-expert",
-   "date": "2026-10-06",
-   "categories": [
-    "Corporate Gifting",
-    "Swag Ideas & Merch"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "Swag for Customer Success: Rewards, Renewals and Referral Programs That Scale",
-   "link": "https://swag.com/blog/swag-for-customer-success-rewards-renewals-and-referral-programs-that-scale",
-   "date": "2026-09-25",
-   "categories": [
-    "Sales & Marketing",
-    "Swag Management"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "WEBINAR: Manage Excess Swag Responsibly",
-   "link": "https://swag.com/blog/webinar-manage-excess-swag-responsibly",
-   "date": "2026-09-24",
-   "categories": [
-    "Swag Ideas & Merch",
-    "Sustainable Swag"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "How Dialpad Personalized Holiday Gifting With Swag Pro",
-   "link": "https://swag.com/blog/how-dialpad-personalized-holiday-gifting-with-swag-pro",
-   "date": "2026-09-22",
-   "categories": [
-    "Case Study",
-    "Corporate Gifting",
-    "Swag Pro Enterprise"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "How Virta Health Makes Employee Events Easier with Swag.com",
-   "link": "https://swag.com/blog/how-virta-health-makes-employee-events-easier-with-swag-com",
-   "date": "2026-09-22",
-   "categories": [
-    "Swag Ideas & Merch",
-    "Company Events & Celebrations"
-   ]
-  },
-  {
-   "competitorId": "swag",
-   "competitorName": "Swag.com / Swag Pro",
-   "title": "How Phase Financial Makes Client Gifting a Set-It-and-Forget-It Experience",
-   "link": "https://swag.com/blog/how-phase-financial-makes-client-gifting-a-set-it-and-forget-it-experience",
-   "date": "2026-09-22",
-   "categories": [
-    "Corporate Gifting",
-    "Swag Management"
-   ]
+  "own-promo4kids": {
+   "name": "promo4kids",
+   "brand": "promo4kids",
+   "domain": "www.promo4kids.com",
+   "urlCount": 875,
+   "byKind": {
+    "page": 868,
+    "content": 4,
+    "product": 3
+   },
+   "topSections": {
+    "(home)": 1,
+    "custom-piggy-banks": 1,
+    "custom-smash-it-piggy-bank": 1,
+    "personalized-smash-it-piggy-bank-red": 1,
+    "customized-smash-it-piggy-bank-blue": 1,
+    "customized-smash-it-piggy-bank-white": 1,
+    "personalized-smash-it-piggy-bank-translucent-blue": 1,
+    "custom-classic-piggy-bank": 1,
+    "customized-classic-piggy-bank-clear": 1,
+    "customized-classic-piggy-bank-white": 1,
+    "personalized-classic-piggy-bank-translucent-yellow": 1,
+    "customized-classic-piggy-bank-translucent-orange": 1,
+    "personalized-classic-piggy-bank-translucent-green": 1,
+    "personalized-classic-piggy-bank-translucent-purple": 1,
+    "customized-classic-piggy-bank-pink": 1
+   },
+   "gaps": {
+    "eco": 2,
+    "industry": 4,
+    "price": 4,
+    "occasion": 1,
+    "faq": 1
+   },
+   "gapExamples": {
+    "eco": [
+     "https://www.promo4kids.com/Promotional-Logo-Recycling-Coloring-Books",
+     "https://www.promo4kids.com/Promotional-Eco-Spiral-Notebook-Pen"
+    ],
+    "industry": [
+     "https://www.promo4kids.com/Customized-4-Pack-Dental-Crayons",
+     "https://www.promo4kids.com/Promotional-Dental-Assistant-Jigsaw-Puzzle",
+     "https://www.promo4kids.com/Custom-Imprinted-Police-Jigsaw-Puzzle"
+    ],
+    "price": [
+     "https://www.promo4kids.com/Assorted-Bulk-Crayons",
+     "https://www.promo4kids.com/Personalized-Budget-Sling-Backpack",
+     "https://www.promo4kids.com/Custom-Budget-Backpack"
+    ],
+    "occasion": [
+     "https://www.promo4kids.com/Christmas-Promotions"
+    ],
+    "faq": [
+     "https://www.promo4kids.com/faqs"
+    ]
+   },
+   "status": "ok",
+   "errors": []
   }
- ],
- "industry": [
+ },
+ "posts": [],
+ "industry": [],
+ "jobs": [],
+ "gapTypes": [
   {
-   "source": "ASI Central",
-   "title": "Webinar: See ESP+ Stores in Action: Real Use Cases, Real Results",
-   "link": "https://asicentral.com/assets/webinars/see-esp-stores-in-action-real-use-cases-real-results/",
-   "date": "2026-10-29",
-   "categories": [
-    "Distributors",
-    "Resources",
-    "Webinars"
-   ]
+   "key": "industry",
+   "label": "Industry pages"
   },
   {
-   "source": "ASI Central",
-   "title": "How a Family-First Business Turned Relationships Into a Century of Growth",
-   "link": "https://asicentral.com/assets/success-stories/how-a-family-first-business-turned-relationships-into-a-century-of-growth/",
-   "date": "2026-10-29",
-   "categories": [
-    "Success Stories",
-    "Suppliers"
-   ]
+   "key": "occasion",
+   "label": "Events and occasions"
   },
   {
-   "source": "ASI Central",
-   "title": "ASI Names Promo Industry\u2019s Most Influential Leaders in 2026 Counselor Power 50",
-   "link": "https://asicentral.com/press-releases/asi-names-promo-industrys-most-influential-leaders-in-2026-counselor-power-50/",
-   "date": "2026-10-27",
-   "categories": [
-    "Press Releases"
-   ]
+   "key": "guide",
+   "label": "Buying guides and blog"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "AI: From Adoption To Advantage",
-   "link": "https://www.ppai.org/media-hub/ai-from-adoption-to-advantage/",
-   "date": "2026-11-13",
-   "categories": [
-    "Exclusive Insights For Professional Members"
-   ]
+   "key": "faq",
+   "label": "FAQ and help"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "What\u2019s New In Branded Merch?",
-   "link": "https://www.ppai.org/media-hub/whats-new-in-branded-merch/",
-   "date": "2026-11-13",
-   "categories": [
-    "Cap America",
-    "Growth Strategies & Best Practices",
-    "Hirsch",
-    "PCNA",
-    "Perfect Promotions",
-    "Storm Creek",
-    "Terry Town",
-    "Voices, Ideas & Perspectives"
-   ]
+   "key": "proof",
+   "label": "Case studies and reviews"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "Vantage Apparel Names Nikki Stella CEO",
-   "link": "https://www.ppai.org/media-hub/vantage-apparel-names-nikki-stella-ceo/",
-   "date": "2026-11-13",
-   "categories": [
-    "Must Read",
-    "Today\u2019s Leading Articles",
-    "Top Stories",
-    "Vantage Apparel"
-   ]
+   "key": "deals",
+   "label": "Deals and clearance"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "PromoWire (11/10-11/11): News And Notes From Around The Industry",
-   "link": "https://www.ppai.org/media-hub/promowire-11-10-11-11-news-and-notes-from-around-the-industry/",
-   "date": "2026-11-12",
-   "categories": [
-    "Clayton Kendall",
-    "Concord",
-    "Concord Marketing Solutions",
-    "Proforma"
-   ]
+   "key": "speed",
+   "label": "Rush and fast turnaround"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "Beyond Automation: What\u2019s Next For AI In Branded Merch?",
-   "link": "https://www.ppai.org/media-hub/beyond-automation-whats-next-for-ai-in-branded-merch/",
-   "date": "2026-11-10",
-   "categories": [
-    "Must Read",
-    "Technology & Digital Transformation",
-    "Today\u2019s Leading Articles",
-    "Voices, Ideas & Perspectives"
-   ]
+   "key": "price",
+   "label": "Price-point pages"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "Updated Guidance For State-Level Packaging EPR Laws",
-   "link": "https://www.ppai.org/media-hub/updated-guidance-for-state-level-packaging-epr-laws/",
-   "date": "2026-11-10",
-   "categories": [
-    "Exclusive Insights For Professional Members"
-   ]
+   "key": "eco",
+   "label": "Eco and made in USA"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "PPAI Updates Guidance On State-Level Packaging EPR Laws",
-   "link": "https://www.ppai.org/media-hub/ppai-updates-guidance-on-state-level-packaging-epr-laws/",
-   "date": "2026-11-10",
-   "categories": [
-    "EPR",
-    "Ethics & Sustainable Business",
-    "Must Read",
-    "Public Affairs",
-    "What's Happening At The Association"
-   ]
+   "key": "stores",
+   "label": "Company stores, kits, gifting"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "PromoWire (11/5-11/9): News And Notes From Around The Industry",
-   "link": "https://www.ppai.org/media-hub/promowire-11-5-11-9-news-and-notes-from-around-the-industry/",
-   "date": "2026-11-10",
-   "categories": [
-    "HPG",
-    "Imperial",
-    "Reciprocity Road",
-    "Sock Club",
-    "Stahls'",
-    "Storm Creek"
-   ]
+   "key": "design",
+   "label": "Design tools and templates"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "Harper + Scott Co-Founder Shares Playbook For Merch Sellers",
-   "link": "https://www.ppai.org/media-hub/harper-scott-co-founder-shares-playbook-for-merch-sellers/",
-   "date": "2026-11-09",
-   "categories": [
-    "Growth Strategies & Best Practices",
-    "Must Read"
-   ]
+   "key": "samples",
+   "label": "Free samples"
   },
   {
-   "source": "PPAI Media Hub",
-   "title": "US, China Make Mutual Pause On Port Fees, Tariff Hikes Official",
-   "link": "https://www.ppai.org/media-hub/u-s-china-make-pause-on-port-fees-tariff-hikes-official/",
-   "date": "2026-11-09",
-   "categories": [
-    "China",
-    "Must Read",
-    "Public Affairs",
-    "Tariffs",
-    "Today\u2019s Leading Articles",
-    "Top Stories",
-    "USTR"
-   ]
-  },
-  {
-   "source": "Print+Promo Marketing",
-   "title": "Are There Benefits to Using QB Solopreneur Instead of QuickBooks Online?",
-   "link": "https://printandpromomarketing.com/post/are-there-benefits-to-using-qb-solopreneur-instead-of-quickbooks-online/",
-   "date": "2026-11-06",
-   "categories": [
-    "Homepage News"
-   ]
-  },
-  {
-   "source": "Print+Promo Marketing",
-   "title": "Lifelong Learning Still Drives Print Sales",
-   "link": "https://printandpromomarketing.com/post/lifelong-learning-still-drives-print-sales/",
-   "date": "2026-11-05",
-   "categories": [
-    "Featured News",
-    "Homepage News"
-   ]
+   "key": "brands",
+   "label": "Retail brand pages"
   }
  ]
 }

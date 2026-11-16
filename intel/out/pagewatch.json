@@ -1,0 +1,2268 @@
+{
+ "runAt": "2026-11-16T05:59:28Z",
+ "pages": [
+  {
+   "id": "pg-2535302b6bda",
+   "competitorId": "4imprint",
+   "competitorName": "4imprint",
+   "label": "Homepage",
+   "url": "https://www.4imprint.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-2535302b6bda.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Kameleoon",
+    "Listrak",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "OneTrust"
+   ],
+   "title": "Promotional Products - 4imprint Promo Items, Giveaways with Your Logo",
+   "meta": "Promotional products by 4imprint. Find the perfect custom printed gifts for business branding, saying thanks, or awarding excellence! We have 30,000+ personalized items for positive promotions.",
+   "h1": [
+    "Promotional Products by 4imprint"
+   ],
+   "h2": [
+    "The perfect product, perfectly printed and delivered on-time.",
+    "Featured Promotional Product Categories",
+    "Shop By Budget",
+    "Featured Stores",
+    "Featured Brands",
+    "Weekly Deal",
+    "deal of the day",
+    "Special Services",
+    "Real Customer Testimonials About Our Service",
+    "#SwaggingRights\u00ae Customer photos",
+    "10 Popular Search Terms",
+    "4imprint Information and Contact Links"
+   ],
+   "banners": [
+    "You'll shine. We'll make certain.",
+    "It\u2019s your logo, so it has to be perfect. The perfect product, perfectly printed and delivered on-time. That\u2019s certainty. And it\u2019s our promise to you."
+   ],
+   "nav": [
+    "Skip to Content",
+    "24 Hour Rush",
+    "Hot Products",
+    "New Products",
+    "On Sale",
+    "Outlet Site",
+    "USA",
+    "Cart (0) Items"
+   ],
+   "offers": [
+    "# Hour Rush",
+    "# Hour",
+    "Free samples are the trick to finding that perfect promotional product that makes the magic happen.",
+    "Learn About Free Samples",
+    "Save up to 34%"
+   ],
+   "textHash": "3ce9d66b24a9",
+   "lineCount": 100,
+   "textChange": {
+    "added": 2,
+    "removed": 2,
+    "sampleAdded": [
+     "Collapsible Stainless Steel Straw Kit"
+    ]
+   },
+   "changed": false,
+   "changes": {
+    "offers": {
+     "added": [],
+     "removed": [
+      "as low as $10.45"
+     ]
+    }
+   },
+   "prevShotUrl": "/_blob/4fd2fa3b188adf57ee3298e64472579f",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-c8a78e546643",
+   "competitorId": "4imprint",
+   "competitorName": "4imprint",
+   "label": "Hot deals",
+   "url": "https://www.4imprint.com/hot",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-c8a78e546643.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Kameleoon",
+    "Listrak",
+    "Meta Pixel",
+    "Microsoft Ads (UET)"
+   ],
+   "title": "Top-Selling Promotional Products & Custom Items | 4imprint",
+   "meta": "Looking for new and hot, trendy promotional products? Turn to 4imprint\u2019s top promotional products, including T-shirts, pens, bags and more, for inspired events and giveaways.",
+   "h1": [
+    "Hottest and Best-Selling Promotional Items"
+   ],
+   "h2": [
+    "Filter Products",
+    "List of Products",
+    "Why Order Promotional Products Through 4imprint?",
+    "Discover More"
+   ],
+   "banners": [
+    "Jon with 4imprint 15 years"
+   ],
+   "nav": [
+    "Skip to Content",
+    "24 Hour Rush",
+    "Hot Products",
+    "New Products",
+    "On Sale",
+    "Outlet Site",
+    "USA",
+    "Cart (0) Items"
+   ],
+   "offers": [
+    "# Hour Rush",
+    "# Hours (4)",
+    "Ships within 2 days.*",
+    "up to 11% off!",
+    "Ships within 3 days.*",
+    "Ships within 5 days.*",
+    "up to 37% off!",
+    "up to 34% off!",
+    "Ships within 1 day.*",
+    "Ships within 4 days.*",
+    "up to 10% off!"
+   ],
+   "textHash": "0273cc5d64eb",
+   "lineCount": 452,
+   "textChange": {
+    "added": 27,
+    "removed": 27,
+    "sampleAdded": [
+     "Better Materials (88)",
+     "Better Workplaces (36)",
+     "Sustainable Cotton (26)",
+     "USA Grown Cotton (23)",
+     "Forest Stewardship Council (11)",
+     "Sustainable Forestry Initiative (1)",
+     "Fair Labor Association (35)"
+    ]
+   },
+   "changed": false,
+   "prevShotUrl": "/_blob/147553ed011828b2bf87613992fc4eaf",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-3ff193d8bf3f",
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "label": "Homepage",
+   "url": "https://www.customink.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-3ff193d8bf3f.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Klaviyo",
+    "LiveChat",
+    "Next.js",
+    "OneTrust",
+    "Trustpilot"
+   ],
+   "title": "Custom Ink - Design Custom T-shirts, Apparel & Promo Products Online",
+   "meta": "Make custom T-shirts, apparel & promotional products online with the highest quality printing & customer service. Easy Ordering. Fast & Free Shipping.",
+   "h1": [
+    "It's The Thought That Lasts"
+   ],
+   "h2": [
+    "Thousands of gifts for clients and teams, customized for one or five hundred.",
+    "Custom T-shirts & Promotional Products for Your Group",
+    "Shop Featured Brands",
+    "What Our Customers Say"
+   ],
+   "banners": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing",
+    "It's The Thought That Lasts Thousands of gifts for clients and teams, customized for one or five hundred. Get Started",
+    "It's The Thought That Lasts"
+   ],
+   "nav": [],
+   "offers": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing",
+    "100% Satisfaction Guarantee"
+   ],
+   "textHash": "09e15a0023f1",
+   "lineCount": 91,
+   "textChange": {
+    "added": 25,
+    "removed": 22,
+    "sampleAdded": [
+     "Chat with a Real Person",
+     "Customs is my new shopping online store for T-shirt next I will try sweatshirts",
+     "Customer service agent was very professional and helpful.",
+     "Custom Ink has a very user-friendly site. I appreciate that that vet the artwork sent to them.",
+     "Website has a VERY large array of designs and styles to choose from, and made is very easy to design my own shirts.",
+     "Very user friendly experience. Will do again when the opportunity presnts itself.",
+     "Order came quickly and was exactly what I expected and wanted",
+     "owner, DANAMATT LLC, Wayne, NJ",
+     "Custom Ink is your source for custom t-shirts. Privacy PolicyCalifornia Privacy NoticeUser AgreementCookie Settings"
+    ]
+   },
+   "changed": false,
+   "changes": {
+    "banners": {
+     "added": [],
+     "removed": [
+      "It's The Thought That Lasts Thousands of gifts for clients and teams, customized for one or five hundred. See All Products Build Your Design"
+     ]
+    }
+   },
+   "prevShotUrl": "/_blob/6e119e23aaec43008012a0654b0aaa44",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-114c8a076ff8",
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "label": "Corporate gifts",
+   "url": "https://www.customink.com/ink/business/corporate-gifts",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-114c8a076ff8.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Klaviyo",
+    "LiveChat",
+    "Next.js",
+    "OneTrust",
+    "Trustpilot"
+   ],
+   "title": "Branded Corporate Gifts for Clients & Customers | Custom Ink",
+   "meta": "Surprise clients and partners this holiday season with branded corporate gifts. Explore branded gift options that leave a lasting impression.",
+   "h1": [
+    "Corporate Gifts for Clients",
+    "Tips & Inspiration for Client Gifting"
+   ],
+   "h2": [
+    "Gifts for Every Client Gifting Occasion",
+    "What Our Customers Are Saying About Client Gifting"
+   ],
+   "banners": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing"
+   ],
+   "nav": [
+    "Home"
+   ],
+   "offers": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing",
+    "Expert Design Assistance: Our team ensures your logo looks its best across all products, providing free artwork review and proofs.",
+    "Timely Delivery: With options for rush delivery, your gifts will arrive when you need them.",
+    "Get your client gifts on time, with rush delivery options for last-minute holiday or corporate events.",
+    "Do you offer rush delivery for last-minute corporate gifts?"
+   ],
+   "textHash": "f90412adc62f",
+   "lineCount": 111,
+   "textChange": {
+    "added": 1,
+    "removed": 0,
+    "sampleAdded": [
+     "Chat with a Real Person"
+    ]
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/cf4f36af12a4ab89edf73bcf32009285",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-41a429a274ba",
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "label": "Drinkware",
+   "url": "https://www.customink.com/products/drinkware/5",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-41a429a274ba.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Klaviyo",
+    "LiveChat",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Next.js",
+    "OneTrust",
+    "Optimizely",
+    "Pinterest Tag",
+    "Trustpilot"
+   ],
+   "title": "Custom Drinkware - Design Custom Cups, Water Bottles, Mugs, Tumblers and more",
+   "meta": "Design custom logo drinkware at discount prices. Free Shipping, Live Expert help and fast turnaround.",
+   "h1": [
+    "Custom Drinkware"
+   ],
+   "h2": [
+    "Create custom drinkware with your logo.",
+    "Featured Products",
+    "Stanley Laser Engraved 30 oz. Quencher H2.0 FlowState Tumbler",
+    "Shop By Type",
+    "Shop By Brand",
+    "Shop By Collection",
+    "Shop Drinkware Accessories",
+    "Product Experts Available 7 Days a Week"
+   ],
+   "banners": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing",
+    "Create custom drinkware with your logo. Shop All Drinkware"
+   ],
+   "nav": [
+    "All Products"
+   ],
+   "offers": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing",
+    "Minimum 6",
+    "No Minimum Drinkware",
+    "Minimum 50",
+    "Minimum 36",
+    "No Minimum",
+    "FREE delivery",
+    "FREE artwork review",
+    "FREE artwork setup"
+   ],
+   "textHash": "330268783838",
+   "lineCount": 133,
+   "textChange": {
+    "added": 25,
+    "removed": 25,
+    "sampleAdded": [
+     "Chat with a Real Person",
+     "Stanley Laser Engraved 30 oz. Quencher H2.0 FlowState Tumbler",
+     "10 oz. Frosted Flex Cup",
+     "Foldable Slim Can Cooler"
+    ]
+   },
+   "changed": true,
+   "changes": {
+    "offers": {
+     "added": [
+      "Minimum 50",
+      "Minimum 36"
+     ],
+     "removed": []
+    }
+   },
+   "prevShotUrl": "/_blob/a00415077c966b6025bf68ee80bd8a46",
+   "needsUpload": true
+  },
+  {
+   "id": "pg-60b82322a8cb",
+   "competitorId": "customink",
+   "competitorName": "Custom Ink",
+   "label": "Careers",
+   "url": "https://www.customink.com/about/jobs",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-60b82322a8cb.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Klaviyo",
+    "LiveChat",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Next.js",
+    "OneTrust",
+    "Optimizely",
+    "Pinterest Tag",
+    "Trustpilot"
+   ],
+   "title": "Careers at Custom Ink",
+   "meta": "Make custom T-shirts, apparel & promotional products online with the highest quality printing & customer service. Easy Ordering. Fast & Free Shipping.",
+   "h1": [
+    "Join the team behind the swag."
+   ],
+   "h2": [
+    "About Us",
+    "Related Links",
+    "More About Us"
+   ],
+   "banners": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing"
+   ],
+   "nav": [
+    "Get To Know Custom Ink",
+    "Our Story",
+    "Corporate Governance",
+    "Diversity & Belonging",
+    "Careers",
+    "Press",
+    "Partnerships",
+    "User Agreement",
+    "Customer Reviews",
+    "Ink of the Week",
+    "Custom Ink Blog"
+   ],
+   "offers": [
+    "Custom T-shirts & Promotional Products, Fast & Free Shipping, and All-Inclusive Pricing"
+   ],
+   "textHash": "4808e79ea021",
+   "lineCount": 89,
+   "textChange": {
+    "added": 1,
+    "removed": 0,
+    "sampleAdded": [
+     "Chat with a Real Person"
+    ]
+   },
+   "changed": false,
+   "prevShotUrl": "/_blob/f981821b1f9fbfce2131c8b85b8b1ef2",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-93a6ba66e060",
+   "competitorId": "epromos",
+   "competitorName": "ePromos",
+   "label": "Homepage",
+   "url": "https://www.epromos.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-93a6ba66e060.jpg",
+   "tech": [
+    "Amazon Pay",
+    "BigCommerce",
+    "Cloudflare",
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Pay",
+    "Google Tag Manager",
+    "HubSpot",
+    "Klarna",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Osano",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "ePromos Promotional Products | Corporate Promotional Items",
+   "meta": "ePromos helps you design the best custom apparel and promotional products. Champion employee gifts, encourage customer loyalty and get new eyes on your business!",
+   "h1": [
+    "Custom Promotional Products & Branded Merchandise"
+   ],
+   "h2": [
+    "YOUR HOLIDAY GIFTING SHOP.",
+    "WARM UP YOUR TEAM. DESIGNED TO GET YOUR BRAND SEEN.",
+    "YOUR GREATNESS",
+    "OUR GOODS",
+    "EPIC IDEAS. EXCEPTIONAL MERCH.",
+    "PARTNERSHIP FOR IMPACT",
+    "The Brands Defining Our Standard.",
+    "Secure Your Swag.",
+    "Trusted By",
+    "Give More Than a Gift. Create Lasting Connections.",
+    "Branded Business Solutions",
+    "Our Awards"
+   ],
+   "banners": [],
+   "nav": [
+    "Sign Up for Our Emails & Save!",
+    "877.377.6667",
+    "0 ITEMS IN CART",
+    "Shop All Products",
+    "Catalogs",
+    "PRODUCT FINDER",
+    "MERCH CALCULATOR"
+   ],
+   "offers": [
+    "Guaranteed",
+    "Your satisfaction is always 110% guaranteed.",
+    "Lowest Price",
+    "You won't find better prices, guaranteed.",
+    "Our Guarantee"
+   ],
+   "textHash": "241f2ac34679",
+   "lineCount": 151,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/2bd7e958a5a5daa374f371a8c6b86c16",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-06e5d53239d4",
+   "competitorId": "epromos",
+   "competitorName": "ePromos",
+   "label": "Drinkware",
+   "url": "https://www.epromos.com/drinkware/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-06e5d53239d4.jpg",
+   "tech": [
+    "Amazon Pay",
+    "BigCommerce",
+    "Cloudflare",
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Pay",
+    "Google Tag Manager",
+    "HubSpot",
+    "Klarna",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Osano",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "Promotional Drinkware with Your Custom Logo | ePromos",
+   "meta": "Promotional drinkware is cost-effective and useful. Custom print your logo on drinkware items such as mugs, water bottles & more. Shop our low prices.",
+   "h1": [
+    "PROMOTIONAL DRINKWARE"
+   ],
+   "h2": [
+    "Filters",
+    "Shopping By Price?",
+    "481 products found",
+    "Eco-Smart. Eco-Fresh. Eco-Now.",
+    "Custom Logo Drinkware Makes for an Excellent Promotional Gift",
+    "The Most Popular Types of Promotional Drinkware",
+    "The Benefits of Customized Drinkware to Your Business",
+    "How Many Promotional Drinkware Items Should I Buy?",
+    "Order Custom Drinkware Today",
+    "Subscribe & Save",
+    "Footer Start"
+   ],
+   "banners": [],
+   "nav": [
+    "Sign Up for Our Emails & Save!",
+    "877.377.6667",
+    "0 ITEMS IN CART",
+    "Shop All Products",
+    "Catalogs",
+    "PRODUCT FINDER",
+    "MERCH CALCULATOR"
+   ],
+   "offers": [
+    "Guaranteed",
+    "Your satisfaction is always 110% guaranteed.",
+    "Lowest Price",
+    "You won't find better prices, guaranteed.",
+    "Our Guarantee"
+   ],
+   "textHash": "ccbdf18f3901",
+   "lineCount": 292,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/91acdc879332307c0fe8713592e9dd85",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-204819837330",
+   "competitorId": "epromos",
+   "competitorName": "ePromos",
+   "label": "Corporate gifts",
+   "url": "https://www.epromos.com/corporate-gifts/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-204819837330.jpg",
+   "tech": [
+    "Amazon Pay",
+    "BigCommerce",
+    "Cloudflare",
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Pay",
+    "Google Tag Manager",
+    "HubSpot",
+    "Klarna",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Osano",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "Custom Corporate Gifts with Your Logo | ePromos",
+   "meta": "Shop custom corporate gifts for employees and clients. Branded apparel, drinkware, bags, tech and gift sets for every budget. Choose ePromos for promotional items and gifts.",
+   "h1": [
+    "CUSTOM CORPORATE GIFTS"
+   ],
+   "h2": [
+    "Filters",
+    "Shopping By Price?",
+    "506 products found",
+    "Reorder. Restock. Ready for 2026.",
+    "Personalize Corporate Gifts for Your Employees and Clients",
+    "Benefits of Corporate Gifting",
+    "How Many Corporate Gifts to Order",
+    "Choose Your Customized Corporate Gifts Today!",
+    "Subscribe & Save",
+    "Footer Start"
+   ],
+   "banners": [],
+   "nav": [
+    "Sign Up for Our Emails & Save!",
+    "877.377.6667",
+    "0 ITEMS IN CART",
+    "Shop All Products",
+    "Catalogs",
+    "PRODUCT FINDER",
+    "MERCH CALCULATOR"
+   ],
+   "offers": [
+    "Guaranteed",
+    "Your satisfaction is always 110% guaranteed.",
+    "Lowest Price",
+    "You won't find better prices, guaranteed.",
+    "Our Guarantee"
+   ],
+   "textHash": "86c0a53b3a07",
+   "lineCount": 294,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/4802a31163a12855199c919bbcc4021f",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-2d098544030b",
+   "competitorId": "qlp",
+   "competitorName": "Quality Logo Products",
+   "label": "Homepage",
+   "url": "https://www.qualitylogoproducts.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-2d098544030b.jpg",
+   "tech": [
+    "Trustpilot",
+    "WordPress"
+   ],
+   "title": "Promotional Products & Promo Items - Quality Logo Products Official Site",
+   "meta": "Quality Logo Products (QLP) makes custom promotional products for marketing, advertising, private events, and conferences. We promise fast shipping, the best prices, and a helpful human customer service team.",
+   "h1": [
+    "Popular Promotional Items"
+   ],
+   "h2": [
+    "Add your logo to any of these best-selling promotional items.",
+    "Shop Trending Promotional Products",
+    "Promo Know How:",
+    "Promos Are the #1 Form of Advertising",
+    "You'll Never Feel Like Just Another Number",
+    "Let the Numbers Do the Talking"
+   ],
+   "banners": [
+    "Save 8% with Promo Code NEWCUSTOMER8 at Checkout - LIMITED TIME OFFER!"
+   ],
+   "nav": [
+    "QUALITY LOGO PRODUCTS",
+    "Shop All",
+    "Give Us a Call 1-866-312-5646"
+   ],
+   "offers": [
+    "Save 8% with Promo Code NEWCUSTOMER8 at Checkout - LIMITED TIME OFFER!",
+    "If you're a small business, non-profit, Fortune 500 company, or aspiring entrepreneur, branded giveaways are a guaranteed way to make a positive impact."
+   ],
+   "textHash": "54dd3548b298",
+   "lineCount": 206,
+   "textChange": {
+    "added": 10,
+    "removed": 11,
+    "sampleAdded": [
+     "1,180,706 Happy Customers and Counting",
+     "* Statistics last updated 11/15/2026 6:00 AM"
+    ]
+   },
+   "changed": false,
+   "prevShotUrl": "/_blob/53b7412a58d0712ff4d34d4b185f6ef3",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-36757395756d",
+   "competitorId": "qlp",
+   "competitorName": "Quality Logo Products",
+   "label": "Corporate gifts",
+   "url": "https://www.qualitylogoproducts.com/corporate-gifts.htm",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-36757395756d.jpg",
+   "tech": [],
+   "title": "Custom Company Gifts",
+   "meta": "Treat your team to customized company gifts! You can get these corporate gifts for the holidays. Personalize your items with your logo or a special message.",
+   "h1": [
+    "Custom Company Gifts"
+   ],
+   "h2": [
+    "Filters"
+   ],
+   "banners": [
+    "Save 8% with Promo Code NEWCUSTOMER8 at Checkout - LIMITED TIME OFFER!"
+   ],
+   "nav": [
+    "QUALITY LOGO PRODUCTS",
+    "Shop All",
+    "Give Us a Call 1-866-312-5646"
+   ],
+   "offers": [
+    "Save 8% with Promo Code NEWCUSTOMER8 at Checkout - LIMITED TIME OFFER!"
+   ],
+   "textHash": "f9c7a9cc05f3",
+   "lineCount": 483,
+   "textChange": {
+    "added": 15,
+    "removed": 14,
+    "sampleAdded": [
+     "1 - 60 of 1,030 Corporate Gifts",
+     "$7.00 to $10.99 (150)",
+     "Leather Substitute (138)",
+     "Austin Nylon Laptop Backpacks",
+     "Item Color: Heather Navy Blue/Black",
+     "Item Size: 4.25\" x 11.25\" x 17\""
+    ]
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/822fac983902c093c1bda394fe27c1a5",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-ee83e1169c35",
+   "competitorId": "totallypromotional",
+   "competitorName": "Totally Promotional",
+   "label": "Homepage",
+   "url": "https://www.totallypromotional.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "blocked",
+   "httpStatus": 403,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-ee83e1169c35.jpg",
+   "tech": [
+    "Cloudflare"
+   ],
+   "title": "Just a moment...",
+   "meta": "",
+   "h1": [
+    "www.totallypromotional.com"
+   ],
+   "h2": [
+    "Performing security verification"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "4acd95897bc7",
+   "lineCount": 6,
+   "changed": false,
+   "baseline": false,
+   "prevShotUrl": null,
+   "needsUpload": false
+  },
+  {
+   "id": "pg-5fd88c4b1125",
+   "competitorId": "totallypromotional",
+   "competitorName": "Totally Promotional",
+   "label": "Drinkware",
+   "url": "https://www.totallypromotional.com/drinkware.html",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "blocked",
+   "httpStatus": 403,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-5fd88c4b1125.jpg",
+   "tech": [
+    "Cloudflare"
+   ],
+   "title": "Just a moment...",
+   "meta": "",
+   "h1": [
+    "www.totallypromotional.com"
+   ],
+   "h2": [
+    "Performing security verification"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "db84464f8e1d",
+   "lineCount": 6,
+   "changed": false,
+   "baseline": false,
+   "prevShotUrl": null,
+   "needsUpload": false
+  },
+  {
+   "id": "pg-7e82b7159b0d",
+   "competitorId": "totallypromotional",
+   "competitorName": "Totally Promotional",
+   "label": "Magnets",
+   "url": "https://www.totallypromotional.com/magnets.html",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "blocked",
+   "httpStatus": 403,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-7e82b7159b0d.jpg",
+   "tech": [
+    "Cloudflare"
+   ],
+   "title": "Just a moment...",
+   "meta": "",
+   "h1": [
+    "www.totallypromotional.com"
+   ],
+   "h2": [
+    "Performing security verification"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "1a015b1639bc",
+   "lineCount": 6,
+   "changed": false,
+   "baseline": false,
+   "prevShotUrl": null,
+   "needsUpload": false
+  },
+  {
+   "id": "pg-86d2c3ba3349",
+   "competitorId": "vistaprint",
+   "competitorName": "Vistaprint",
+   "label": "Homepage",
+   "url": "https://www.vistaprint.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-86d2c3ba3349.jpg",
+   "tech": [
+    "Akamai",
+    "Amplitude",
+    "Apple Pay",
+    "Attentive",
+    "Cloudflare",
+    "Criteo",
+    "Google Ads",
+    "Google Tag Manager",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Pinterest Tag",
+    "TikTok Pixel",
+    "Trustpilot"
+   ],
+   "title": "VistaPrint Official Website: Online Printing Services",
+   "meta": "VistaPrint online printing services help you create and order the best custom products: marketing materials, business cards, signage, promotional products, custom gifts, packaging and more.",
+   "h1": [
+    "Vistaprint Home Page"
+   ],
+   "h2": [
+    "Your ideas are too good to stay ideas",
+    "Explore all categories",
+    "Customer favorites you won\u2019t want to miss",
+    "Thoughtful picks for everyone on your list",
+    "Get stackable savings with our holiday cards & wall calendars",
+    "Questions? We live for those.",
+    "Holiday favorites by Madeleine's, Vistaprint Ambassador",
+    "Tools, services and expert support to build your business",
+    "Made by you, #MadeWithVistaPrint",
+    "VistaPrint: Here for small business since 1995."
+   ],
+   "banners": [
+    "Your ideas are too good to stay ideas",
+    "Whatever you're creating this holiday season, we'll help you make it real. Discover high-quality custom products, intuitive design tools and expert services to bring your ideas to life."
+   ],
+   "nav": [
+    "Websites by Vista x Wix",
+    "VistaPrint for Business",
+    "VistaCreate",
+    "VistaPrint Advantage",
+    "Deals",
+    "Holiday & Christmas Cards",
+    "Calendars & Gifts",
+    "Business Cards",
+    "Postcards & Print Advertising",
+    "Signs, Banners & Posters",
+    "Labels & Stickers",
+    "Retail, Food & Shipping Packaging",
+    "Clothing & Bags",
+    "Promotional Products",
+    "Invitations, Stationery & Wedding",
+    "Logo, Websites & Social",
+    "Design Services"
+   ],
+   "offers": [
+    "Get 15% off your order when you sign up for our emails"
+   ],
+   "textHash": "84daac57304e",
+   "lineCount": 165,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/0220fe3c2f774ba8657d3287460c3714",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-3a85306aa9db",
+   "competitorId": "vistaprint",
+   "competitorName": "Vistaprint",
+   "label": "Promotional products",
+   "url": "https://www.vistaprint.com/promotional-products",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-3a85306aa9db.jpg",
+   "tech": [
+    "Akamai",
+    "Amplitude",
+    "Apple Pay",
+    "Attentive",
+    "Cloudflare",
+    "Criteo",
+    "Google Ads",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Pinterest Tag",
+    "TikTok Pixel",
+    "Trustpilot"
+   ],
+   "title": "Promotional Products: Custom Promotional Items with Your Logo",
+   "meta": "Discover custom promotional products, branded business merchandise, and company swag with your logo. Enjoy bulk savings & fast shipping with VistaPrint.",
+   "h1": [
+    "Promotional Products"
+   ],
+   "h2": [
+    "Our bestsellers",
+    "Gifts & giveaways they\u2019ll love",
+    "Let\u2019s make your event unforgettable",
+    "More to love \u2013 less to spend",
+    "Why choose VistaPrint for your business?",
+    "Brands you know and love",
+    "Can\u2019t-miss collections",
+    "Explore all categories",
+    "Made by you, #MadeWithVistaPrint",
+    "Design promotional products that they'll hold onto."
+   ],
+   "banners": [
+    "Over 73,000 5-star promo product reviews",
+    "Promotional Products"
+   ],
+   "nav": [
+    "Websites by Vista x Wix",
+    "VistaPrint for Business",
+    "VistaCreate",
+    "VistaPrint Advantage",
+    "Deals",
+    "Holiday & Christmas Cards",
+    "Calendars & Gifts",
+    "Business Cards",
+    "Postcards & Print Advertising",
+    "Signs, Banners & Posters",
+    "Labels & Stickers",
+    "Retail, Food & Shipping Packaging",
+    "Clothing & Bags",
+    "Promotional Products",
+    "Invitations, Stationery & Wedding",
+    "Logo, Websites & Social",
+    "Design Services"
+   ],
+   "offers": [
+    "Friends & Family Sale: $125 off order $300+, $50 off $150+, $20 off $75+",
+    "Code: FAMILYEnds Nov 16. Not combinable with other offers.",
+    "No Minimum Quantity",
+    "Free samples availability",
+    "Get free samples",
+    "No Minimum Order Quantity",
+    "Free Samples",
+    "Try before you buy with free samples to see and feel the products firsthand."
+   ],
+   "textHash": "09457785e018",
+   "lineCount": 244,
+   "textChange": {
+    "added": 6,
+    "removed": 6,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/954e120b1ab732a82a8360309da9642b",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-0aee089a5cf0",
+   "competitorId": "vistaprint",
+   "competitorName": "Vistaprint",
+   "label": "Magnets",
+   "url": "https://www.vistaprint.com/marketing-materials/magnets",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-0aee089a5cf0.jpg",
+   "tech": [
+    "Amplitude",
+    "Apple Pay",
+    "Attentive",
+    "Cloudflare",
+    "Criteo",
+    "Google Ads",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Pinterest Tag",
+    "TikTok Pixel",
+    "Trustpilot"
+   ],
+   "title": "Custom Magnets, Photo Magnets Personalized | VistaPrint",
+   "meta": "Create your custom magnets with VistaPrint! From fridge magnets, car magnets, magnetic business cards, and more, you'll find the right photo magnet for your business.",
+   "h1": [
+    "Custom Magnets"
+   ],
+   "h2": [
+    "\u201cBeautiful printing, quality magnets.\u201d",
+    "Related Products",
+    "Keep your brand top of mind with personalized magnets for fridges, vehicles and more."
+   ],
+   "banners": [],
+   "nav": [
+    "Websites by Vista x Wix",
+    "VistaPrint for Business",
+    "VistaCreate",
+    "VistaPrint Advantage",
+    "Deals",
+    "Holiday & Christmas Cards",
+    "Calendars & Gifts",
+    "Business Cards",
+    "Postcards & Print Advertising",
+    "Signs, Banners & Posters",
+    "Labels & Stickers",
+    "Retail, Food & Shipping Packaging",
+    "Clothing & Bags",
+    "Promotional Products",
+    "Invitations, Stationery & Wedding",
+    "Logo, Websites & Social",
+    "Design Services"
+   ],
+   "offers": [],
+   "textHash": "d57fa635b236",
+   "lineCount": 106,
+   "textChange": {
+    "added": 9,
+    "removed": 9,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/555d2ca48096990b47d849bcc950b9ff",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-ca47dcd9b6b8",
+   "competitorId": "vistaprint",
+   "competitorName": "Vistaprint",
+   "label": "Careers",
+   "url": "https://careers.vista.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-ca47dcd9b6b8.jpg",
+   "tech": [
+    "Cloudflare",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "WordPress"
+   ],
+   "title": "Vista Careers - Home",
+   "meta": "Let's help small businesses succeed, together. We use our love of all things tech, design, manufacturing, and customer care to help small businesses feel big.",
+   "h1": [
+    "Let's help small businesses succeed, together."
+   ],
+   "h2": [
+    "We\u2019re a great place to work. Here\u2019s why.",
+    "So many ways to support small businesses.",
+    "Vista Behaviors",
+    "Work where you\u2019re seen, heard, and valued.",
+    "Let\u2019s talk about benefits.",
+    "Rewarding (and award-winning) careers.",
+    "Ready to join us?",
+    "Join our talent community."
+   ],
+   "banners": [],
+   "nav": [
+    "Remote-First",
+    "Life at VistaPrint",
+    "Teams",
+    "How We Hire"
+   ],
+   "offers": [],
+   "textHash": "9f206450d723",
+   "lineCount": 88,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/66447e2ff2b8a79deb10eddcf8e86c30",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-630af43c1346",
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "label": "Homepage",
+   "url": "https://swag.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-630af43c1346.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity",
+    "Pinterest Tag",
+    "Stripe"
+   ],
+   "title": "Swag.com - Promotional Products & Branded Merchandise",
+   "meta": "Swag.com is your all-in one platform for promotional products and branded merchandise. Shop and ship the highest quality swag with the click of a button.",
+   "h1": [
+    "Swag Simplified."
+   ],
+   "h2": [
+    "Swag Pro for Enterprise"
+   ],
+   "banners": [
+    "718-878-4442 Log In Sign Up 0 0"
+   ],
+   "nav": [
+    "Swag",
+    "Brands",
+    "New & Trending",
+    "Apparel",
+    "Drinkware",
+    "Tech",
+    "Office",
+    "Bags",
+    "Home & Wellness",
+    "Other",
+    "Trade Show",
+    "Swag Pro for Enterprise"
+   ],
+   "offers": [],
+   "textHash": "eb59fea42a6a",
+   "lineCount": 97,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/e1c5c87654ebe577f7ff5cef91bc65d1",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-618f23bf2a27",
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "label": "Company stores",
+   "url": "https://swag.com/companystores",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-618f23bf2a27.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity",
+    "Pinterest Tag",
+    "Stripe"
+   ],
+   "title": "Swag.com \u2014 quality promotional products.",
+   "meta": "Swag.com helps companies create quality promotional products that people actually want to keep. 1000's of companies including Facebook, Google, WeWork, Harry's, Virgin trust us.",
+   "h1": [
+    "Build a company store powered by Swag.com."
+   ],
+   "h2": [
+    "Swag Pro for Enterprise"
+   ],
+   "banners": [
+    "718-878-4442 Log In Sign Up 0 0",
+    "Swag.com + Shopify",
+    "Build a company store powered by Swag.com.",
+    "Build a company",
+    "store powered by Swag.com."
+   ],
+   "nav": [
+    "Swag",
+    "Brands",
+    "New & Trending",
+    "Apparel",
+    "Drinkware",
+    "Tech",
+    "Office",
+    "Bags",
+    "Home & Wellness",
+    "Other",
+    "Trade Show",
+    "Swag Pro for Enterprise"
+   ],
+   "offers": [],
+   "textHash": "7767f4503f6c",
+   "lineCount": 76,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/c76a2360bd4933ccc6aeffa9d6023ac3",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-ddb70cdc866e",
+   "competitorId": "swag",
+   "competitorName": "Swag.com / Swag Pro",
+   "label": "Gifting",
+   "url": "https://swag.com/gifting",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-ddb70cdc866e.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity",
+    "Pinterest Tag",
+    "Stripe"
+   ],
+   "title": "Corporate & Employee Gifting - Send Custom Gifts - Swag.com",
+   "meta": "Easily send custom gifts to your customers, employees, leads and more! All you need is their email address \u2014 we'll send them a link to choose their own gift.",
+   "h1": [
+    "Corporate gifting made simple.",
+    "Need some inspiration?"
+   ],
+   "h2": [
+    "So many uses cases and it\u2019s free to use."
+   ],
+   "banners": [
+    "718-878-4442 Log In Sign Up 0 0",
+    "Swag Gifting Corporate gifting made simple. Send a link that lets people choose their own custom gifts. All you need is their email \u2014 we'll handle the rest. Let's Go!",
+    "Swag Gifting",
+    "Corporate gifting made simple."
+   ],
+   "nav": [
+    "Swag",
+    "Brands",
+    "New & Trending",
+    "Apparel",
+    "Drinkware",
+    "Tech",
+    "Office",
+    "Bags",
+    "Home & Wellness",
+    "Other",
+    "Trade Show",
+    "Swag Pro for Enterprise"
+   ],
+   "offers": [],
+   "textHash": "4a6b97b1dd4c",
+   "lineCount": 113,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/4b48e8f2012083967a8fce973b7c767a",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-32fe3ae4a9b6",
+   "competitorId": "stickermule",
+   "competitorName": "Sticker Mule",
+   "label": "Homepage",
+   "url": "https://www.stickermule.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-32fe3ae4a9b6.jpg",
+   "tech": [
+    "Google Tag Manager",
+    "Next.js",
+    "Trustpilot",
+    "reCAPTCHA"
+   ],
+   "title": "Sticker Mule | Custom printing that kicks ass",
+   "meta": "Thousands of people trust us to make kick ass stickers, labels, packaging & more. Free proofs, free worldwide shipping, fast turnaround & 24/7 customer support.",
+   "h1": [
+    "Custom printing that kicks ass"
+   ],
+   "h2": [
+    "Free shipping, free online proofs, fast turnaround."
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [
+    "Free shipping, free online proofs, fast turnaround."
+   ],
+   "textHash": "e5c88de894f2",
+   "lineCount": 70,
+   "textChange": {
+    "added": 2,
+    "removed": 2,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/098fad0bf34db5018b355c9024e44f85",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-a5803f82ce81",
+   "competitorId": "stickermule",
+   "competitorName": "Sticker Mule",
+   "label": "Deals",
+   "url": "https://www.stickermule.com/deals",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-a5803f82ce81.jpg",
+   "tech": [
+    "Google Tag Manager",
+    "Next.js",
+    "Stripe",
+    "Trustpilot",
+    "reCAPTCHA"
+   ],
+   "title": "Deals | Sticker Mule",
+   "meta": "At Sticker Mule we love to run great deals. Sign up today to be notified about future deals, new products, and an occasional surprise.",
+   "h1": [
+    "$29 for 50"
+   ],
+   "h2": [
+    "Custom 1.5\u2033 \u00d7 1.5\u2033 pins",
+    "Free shipping in 4 days",
+    "High quality acrylic",
+    "Soft clutch",
+    "Put a pin in that"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [
+    "Normally $77. Free shipping.",
+    "Order in the next 5 days to get this limited time offer.",
+    "Free shipping in 4 days",
+    "Get your custom pins fast with 4 day turnaround and free shipping."
+   ],
+   "textHash": "9b7f436604d8",
+   "lineCount": 95,
+   "textChange": {
+    "added": 30,
+    "removed": 26,
+    "sampleAdded": [
+     "Custom 1.5\u2033 \u00d7 1.5\u2033 pins",
+     "Normally $77. Free shipping.",
+     "Order in the next 5 days to get this limited time offer.",
+     "Get your custom pins fast with 4 day turnaround and free shipping.",
+     "Lightweight, shatter-resistant, and a glossy finish that makes your artwork pop.",
+     "Each custom pin features a soft PVC clutch to easily fasten to your clothing or accessories.",
+     "Personalize for any theme such as birthday, graduation, food, animals, badges, lapel, and more. Make your own pin online and get it delivered in just a few days! Orders start at just 10 units.",
+     "Reviews for custom pins",
+     "Micheal Campbell2 days ago",
+     "I didn\u2019t expect it to look so appealing",
+     "Great Product. 3 stars because of delivery from UPS",
+     "SAN PANCRACIO MOTEROS5 days ago"
+    ]
+   },
+   "changed": true,
+   "changes": {
+    "h1": {
+     "added": [
+      "$29 for 50"
+     ],
+     "removed": []
+    },
+    "offers": {
+     "added": [
+      "Normally $77. Free shipping.",
+      "Order in the next 5 days to get this limited time offer.",
+      "Get your custom pins fast with 4 day turnaround and free shipping."
+     ],
+     "removed": []
+    }
+   },
+   "prevShotUrl": "/_blob/5e75f07d1b95ca3dd167d756b4007c71",
+   "needsUpload": true
+  },
+  {
+   "id": "pg-46b74eb81ab7",
+   "competitorId": "stickermule",
+   "competitorName": "Sticker Mule",
+   "label": "Custom magnets",
+   "url": "https://www.stickermule.com/products/custom-magnets",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-46b74eb81ab7.jpg",
+   "tech": [
+    "Google Tag Manager",
+    "Next.js",
+    "Stripe",
+    "Trustpilot",
+    "reCAPTCHA"
+   ],
+   "title": "Custom magnets | Flexible magnets for fridge, cars and more | Sticker Mule",
+   "meta": "High-quality custom magnets your customers will love. Lightweight, strong, printed in vibrant colors, and precision cut. Easy ordering, free shipping.",
+   "h1": [
+    "Custom magnets"
+   ],
+   "h2": [
+    "Size",
+    "Quantity",
+    "$65",
+    "Powerful magnets that stick",
+    "Vibrant colors that won't fade",
+    "Easy ordering, fast shipping",
+    "Premium quality magnets that make an impact",
+    "Perfect for giveaways, promotions, and gifts",
+    "Related to custom magnets"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [
+    "Save 38%",
+    "Save 58%",
+    "Save 65%",
+    "Save 72%",
+    "Save 78%",
+    "Save 82%",
+    "Save 84%",
+    "Save 85%",
+    "100 magnets\u2022$81\u2022Save 38%",
+    "200 magnets\u2022$110\u2022Save 58%",
+    "300 magnets\u2022$136\u2022Save 65%",
+    "500 magnets\u2022$184\u2022Save 72%",
+    "1,000 magnets\u2022$289\u2022Save 78%",
+    "2,000 magnets\u2022$475\u2022Save 82%",
+    "3,000 magnets\u2022$643\u2022Save 84%",
+    "5,000 magnets\u2022$951\u2022Save 85%"
+   ],
+   "textHash": "242e29be12cb",
+   "lineCount": 133,
+   "textChange": {
+    "added": 14,
+    "removed": 16,
+    "sampleAdded": [
+     "Connie Harris15 hours ago",
+     "Magnets magnifiques !",
+     "Tartifeuille19 hours ago",
+     "Les magnets sont magnifiques comme d'habitude, super qualit\u00e9, arriv\u00e9s en 1 semaine :)",
+     "ALAN MCGILL2 days ago",
+     "Madame Butterfly magnets",
+     "Shellie Bressette2 days ago",
+     "Cornelia Bergundthal2 days ago",
+     "Love it, great quality, great print, fast delivery"
+    ]
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/46e07724df05d5323b75cf5d905bc1a8",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-7404be7ff313",
+   "competitorId": "buildasign",
+   "competitorName": "BuildASign",
+   "label": "Homepage",
+   "url": "https://www.buildasign.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-7404be7ff313.jpg",
+   "tech": [
+    "AB Tasty",
+    "Apple Pay",
+    "Next.js",
+    "OneTrust",
+    "VWO"
+   ],
+   "title": "Custom Signs, Banners, Flags | 25% OFF + FREE Shipping over $99!*",
+   "meta": "Custom Signs - 100% customer satisfaction guarantee! BuildASign is the #1 leading custom signs expert. SHIPS NEXT DAY! FREE SHIPPING OVER $75!*",
+   "h1": [
+    "Custom Signs for Every Need"
+   ],
+   "h2": [
+    "Signs",
+    "Real Estate Signs",
+    "Banners",
+    "Retractable Banners",
+    "Flags",
+    "Magnets",
+    "Tradeshow",
+    "Custom Decals",
+    "Business Cards",
+    "Metal Prints",
+    "Sign Holders"
+   ],
+   "banners": [],
+   "nav": [
+    "Signs",
+    "Banners",
+    "Flags",
+    "Vehicle Signs",
+    "Tradeshow",
+    "Stickers & Decals",
+    "Sign Holders",
+    "Marketing Materials",
+    "Apparel & Promotional",
+    "Gifts"
+   ],
+   "offers": [
+    "25% Off Everything with Free Shipping Over $99!*Exclusions Apply",
+    "100% Satisfaction Guaranteed",
+    "Free Artwork Check"
+   ],
+   "textHash": "dffb76d0c3ec",
+   "lineCount": 110,
+   "textChange": {
+    "added": 5,
+    "removed": 5,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/873171da4dd4a6920865a4f69591171f",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-07ac534da9e1",
+   "competitorId": "buildasign",
+   "competitorName": "BuildASign",
+   "label": "Shipping",
+   "url": "https://www.buildasign.com/shipping",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-07ac534da9e1.jpg",
+   "tech": [
+    "AB Tasty",
+    "Apple Pay",
+    "Attentive",
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Heap",
+    "Hotjar",
+    "HubSpot",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity",
+    "OneTrust",
+    "Segment",
+    "VWO"
+   ],
+   "title": "Shipping Policy",
+   "meta": "Custom Signs - 100% customer satisfaction guarantee! BuildASign is the #1 leading custom signs expert. SHIPS NEXT DAY! FREE SHIPPING OVER $75!*",
+   "h1": [
+    "Shipping Policy",
+    "BuildASign.com Production & Shipping Policy"
+   ],
+   "h2": [
+    "How long will it take my signs to arrive?"
+   ],
+   "banners": [
+    "25% Off Everything with Free Shipping Over $99!* Exclusions Apply",
+    "Exclusions Apply"
+   ],
+   "nav": [],
+   "offers": [
+    "25% Off Everything with Free Shipping Over $99!*"
+   ],
+   "textHash": "41d1dff21591",
+   "lineCount": 49,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/d78ec580ead9040960a29961a480ea4e",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-a5a86def6763",
+   "competitorId": "buildasign",
+   "competitorName": "BuildASign",
+   "label": "Careers",
+   "url": "https://www.buildasign.com/up/careers/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-a5a86def6763.jpg",
+   "tech": [
+    "Heap",
+    "WordPress"
+   ],
+   "title": "",
+   "meta": "",
+   "h1": [],
+   "h2": [],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "f599d20c7e91",
+   "lineCount": 73,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/1219fa0b94d4a0ec41c51946d8e96d00",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-56fead8db804",
+   "competitorId": "positivepromotions",
+   "competitorName": "Positive Promotions",
+   "label": "Homepage",
+   "url": "https://www.positivepromotions.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 202,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-56fead8db804.jpg",
+   "tech": [
+    "Adobe Commerce (Magento)",
+    "Apple Pay",
+    "Cloudflare",
+    "Google Ads",
+    "Google Pay",
+    "Google Tag Manager",
+    "Hotjar",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Listrak",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "Promotional Products & Recognition Gifts | Positive Promotions",
+   "meta": "Positive Promotions is your one-stop shop for your promotional product needs. Visit our site to learn how our expert marketing staff can help make your awareness, education and incentive programs campaign a success.",
+   "h1": [
+    "Positive Promotions",
+    "SIGN UP & SAVE 10% ON YOUR NEXT ORDER!"
+   ],
+   "h2": [
+    "Best Sellers",
+    "THE POSITIVE ADVANTAGE",
+    "Connect with Us"
+   ],
+   "banners": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails"
+   ],
+   "nav": [
+    "Skip to Main Content",
+    "Skip to Footer Content",
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails",
+    "+18006352666",
+    "Contact Sales",
+    "Chat",
+    "Order Status",
+    "Favorites",
+    "Pay Your Invoice",
+    "My Account"
+   ],
+   "offers": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Holiday Gifts New Products Impact Collection Boxed Gift Sets Best Sellers Clearance",
+    "100% Guarantee",
+    "SAVE 10%"
+   ],
+   "textHash": "f23909af96b7",
+   "lineCount": 178,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {
+    "tech": {
+     "added": [],
+     "removed": [
+      "Google Analytics 4"
+     ]
+    }
+   },
+   "prevShotUrl": "/_blob/83520cbbe19af26bfbce1f8511275fef",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-7405cecad9b6",
+   "competitorId": "positivepromotions",
+   "competitorName": "Positive Promotions",
+   "label": "Promotional products",
+   "url": "https://www.positivepromotions.com/promotional-products/c/tlvlpp/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-7405cecad9b6.jpg",
+   "tech": [
+    "Adobe Commerce (Magento)",
+    "Apple Pay",
+    "Cloudflare",
+    "Google Ads",
+    "Google Pay",
+    "Hotjar",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Listrak",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "Promotional Products With Your Logo | Positive Promotions | Positive Promotions",
+   "meta": "Customize promotional products with your logo including apparel, drinkware, bags, and giveaways. Promote your company and build your brand with Positive Promotions.",
+   "h1": [
+    "Promotional Products"
+   ],
+   "h2": [
+    "Custom Promotional Products That Help You Promote Your Brand",
+    "Find Promotional Products for Your Program",
+    "What are promotional products?",
+    "Why are promotional products effective?",
+    "What are personalized promotional products?",
+    "What are the most popular promotional products with logo branding?",
+    "Where is the best place to order custom promotional items?",
+    "Where can I buy personalized promotional products?",
+    "Who uses promotional products?",
+    "How are promotional products used in schools and education?",
+    "What are the best custom promotional products for healthcare staff?",
+    "What should an organization consider before ordering promotional products in bulk?"
+   ],
+   "banners": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails"
+   ],
+   "nav": [
+    "Skip to Main Content",
+    "Skip to Footer Content",
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails",
+    "+18006352666",
+    "Contact Sales",
+    "Chat",
+    "Order Status",
+    "Favorites",
+    "Pay Your Invoice",
+    "My Account"
+   ],
+   "offers": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Holiday Gifts New Products Impact Collection Boxed Gift Sets Best Sellers Clearance",
+    "100% Guarantee"
+   ],
+   "textHash": "e924367c1f76",
+   "lineCount": 171,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {
+    "tech": {
+     "added": [],
+     "removed": [
+      "Google Analytics 4"
+     ]
+    }
+   },
+   "prevShotUrl": "/_blob/54dc9707026af8f72a89a7f13c60d067",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-02f45f3277b0",
+   "competitorId": "positivepromotions",
+   "competitorName": "Positive Promotions",
+   "label": "Clearance",
+   "url": "https://www.positivepromotions.com/clearance/c/cl_1001_88/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-02f45f3277b0.jpg",
+   "tech": [
+    "Adobe Commerce (Magento)",
+    "Apple Pay",
+    "Cloudflare",
+    "Google Ads",
+    "Google Pay",
+    "Google Tag Manager",
+    "Hotjar",
+    "HubSpot",
+    "LinkedIn Insight",
+    "Listrak",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Yotpo",
+    "reCAPTCHA"
+   ],
+   "title": "Clearance Products | Positive Promotions",
+   "meta": "Shop custom promotional products at special clearance pricing from Positive Promotions. Only available while supplies last!",
+   "h1": [
+    "Clearance"
+   ],
+   "h2": [
+    "Connect with Us"
+   ],
+   "banners": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails"
+   ],
+   "nav": [
+    "Skip to Main Content",
+    "Skip to Footer Content",
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Sign Up for Emails",
+    "+18006352666",
+    "Contact Sales",
+    "Chat",
+    "Order Status",
+    "Favorites",
+    "Pay Your Invoice",
+    "My Account"
+   ],
+   "offers": [
+    "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+    "Holiday Gifts New Products Impact Collection Boxed Gift Sets Best Sellers Clearance",
+    "Clearance",
+    "# Hour Quick Ship For Each Price By Product By Event Personalized Product Color Featured Themes Production Time / Days Sale & Clearance",
+    "100% Guarantee"
+   ],
+   "textHash": "dbb947362dda",
+   "lineCount": 266,
+   "textChange": {
+    "added": 266,
+    "removed": 6,
+    "sampleAdded": [
+     "This website uses cookies to ensure you get the best experience. Privacy Policy",
+     "Skip to Footer Content",
+     "\ud83d\udecd\ufe0f PRE-BLACK FRIDAY HOLIDAY DEALS \ud83d\udd25",
+     "+18006352666 | Contact Sales | Chat",
+     "items in your shopping cart",
+     "Holiday Gifts New Products Impact Collection Boxed Gift Sets Best Sellers Clearance",
+     "HOLIDAY GIFTSUSA 250TH ANNIVERSARYPROMOTIONAL PRODUCTSBREAST CANCER AWARENESSHEALTHCARE GIFTSTEACHER/STAFF GIFTSEDUCATIONAL ITEMS",
+     "24 Hour Quick Ship For Each Price By Product By Event Personalized Product Color Featured Themes Production Time / Days Sale & Clearance",
+     "Show 40 80 View All | Page 1 of 10",
+     "Minimum Qty: Low to High",
+     "Minimum Qty: High to Low",
+     "Motivations Inspired Visions 2027 Wall Calendar - One-Color Personalization Available"
+    ]
+   },
+   "changed": false,
+   "prevShotUrl": "/_blob/99baad6d49bf843d55674d12abdbdc5a",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-1d20e631e82b",
+   "competitorId": "nationalpen",
+   "competitorName": "National Pen",
+   "label": "Homepage",
+   "url": "https://www.pens.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-1d20e631e82b.jpg",
+   "tech": [
+    "AB Tasty",
+    "Cloudflare",
+    "Criteo",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Hotjar",
+    "Iterable",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "OneTrust",
+    "Segment",
+    "Trustpilot"
+   ],
+   "title": "Promotional Pens & Logo Products at Pens.com | National Pen Brand",
+   "meta": "Shop the best promotional pens & logo products at Pens.com, a National Pen brand. Customize & save with our Perfect Print Promise & Low Price Guarantee.",
+   "h1": [
+    "Pens.com - A National Pen Brand"
+   ],
+   "h2": [
+    "UP TO 50% OFF + FREE SHIPPING",
+    "FAST AND EASY RE-ORDER",
+    "CALENDARS & PLANNERS",
+    "TOP-RATED ALPHA COLLECTION",
+    "SHOP OUR BEST SELLERS",
+    "What Our Customers Are Saying",
+    "SHOP THE BRANDS YOU LOVE",
+    "REAL STORIES. REAL SUCCESS.",
+    "Why Choose Pens.com for Company Logo Pens & Promotional Items?",
+    "Customer Support",
+    "Sign Up for 15% Off Your First Order",
+    "Get to Know Us"
+   ],
+   "banners": [
+    "All Products Pens & Writing Drinkware Bags Stationery & Office Apparel Technology Keychains & Tools Home & Outdoor Gifts & Food Gifts Sale",
+    "We're More Than Just Pens! | Shop All Promotional Products",
+    "We're More Than Just Pens! |",
+    "Shop All Promotional Products",
+    "Black Friday Sale UP TO 50% OFF + FREE SHIPPING Save on select styles. Free shipping on orders $250+. Shop Now *Terms & Conditions Apply"
+   ],
+   "nav": [
+    "1-866-900-7367",
+    "Help Center",
+    "Live Chat",
+    "Order Status",
+    "Pay My Invoice",
+    "Reorder",
+    "Enter Promo Code",
+    "United States",
+    "Sign In",
+    "Pens & Writing",
+    "Drinkware",
+    "Bags",
+    "Stationery & Office",
+    "Apparel",
+    "Technology",
+    "Keychains & Tools",
+    "Home & Outdoor",
+    "Gifts & Food Gifts",
+    "Sale"
+   ],
+   "offers": [
+    "Enter Promo Code",
+    "Black Friday Sale",
+    "UP TO 50% OFF",
+    "+ FREE SHIPPING",
+    "Save on select styles. Free shipping on orders $250+.",
+    "Clearance",
+    "Ships within 2 business days*",
+    "Ships within 4 business days*",
+    "Build your brand on time and on budget with fast turnaround times, flexible order sizes, and our Low Price Guarantee.",
+    "Sign Up for 15% Off Your First Order",
+    "Promo Codes & Coupons"
+   ],
+   "textHash": "188ed7f478c5",
+   "lineCount": 132,
+   "textChange": {
+    "added": 32,
+    "removed": 28,
+    "sampleAdded": [
+     "Save on select styles. Free shipping on orders $250+.",
+     "Port Authority Collective Soft Shell Jacket",
+     "Ships within 2 business days*",
+     "Mini Reflections Wall Calendar",
+     "12 oz.White Ceramic Mug",
+     "Stride Drawstring Bag",
+     "Alpha Soft Touch Gel Pen with Rose Gold Trim"
+    ]
+   },
+   "changed": true,
+   "changes": {
+    "banners": {
+     "added": [
+      "Black Friday Sale UP TO 50% OFF + FREE SHIPPING Save on select styles. Free shipping on orders $250+. Shop Now *Terms & Conditions Apply"
+     ],
+     "removed": []
+    },
+    "offers": {
+     "added": [
+      "Black Friday Sale",
+      "UP TO 50% OFF",
+      "+ FREE SHIPPING",
+      "Save on select styles. Free shipping on orders $250+.",
+      "Clearance"
+     ],
+     "removed": []
+    }
+   },
+   "prevShotUrl": "/_blob/d5747acc58930308a4ba933409e8addd",
+   "needsUpload": true
+  },
+  {
+   "id": "pg-901e7074ddee",
+   "competitorId": "swagup",
+   "competitorName": "SwagUp",
+   "label": "Homepage",
+   "url": "https://www.swagup.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-901e7074ddee.jpg",
+   "tech": [
+    "Convert",
+    "Google Tag Manager",
+    "Intercom",
+    "Klaviyo",
+    "Meta Pixel",
+    "OneTrust",
+    "reCAPTCHA"
+   ],
+   "title": "SwagUp \u2014 Premium Custom Swag Platform for Modern Teams",
+   "meta": "SwagUp is the custom swag platform built for growing teams. Design branded merchandise, pack curated swag kits, and ship globally from one dashboard.",
+   "h1": [
+    "Custom Swag, All in One Place",
+    "Premium Custom Swag. One Powerful Platform."
+   ],
+   "h2": [
+    "How it Works",
+    "SwagUp Stories",
+    "Frequently Asked Questions"
+   ],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "40489519664d",
+   "lineCount": 98,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/a7b0d464da67069b85f1388343d08aa6",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-75b7c6ab6397",
+   "competitorId": "swagup",
+   "competitorName": "SwagUp",
+   "label": "Shops",
+   "url": "https://www.swagup.com/shops",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-75b7c6ab6397.jpg",
+   "tech": [
+    "Convert",
+    "Google Tag Manager",
+    "Intercom",
+    "Klaviyo",
+    "Meta Pixel",
+    "OneTrust",
+    "reCAPTCHA"
+   ],
+   "title": "Custom Company Swag Shops | SwagUp",
+   "meta": "Build a branded merch store for employees, customers, and events. Manage merchandise, orders, inventory, and fulfillment in one place.",
+   "h1": [],
+   "h2": [],
+   "banners": [],
+   "nav": [],
+   "offers": [],
+   "textHash": "dce6e99af5b5",
+   "lineCount": 100,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/65268e01f67bbec60d8cd3f1a39f4812",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-7b15b0096b30",
+   "competitorId": "gotprint",
+   "competitorName": "GotPrint",
+   "label": "Homepage",
+   "url": "https://www.gotprint.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-7b15b0096b30.jpg",
+   "tech": [
+    "Accessibility widget (accessiBe/UserWay)",
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "LivePerson",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity"
+   ],
+   "title": "Online Printing Services | Business Cards, Postcards & More",
+   "meta": "",
+   "h1": [],
+   "h2": [
+    "Most Popular Business Essentials",
+    "Marketing Prints for Businesses",
+    "Limited-Time Savings",
+    "Signs & Banner Displays",
+    "Professional or Personal Apparel",
+    "Mailing Services",
+    "Design Services",
+    "Best Selling Business Cards",
+    "A Guide to Business Cards",
+    "Raised Prints to Stand Out",
+    "Popular Stickers & Roll Labels",
+    "Personalized Office & Home D\u00e9cor"
+   ],
+   "banners": [
+    "FREE Sample Kit - Request yours today!",
+    "Postcard Greeting Card"
+   ],
+   "nav": [
+    "FREE Sample Kit",
+    "Reseller",
+    "Contact",
+    "Log In",
+    "Sign Up"
+   ],
+   "offers": [
+    "FREE Sample Kit - Request yours today!",
+    "15% off Notepads",
+    "10% off Bookmarks",
+    "10% off Floor Decals",
+    "10% off PVC Boards",
+    "FREE Sample Kit*",
+    "Satisfaction Guarantee",
+    "Free sample kit",
+    "Honest Pricing Guarantee",
+    "What is GotPrint\u2019s 100% Satisfaction Guarantee?",
+    "Get My Free Sample Kit",
+    "Coupons",
+    "Guarantee"
+   ],
+   "textHash": "313ad4f63131",
+   "lineCount": 251,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/7b8ef8e8790d8325fabe45d5c5a9894b",
+   "needsUpload": false
+  },
+  {
+   "id": "pg-c2356ad8a6f6",
+   "competitorId": "uprinting",
+   "competitorName": "UPrinting",
+   "label": "Homepage",
+   "url": "https://www.uprinting.com/",
+   "checkedAt": "2026-11-16T05:59:28Z",
+   "status": "ok",
+   "httpStatus": 200,
+   "screenshot": "/home/user/aaa/intel/out/shots/pg-c2356ad8a6f6.jpg",
+   "tech": [
+    "Google Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "LinkedIn Insight",
+    "Meta Pixel",
+    "Microsoft Ads (UET)",
+    "Microsoft Clarity",
+    "OneTrust",
+    "Optimizely",
+    "Pinterest Tag",
+    "reCAPTCHA"
+   ],
+   "title": "Online Printing Services: Custom Printing for Your Business",
+   "meta": "UPrinting helps businesses with custom printing products from business cards, postcards, to stickers and labels, signs and banners, packaging materials, and more. Free file-proofing and fast print turnaround.",
+   "h1": [
+    "Make the season memorable"
+   ],
+   "h2": [
+    "Top Sellers",
+    "Featured Products",
+    "New & Updated Products",
+    "Best Deals",
+    "Trusted Online Printer of Choice",
+    "Quality custom printing. Guaranteed.",
+    "1,000,000+ business professionals trust us with their printing.",
+    "Browse by Category",
+    "Discover What's New on the UPrinting Blog"
+   ],
+   "banners": [
+    "Make the season memorable Branded details for gifting, thanking, and celebrating SHOP NOW"
+   ],
+   "nav": [
+    "Skip to main content",
+    "888.888.4211",
+    "Quality Customer Service",
+    "Marketing Materials",
+    "Stickers & Labels",
+    "Boxes & Packaging",
+    "Signs & Banners",
+    "Apparel & Promo",
+    "Featured Collections"
+   ],
+   "offers": [
+    "Quality custom printing. Guaranteed.",
+    "Free artwork check.",
+    "The product you want. The way you want. Professional printing guaranteed."
+   ],
+   "textHash": "cfaa9e46dc5e",
+   "lineCount": 139,
+   "textChange": {
+    "added": 0,
+    "removed": 0,
+    "sampleAdded": []
+   },
+   "changed": false,
+   "changes": {},
+   "prevShotUrl": "/_blob/b1a3e186e2ae3f347d43221741bcff3d",
+   "needsUpload": false
+  }
+ ]
+}
