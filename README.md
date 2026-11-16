@@ -53,8 +53,12 @@ php artisan test
 ```bash
 php artisan hub:directory:import --file=directory.json --code=ACME   # endpoints from the directory export
 php artisan hub:supplier:add "Acme Promo" --code=ACME --account=12345 # prompts for username, hidden password
+php artisan hub:supplier:endpoint acme-promo inventory https://acme.example/inv  # add an endpoint by hand
 php artisan hub:supplier:test acme-promo                             # safe read-only test per service
 ```
+
+Suppliers missing from the directory (or when the directory import is not yet verified) are set up
+with `hub:supplier:endpoint`, one call per service. Manual endpoints are never overwritten by a re-import.
 
 ## Rules the code follows
 
